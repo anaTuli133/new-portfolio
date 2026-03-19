@@ -44,9 +44,9 @@
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to bottom, #8b5cf6, #f39ac6);
 }
-/* Tablet and Mobile Fix (991px and below) */
+/* Tablet and Mobile Fix (991px and below) for icons  */
 @media (max-width: 991px) {
-    /* 1. Main Wrapper ke center kora */
+
     .footer-center, 
     .contact-social-section,
     div[class*="social-icons"] { 
@@ -57,19 +57,19 @@
         width: 100% !important;
         margin-left: auto !important;
         margin-right: auto !important;
-        float: none !important; /* Jodi float deya thake */
+        float: none !important; 
     }
 
-    /* 2. Icons gulo jate pashapashi theke center hoy */
+  
     .footer-icons {
         display: flex !important;
         justify-content: center !important;
         gap: 20px !important;
-        padding-left: 0 !important; /* Extra padding remove kora */
+        padding-left: 0 !important; 
         margin: 20px auto 0 auto !important;
     }
 
-    /* 3. Jodi Bootstrap-er grid use koro (col-md-etc) */
+ 
     .col-lg-6, .col-md-12, .col-12 {
         display: flex !important;
         justify-content: center !important;
