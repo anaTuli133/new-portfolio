@@ -92,8 +92,8 @@ const Education = () => {
               {/* GPA if available */}
               {edu.gpa && (
                 <div className="flex items-center gap-2 mb-3">
-                  <FaAward className="text-yellow-500" />
-                  <span className="text-yellow-500 font-semibold">{edu.gpa}</span>
+                  <FaAward className="text-purple-300" />
+                  <span className="text-purple-300 font-semibold">{edu.gpa}</span>
                 </div>
               )}
 

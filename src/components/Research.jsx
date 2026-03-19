@@ -34,7 +34,7 @@ const Research = () => {
             <h3 className="text-2xl font-bold text-white mb-2 flex items-center gap-2">
               🎓 Thesis
             </h3>
-            <h4 className="text-xl text-amber-500 mb-2 font-semibold">{research.thesis.title}</h4>
+            <h4 className="text-xl text-purple-300 mb-2 font-semibold">{research.thesis.title}</h4>
             
             <p className="text-sky-400 italic mb-4">{research.thesis.supervisor}</p>
             
