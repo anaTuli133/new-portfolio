@@ -46,7 +46,7 @@ const Skills = () => {
               key={index}
               variants={itemVariants}
               whileHover={{ scale: 1.05, y: -10 }}
-              className="glass-effect rounded-2xl p-6 hover:shadow-xl hover:shadow-primary/20 transition-all"
+              className="glass-effect rounded-2xl p-6 hover:shadow-xl hover:shadow-purple-500/10 transition-all border border-white/5"
             >
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-4xl">{skill.icon}</span>
@@ -56,8 +56,13 @@ const Skills = () => {
                 {skill.items.map((item, i) => (
                   <motion.span
                     key={i}
-                    whileHover={{ scale: 1.1 }}
-                    className="px-3 py-1 bg-primary/20 border border-primary/30 rounded-full text-sm text-primary hover:bg-primary/30 transition-colors cursor-default"
+                    whileHover={{ 
+                      scale: 1.1,
+                      backgroundColor: "rgba(139, 92, 246, 0.2)", // Purple-500 with opacity
+                      borderColor: "rgba(56, 189, 248, 0.5)", // Sky-400 border on hover
+                      color: "#38bdf8" // Sky-400 text on hover
+                    }}
+                    className="px-3 py-1 bg-purple-500/10 border border-purple-500/20 rounded-full text-sm text-purple-300 transition-all cursor-default font-medium"
                   >
                     {item}
                   </motion.span>

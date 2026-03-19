@@ -10,7 +10,6 @@ const Education = () => {
       details: [
         "Core Competencies: AI/ML, Blockchain, IoT, Full-Stack Development and Data Visualization",
         "Completed thesis on Cardiovascular Disease Prediction using Machine Learning"
-        
       ],
       icon: "🎓"
     },
@@ -62,14 +61,22 @@ const Education = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
               whileHover={{ scale: 1.02, y: -5 }}
-              className="glass-effect rounded-2xl p-6 hover:shadow-xl hover:shadow-primary/10 transition-all"
+              className="glass-effect rounded-2xl p-6 hover:shadow-xl hover:shadow-purple-500/10 transition-all"
             >
-              {/* Icon & Period Badge */}
+              {/* Icon & Period Badge - Updated to Purple/Sky */}
               <div className="flex items-center gap-3 mb-3">
                 <span className="text-4xl">{edu.icon}</span>
-                <span className="px-4 py-1 bg-primary/20 border border-primary/30 rounded-full text-primary text-sm font-semibold">
+                <motion.span 
+                  whileHover={{ 
+                    scale: 1.05,
+                    backgroundColor: "rgba(139, 92, 246, 0.2)",
+                    borderColor: "rgba(56, 189, 248, 0.5)",
+                    color: "#38bdf8"
+                  }}
+                  className="px-4 py-1 bg-purple-500/10 border border-purple-500/20 rounded-full text-purple-300 text-sm font-semibold transition-all cursor-default"
+                >
                   {edu.period}
-                </span>
+                </motion.span>
               </div>
 
               {/* Degree */}
@@ -77,7 +84,7 @@ const Education = () => {
                 {edu.degree}
               </h3>
 
-              {/* Institution - Changed from accent to white */}
+              {/* Institution */}
               <p className="text-white font-semibold text-lg mb-2">
                 {edu.institution}
               </p>
@@ -94,7 +101,7 @@ const Education = () => {
               <ul className="space-y-2 text-slate-300">
                 {edu.details.map((detail, i) => (
                   <li key={i} className="flex items-start gap-2">
-                    <span className="text-primary mt-1">▹</span>
+                    <span className="text-purple-400 mt-1">▹</span>
                     <span>{detail}</span>
                   </li>
                 ))}

@@ -36,7 +36,7 @@ const Experience = () => {
                 className="glass-effect rounded-2xl p-6 hover:shadow-xl hover:shadow-primary/10 transition-all"
               >
                 <h3 className="text-2xl font-bold text-white mb-2">{exp.title}</h3>
-                <p className="text-accent font-semibold mb-1">{exp.company}</p>
+                <p className="text-sky-400 italic mb-1">{exp.company}</p>
                 <p className="text-slate-400 text-sm mb-4">{exp.period} | {exp.location}</p>
                 <ul className="space-y-2">
                   {exp.responsibilities.map((resp, i) => (

@@ -19,35 +19,44 @@ const Research = () => {
           </h2>
           <p className="text-slate-400 text-lg">Academic contributions and thesis work</p>
         </motion.div>
-{/* Thesis */}
-<motion.div
-  initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  className="max-w-4xl mx-auto mb-12"
->
-  <motion.div
-    whileHover={{ scale: 1.02 }}
-    className="glass-effect rounded-2xl p-8 hover:shadow-xl hover:shadow-primary/10 transition-all"
-  >
-    <h3 className="text-2xl font-bold text-white mb-2 flex items-center gap-2">
-      🎓 Thesis
-    </h3>
-    <h4 className="text-xl text-amber-600 mb-2 font-semibold">{research.thesis.title}</h4>
-    
-    {/* Supervisor Color Changed to Sky Blue */}
-    <p className="text-sky-400 italic mb-4">{research.thesis.supervisor}</p>
-    
-    <p className="text-slate-300 leading-relaxed mb-4">{research.thesis.description}</p>
-    <motion.a
-      whileHover={{ scale: 1.05 }}
-      href={research.thesis.link}
-      className="inline-flex items-center gap-2 px-6 py-2 bg-primary/20 border border-primary/30 rounded-full text-primary hover:bg-primary/30 transition-colors"
-    >
-      📖 View Thesis <FaExternalLinkAlt className="text-sm" />
-    </motion.a>
-  </motion.div>
-</motion.div>
+
+        {/* Thesis */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-4xl mx-auto mb-12"
+        >
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            className="glass-effect rounded-2xl p-8 hover:shadow-xl hover:shadow-purple-500/10 transition-all"
+          >
+            <h3 className="text-2xl font-bold text-white mb-2 flex items-center gap-2">
+              🎓 Thesis
+            </h3>
+            <h4 className="text-xl text-amber-500 mb-2 font-semibold">{research.thesis.title}</h4>
+            
+            <p className="text-sky-400 italic mb-4">{research.thesis.supervisor}</p>
+            
+            <p className="text-slate-300 leading-relaxed mb-4">{research.thesis.description}</p>
+            
+            {/* Thesis Button - Purple/Sky Theme */}
+            <motion.a
+              whileHover={{ 
+                scale: 1.05,
+                backgroundColor: "rgba(139, 92, 246, 0.2)",
+                borderColor: "rgba(56, 189, 248, 0.5)",
+                color: "#38bdf8"
+              }}
+              href={research.thesis.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-2 bg-purple-500/10 border border-purple-500/20 rounded-full text-purple-300 transition-all font-medium"
+            >
+              📖 View Thesis <FaExternalLinkAlt className="text-sm" />
+            </motion.a>
+          </motion.div>
+        </motion.div>
 
         {/* Publications */}
         <div className="grid md:grid-cols-3 gap-6">
@@ -59,7 +68,7 @@ const Research = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ scale: 1.05, y: -5 }}
-              className="glass-effect rounded-2xl p-6 hover:shadow-xl hover:shadow-primary/10 transition-all"
+              className="glass-effect rounded-2xl p-6 hover:shadow-xl hover:shadow-purple-500/10 transition-all"
             >
               <div className={`inline-block px-3 py-1 rounded-full text-xs font-semibold mb-4 ${
                 pub.status === 'Published' 
@@ -70,18 +79,26 @@ const Research = () => {
               </div>
               <h4 className="text-lg font-semibold text-white mb-3 line-clamp-2">{pub.title}</h4>
               <p className="text-slate-400 text-sm mb-4 line-clamp-3">{pub.description}</p>
+              
+              {/* Publication Button - Purple/Sky Theme */}
               <motion.a
-                whileHover={{ scale: 1.05 }}
+                whileHover={pub.link !== '#' ? { 
+                  scale: 1.05,
+                  backgroundColor: "rgba(139, 92, 246, 0.2)",
+                  borderColor: "rgba(56, 189, 248, 0.5)",
+                  color: "#38bdf8"
+                } : {}}
                 href={pub.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm transition-colors ${
+                className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm transition-all font-medium ${
                   pub.link === '#'
-                    ? 'bg-slate-700/50 text-slate-500 cursor-not-allowed'
-                    : 'bg-primary/20 text-primary hover:bg-primary/30'
+                    ? 'bg-slate-700/50 text-slate-500 cursor-not-allowed border border-transparent'
+                    : 'bg-purple-500/10 border border-purple-500/20 text-purple-300'
                 }`}
               >
-                📄 Read Paper {pub.link !== '#' && <FaExternalLinkAlt className="text-xs" />}
+                📄 {index === research.publications.length - 1 ? "View Work" : "Read Paper"} 
+                {pub.link !== '#' && <FaExternalLinkAlt className="text-xs" />}
               </motion.a>
             </motion.div>
           ))}

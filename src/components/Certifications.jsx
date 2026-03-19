@@ -3,7 +3,7 @@ import { FaAward, FaExternalLinkAlt } from 'react-icons/fa'
 
 const Certifications = () => {
   const certifications = [
-       {
+    {
       title: "Automation Essentials: Demonstration of Industrial Process Control System Design",
       organization: "AUST Robotics Club (AUSTRC)",
       date: "2024",
@@ -39,7 +39,6 @@ const Certifications = () => {
       credential: "https://drive.google.com/file/d/1S7cz-YZya1w4KkvmqLlq3WkeMtRUi-F0/view?usp=drive_link",
       icon: "🌌 "
     },
- 
     {
       title: "Deputy Executive - Graphics Design Team",
       organization: "AUST Robotics Club",
@@ -49,7 +48,6 @@ const Certifications = () => {
       credential: "https://drive.google.com/file/d/1mEKr_tg4-JffNZJBn6xfRfNOgrPQvlZ2/view?usp=drive_link",
       icon: "🌐"
     },
-
     {
       title: "Organizer - AUST Rover Challenge 2.0",
       organization: "AUST Robotics Club",
@@ -68,11 +66,11 @@ const Certifications = () => {
       credential: "https://drive.google.com/file/d/1k56rTwy1vtWOkp4YwjyiGYgPwlg3C4ri/view?usp=drive_link",
       icon: "👩🏼‍🔬"
     },
-      {
+    {
       title: "Executive of the Website & Publicity Team",
       organization: "AIAA AUST Student Branch (Spring 2024)",
       date: "2024",
-      description: "Hosted and anchored various online & offline programs and meetings on behalf ofthe branch.",
+      description: "Hosted and anchored various online & offline programs and meetings on behalf of the branch.",
       image: "/certificates/Executive of Website and Publicity.jpg",
       credential: "https://drive.google.com/file/d/1eSdch0V34t548zXD8BBEe48Plh93yi-6/view?usp=drive_link",
       icon: "🖥"
@@ -86,7 +84,7 @@ const Certifications = () => {
       credential: "https://drive.google.com/file/d/1Rz9TgwkBIrjBJX2X1pz8idU98ABePyVm/view?usp=drive_link",
       icon: "⚛️"
     },
-     {
+    {
       title: "4th International Robo Tech Olympiad-2024",
       organization: "Robo Tech Valley",
       date: "October 2024",
@@ -95,8 +93,6 @@ const Certifications = () => {
       credential: "https://drive.google.com/file/d/1-ED63cTeSvuAB4ZOiCYWTICdU7Lp7wJW/view?usp=drive_link",
       icon: "🤖"
     }
- 
-    
   ]
 
   return (
@@ -135,10 +131,9 @@ const Certifications = () => {
                     e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iIzFhMjMzOCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNjAiIGZpbGw9IiM2MzY2ZjEiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj57Y2VydC5pY29ufTwvdGV4dD48L3N2Zz4=';
                   }}
                 />
-                {/* Overlay gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60"></div>
                 
-                {/* Icon badge */}
+                {/* Icon badge - Back to original Blueish/Primary */}
                 <div className="absolute top-4 right-4 w-12 h-12 bg-primary/90 backdrop-blur-sm rounded-full flex items-center justify-center text-2xl">
                   {cert.icon}
                 </div>
@@ -152,19 +147,23 @@ const Certifications = () => {
                 <p className="text-white font-semibold mb-1">{cert.organization}</p>
                 <p className="text-slate-400 text-sm mb-3">{cert.date}</p>
                 
-                {/* Description */}
                 {cert.description && (
                   <p className="text-slate-300 text-sm mb-4 line-clamp-2">{cert.description}</p>
                 )}
 
-                {/* View Certificate Button */}
+                {/* ONLY this button has the new color theme */}
                 <motion.a
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ 
+                    scale: 1.05,
+                    backgroundColor: "rgba(139, 92, 246, 0.2)",
+                    borderColor: "rgba(56, 189, 248, 0.5)",
+                    color: "#38bdf8"
+                  }}
                   whileTap={{ scale: 0.95 }}
                   href={cert.credential}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-2 bg-primary/20 hover:bg-primary/30 rounded-lg text-primary border border-primary/30 transition-colors text-sm font-medium"
+                  className="inline-flex items-center gap-2 px-5 py-2 bg-purple-500/10 border border-purple-500/20 rounded-lg text-purple-300 transition-all text-sm font-medium"
                 >
                   <FaAward /> View Certificate
                   {cert.credential !== '#' && <FaExternalLinkAlt className="text-xs" />}
@@ -173,19 +172,9 @@ const Certifications = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* Add Certificate Note */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-center mt-12"
-        >
-        
-        </motion.div>
       </div>
     </section>
   )
 }
 
-export default Certifications
+export default Certifications;

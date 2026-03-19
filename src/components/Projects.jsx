@@ -29,7 +29,7 @@ const Projects = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -10 }}
-              className="glass-effect rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-primary/20 transition-all flex flex-col h-full"
+              className="glass-effect rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-purple-500/20 transition-all flex flex-col h-full"
             >
               {/* Project Image Container */}
               <div className="relative h-48 overflow-hidden group">
@@ -45,9 +45,9 @@ const Projects = () => {
                   />
                 ) : null}
                 
-                {/* Fallback Gradient (Jodi image na thake ba load na hoy) */}
+                {/* Fallback Gradient */}
                 <div 
-                  className={`absolute inset-0 bg-gradient-to-br ${project.gradient || 'from-primary/40 to-secondary/40'} flex items-center justify-center`}
+                  className={`absolute inset-0 bg-gradient-to-br ${project.gradient || 'from-sky-500/40 to-purple-500/40'} flex items-center justify-center`}
                   style={{ display: project.image ? 'none' : 'flex' }}
                 >
                    <div className="text-center p-4">
@@ -56,9 +56,9 @@ const Projects = () => {
                    </div>
                 </div>
 
-                {/* Hover Overlay with Category */}
-                <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                   <span className="bg-slate-900/80 text-white px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-sm border border-white/10">
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 bg-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                   <span className="bg-slate-900/80 text-white px-3 py-1 rounded-full text-[10px] font-semibold backdrop-blur-sm border border-white/10 tracking-wider">
                      {project.category}
                    </span>
                 </div>
@@ -71,12 +71,12 @@ const Projects = () => {
                   {project.description}
                 </p>
 
-                {/* Tech Stack */}
+                {/* Tech Stack - Color Matched to Sky/Purple */}
                 <div className="flex flex-wrap gap-2 mb-6 mt-auto">
                   {project.tech.map((tech, i) => (
                     <span
                       key={i}
-                      className="px-2 py-1 bg-white/5 border border-white/10 rounded text-[10px] text-slate-300 font-medium"
+                      className="px-2 py-1 bg-purple-500/10 border border-purple-500/20 rounded text-[10px] text-purple-300 font-medium"
                     >
                       {tech}
                     </span>
@@ -91,19 +91,22 @@ const Projects = () => {
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-primary to-secondary text-white rounded-lg text-xs font-semibold shadow-lg shadow-primary/20 transition-all"
+                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-sky-500 to-purple-500 text-white rounded-lg text-[11px] font-bold shadow-lg shadow-sky-500/20 transition-all uppercase tracking-tighter"
                   >
-                    <FaExternalLinkAlt size={12} /> Live Demo
+                    <FaExternalLinkAlt size={10} />
+                    {/* Last 3 projects e 'View Work' dekhabe */}
+                    {index >= projects.length - 3 ? "View Work" : "Live Demo"}
                   </motion.a>
+                  
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2 glass-effect hover:bg-white/10 rounded-lg text-slate-300 text-xs transition-colors"
+                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2 glass-effect hover:bg-white/10 rounded-lg text-slate-300 text-[11px] font-bold transition-colors uppercase tracking-tighter"
                   >
-                    <FaGithub size={14} /> GitHub
+                    <FaGithub size={12} /> GitHub
                   </motion.a>
                 </div>
               </div>

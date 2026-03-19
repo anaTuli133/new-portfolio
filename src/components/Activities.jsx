@@ -32,7 +32,7 @@ const Activities = () => {
             >
               <div className="text-5xl mb-4">{activity.icon}</div>
               <h3 className="text-xl font-bold text-white mb-2">{activity.title}</h3>
-              <p className="text-sky-400 italic mb-4">{activity.organization}</p>
+              <p className="text-sky-400 italic mb-1">{activity.organization}</p>
               <p className="text-slate-400 text-sm mb-4">{activity.period}</p>
               <ul className="space-y-2">
                 {activity.description.map((desc, i) => (

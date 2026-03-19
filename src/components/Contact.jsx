@@ -121,8 +121,8 @@ const Contact = () => {
           >
             <h3 className="text-2xl font-bold text-white mb-4">Let's Work Together!</h3>
             <p className="text-slate-300 leading-relaxed mb-6">
-              I'm always open to discussing new projects, creative ideas, or opportunities. 
-              Whether you have a question or just want to say hi, feel free to reach out!
+              I'm always excited to discussing new projects, creative ideas or opportunities. 
+              Feel free to reach out!
             </p>
             <motion.a
               whileHover={{ scale: 1.05 }}
