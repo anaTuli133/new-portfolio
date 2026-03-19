@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { HiMenuAlt3, HiX } from 'react-icons/hi' // 
+import { HiMenuAlt3, HiX } from 'react-icons/hi'  
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
@@ -22,7 +22,7 @@ const Navbar = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
       setActiveSection(section.toLowerCase())
-      setIsOpen(false) // Menu bondho korar jonno scroll-er por
+      setIsOpen(false) 
     }
   }
 
