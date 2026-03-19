@@ -85,7 +85,7 @@ export const portfolioData = {
       },
       {
         title: "An Edge-AI CNN Framework for Real-Time Waste Classification with Integrated Biometric Authentication and Cryptographically Secure Logging ",
-        description: "Engineered an automated waste management system integrating Edge-AI for real-time classification and Biometric Authentication for secureuser identification, analyzed citizen awareness and participation patterns.",
+        description: "Engineered an automated waste management system integrating Edge-AI for real-time classification and Biometric Authentication.",
         status: "Journal Pre-proceedings",
         link: "https://drive.google.com/drive/u/0/folders/1RRTAIim9eTYHrrvoFxtGEO0S7Gu-LeoT"
       }
@@ -97,7 +97,7 @@ export const portfolioData = {
     {
       title: "Interactive 3D Book Experience",
       category: "Computer Graphics",
-      description: "Developed a web-based immersive 3D book featuring realistic page-turning physics, dynamic lighting and 360° controls using Three.js and WebGL.",
+      description: "Developed a web-based immersive 3D book featuring realistic page-turning physics, dynamic lighting and 360° controls. ",
       tech: ["Three.js", "WebGL", "Shaders"],
       image:"/Project/3d book.png",
       demo: "https://3d-book-cover.netlify.app/",
@@ -132,10 +132,19 @@ export const portfolioData = {
       demo: "https://anamika-to-do-app.netlify.app/",
       github: "https://github.com/anaTuli133"
     },
+    {
+  title: "P5-Odyssey",
+  category: "Generative Art & Gaming",
+  description: "A dynamic web-based game developed using p5.js. The project was inspired by a creative concept on YouTube.",
+  tech: ["p5.js", "JavaScript", "HTML5"],
+  image: "/Project/bingo.png", 
+  demo: "https://editor.p5js.org/anaTuli133/full/K50yZTM-J",
+  github: "https://github.com/anaTuli133/bingoGame"
+    },
       {
       title: "Foodie - Food Ordering Website",
       category: "Full-Stack Website",
-      description: "Developed an online food ordering website featuring interactive menus, order management, and responsive design using C#, ASP.NET MVC and MySQL.",
+      description: "Developed an online food ordering website featuring interactive menus, order management.",
       tech: ["C#", "ASP.NET MVC", "MySQL"],
       image: "/Project/foodie1.png",
       demo: "https://drive.google.com/file/d/1ytUSII4Mi3WYJGCM0QhbTs_wCJkyOHtK/view",
