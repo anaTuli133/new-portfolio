@@ -196,12 +196,13 @@ export const portfolioData = {
       ]
     },
     {
-      title: "Volunteer & Organizing Member",
+      title: "Participant, Volunteer & Organizer",
       organization: "AUST CSE Carnival",
       period: "Spring 2022 - Spring 2024",
       icon: "🎪",
       description: [
         "Volunteered in CSE Carnival 1.0 to 3.0",
+        "Participant in CSE Carnival 2.0 to 4.0",
         "Organizing Committee Member for CSE Carnival 5.0",
         "Supported programming contests and project exhibitions"
       ]
