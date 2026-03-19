@@ -1,4 +1,4 @@
- import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { portfolioData } from '../data/portfolio'
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaCode, FaInstagram } from 'react-icons/fa'
 
@@ -21,16 +21,17 @@ const Contact = () => {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {/* Contact Info */}
+          {/* Contact Info - Added flex-col and items-center for mobile */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="space-y-6"
+            className="space-y-6 flex flex-col items-center md:items-start"
           >
+            {/* Email Card */}
             <motion.div
               whileHover={{ x: 10 }}
-              className="glass-effect rounded-2xl p-6 flex items-center gap-4"
+              className="glass-effect rounded-2xl p-6 flex items-center gap-4 w-full"
             >
               <div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center flex-shrink-0">
                 <FaEnvelope className="text-2xl text-white" />
@@ -43,9 +44,10 @@ const Contact = () => {
               </div>
             </motion.div>
 
+            {/* Phone Card */}
             <motion.div
               whileHover={{ x: 10 }}
-              className="glass-effect rounded-2xl p-6 flex items-center gap-4"
+              className="glass-effect rounded-2xl p-6 flex items-center gap-4 w-full"
             >
               <div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center flex-shrink-0">
                 <FaPhone className="text-2xl text-white" />
@@ -58,9 +60,10 @@ const Contact = () => {
               </div>
             </motion.div>
 
+            {/* Location Card */}
             <motion.div
               whileHover={{ x: 10 }}
-              className="glass-effect rounded-2xl p-6 flex items-center gap-4"
+              className="glass-effect rounded-2xl p-6 flex items-center gap-4 w-full"
             >
               <div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center flex-shrink-0">
                 <FaMapMarkerAlt className="text-2xl text-white" />
@@ -71,57 +74,57 @@ const Contact = () => {
               </div>
             </motion.div>
 
-            {/* Social Links */}
-            <div className="flex gap-4 pt-4">
+            {/* Social Links - FIXED ALIGNMENT HERE */}
+            <div className="flex justify-center md:justify-start gap-4 pt-4 w-full">
               <motion.a
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 href={personal.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-14 h-14 glass-effect rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
+                className="w-12 h-12 md:w-14 md:h-14 glass-effect rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
               >
-                <FaLinkedin className="text-2xl text-primary" />
+                <FaLinkedin className="text-xl md:text-2xl text-primary" />
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 href={personal.social.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-14 h-14 glass-effect rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
+                className="w-12 h-12 md:w-14 md:h-14 glass-effect rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
               >
-                <FaGithub className="text-2xl text-primary" />
+                <FaGithub className="text-xl md:text-2xl text-primary" />
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 href={personal.social.leetcode}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-14 h-14 glass-effect rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
+                className="w-12 h-12 md:w-14 md:h-14 glass-effect rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
               >
-                <FaCode className="text-2xl text-primary" />
+                <FaCode className="text-xl md:text-2xl text-primary" />
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 href={personal.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-14 h-14 glass-effect rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
+                className="w-12 h-12 md:w-14 md:h-14 glass-effect rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
               >
-                <FaInstagram className="text-2xl text-primary" />
+                <FaInstagram className="text-xl md:text-2xl text-primary" />
               </motion.a>
             </div>
           </motion.div>
 
-          {/* Message Section */}
+          {/* Message Section - Adjusted for mobile center */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="glass-effect rounded-2xl p-8"
+            className="glass-effect rounded-2xl p-8 text-center md:text-left"
           >
             <h3 className="text-2xl font-bold text-white mb-4">Let's Work Together!</h3>
             <p className="text-slate-300 leading-relaxed mb-6">
-              I'm always excited to discussing new projects, creative ideas or opportunities. 
+              I'm always excited to discuss new projects, creative ideas or opportunities. 
               Feel free to reach out!
             </p>
             <motion.a
