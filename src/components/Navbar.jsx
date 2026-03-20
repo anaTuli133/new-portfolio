@@ -134,7 +134,7 @@ const Navbar = () => {
               transition={{ delay: 0.5 }}
               href="#contact"
               onClick={() => setIsOpen(false)}
-              className="btn-primary px-8 py-2.5 text-sm rounded-full mt-6 shadow-lg shadow-sky-500/20"
+              className="btn-primary px-8 py-2.5 text-sm rounded-xl mt-6 shadow-lg shadow-sky-500/20"
             >
               Get In Touch
             </motion.a>
