@@ -71,8 +71,15 @@
 
 @layer components {
   .gradient-text {
-    @apply bg-gradient-to-r from-sky-400 to-purple-400 bg-clip-text text-transparent;
+  
+    @apply bg-gradient-to-r from-sky-400 to-purple-400 bg-clip-text text-transparent inline-block;
+    background-image: linear-gradient(to right, #38bdf8, #c084fc) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
   }
+
   
   .glass-effect {
     @apply bg-white/5 backdrop-blur-lg border border-white/10;
