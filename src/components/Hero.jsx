@@ -8,9 +8,9 @@ const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center pt-20 lg:pt-0 overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12">
-     
+
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          
+
           {/* Left Side - Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -45,24 +45,26 @@ const Hero = () => {
               {personal.description}
             </motion.p>
 
-        
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
               className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8"
             >
-              <a 
-                href="/cv/Anamika-Saha-CV.pdf" 
+              <a
+                href="/cv/Anamika-Saha-CV.pdf"
                 download="Anamika_Saha_CV.pdf"
-                className="btn-primary text-sm md:text-base px-6 py-3"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary text-sm md:text-base px-6 py-3 cursor-pointer inline-block"
               >
                 Download CV
               </a>
 
               <motion.a
                 href="#projects"
-                whileHover={{ 
+                whileHover={{
                   scale: 1.05,
                   backgroundColor: "rgba(139, 92, 246, 0.2)",
                   borderColor: "rgba(56, 189, 248, 0.5)",
@@ -107,7 +109,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative flex justify-center order-1 lg:order-2 mt-8 lg:mt-0" 
+            className="relative flex justify-center order-1 lg:order-2 mt-8 lg:mt-0"
           >
             {/* Image container sizes adjusted for Tab (w-72) vs Mobile (w-64) vs Desktop (w-96) */}
             <div className="relative w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96">
@@ -123,9 +125,9 @@ const Hero = () => {
                 className="w-full h-full rounded-full bg-gradient-to-br from-purple-500 via-sky-400 to-purple-600 p-1"
               >
                 <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center overflow-hidden">
-                  <img 
-                    src="/profile.png" 
-                    alt="Anamika Saha" 
+                  <img
+                    src="/profile.png"
+                    alt="Anamika Saha"
                     className="w-full h-full object-cover"
                     style={{ objectPosition: 'center 18%' }}
                   />
