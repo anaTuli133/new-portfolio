@@ -15,16 +15,13 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Prevent body scroll when menu is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden'
     } else {
       document.body.style.overflow = 'unset'
     }
-    return () => {
-      document.body.style.overflow = 'unset'
-    }
+    return () => { document.body.style.overflow = 'unset' }
   }, [isOpen])
 
   const navItems = ['Home', 'About', 'Education', 'Skills', 'Experience', 'Research', 'Projects', 'Certifications', 'Contact']
@@ -43,113 +40,106 @@ const Navbar = () => {
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'glass-effect shadow-lg py-4' : 'bg-transparent py-6'
-          }`}
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+          scrolled ? 'glass-effect shadow-lg py-3' : 'bg-transparent py-5'
+        }`}
       >
-        <div className="container mx-auto px-6 flex justify-between items-center">
+        <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
+          {/* Logo Section - Fixed for Tablet/Mobile */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="cursor-pointer z-50"
+            className="cursor-pointer z-50 flex items-center"
+            onClick={() => scrollToSection('home')}
           >
-            {/* Logo Image */}
             <img
               src="/logo.png"
               alt="Anamika Saha"
-              className="h-8 w-auto object-contain"
+              className="h-10 w-auto object-contain block" // block deya hoyeche jate shob jaygay dekhay
               onError={(e) => {
                 e.target.style.display = 'none';
                 e.target.nextElementSibling.style.display = 'block';
               }}
             />
-           
-            <div className="text-2xl font-bold gradient-text" style={{ display: 'none' }}>AS</div>
+            {/* Logo Name/Initial - Shared Style */}
+            <div className="text-xl md:text-2xl font-bold gradient-text ml-2" style={{ display: 'none' }}>
+              AS
+            </div>
           </motion.div>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8 items-center">
+          {/* Desktop Menu - Tablet e (lg porjonto) hidden thakbe */}
+          <div className="hidden lg:flex space-x-6 xl:space-x-8 items-center">
             {navItems.map((item) => (
               <motion.button
                 key={item}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => scrollToSection(item)}
-                className={`text-sm font-medium transition-colors ${activeSection === item.toLowerCase()
-                    ? 'text-sky-400'
-                    : 'text-slate-300 hover:text-white'
-                  }`}
+                className={`text-sm font-medium transition-colors ${
+                  activeSection === item.toLowerCase() ? 'text-sky-400' : 'text-slate-300 hover:text-white'
+                }`}
               >
                 {item}
               </motion.button>
             ))}
 
-            {/* Desktop Get In Touch Button */}
             <motion.a
               href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="btn-primary text-sm px-6 py-2"
+              className="btn-primary text-xs xl:text-sm px-5 py-2"
             >
               Get In Touch
             </motion.a>
           </div>
 
-          {/* Mobile Menu Toggle */}
+          {/* Hamburger Icon - Visible on Mobile & Tablet (lg:hidden) */}
           <motion.button
             whileTap={{ scale: 0.9 }}
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-3xl text-slate-300 z-50 relative"
+            className="lg:hidden text-3xl text-slate-200 z-50 relative p-2"
           >
-            {isOpen ? <HiX /> : <HiMenuAlt3 />}
+            {isOpen ? <HiX className="text-sky-400" /> : <HiMenuAlt3 />}
           </motion.button>
         </div>
       </motion.nav>
 
-{/* Mobile Menu  */}
-<AnimatePresence>
-  {isOpen && (
-    <motion.div
-      initial={{ x: '100%' }}
-      animate={{ x: 0 }}
-      exit={{ x: '100%' }}
-      transition={{
-        type: 'spring',
-        stiffness: 300,
-        damping: 30
-      }}
-    
-      className="md:hidden fixed top-0 right-0 w-full h-screen bg-[#0f172a] flex flex-col items-center justify-start pt-24 pb-10 space-y-5 z-40 overflow-y-auto"
-    >
-      {navItems.map((item, index) => (
-        <motion.button
-          key={item}
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{
-            delay: index * 0.06,
-          }}
-          onClick={() => scrollToSection(item)}
-          // text-2xl theke text-lg kora hoyeche size choto korar jonno
-          className={`text-lg font-medium transition-colors ${
-            activeSection === item.toLowerCase() ? 'text-sky-400' : 'text-slate-300'
-          }`}
-        >
-          {item}
-        </motion.button>
-      ))}
+      {/* Full Screen Sidebar Menu (Mobile & Tablet) */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ x: '100%' }}
+            animate={{ x: 0 }}
+            exit={{ x: '100%' }}
+            transition={{ type: 'spring', stiffness: 200, damping: 25 }}
+            className="lg:hidden fixed top-0 right-0 w-full sm:w-[400px] h-screen bg-[#0f172a]/95 backdrop-blur-2xl flex flex-col items-center justify-start pt-28 pb-10 space-y-5 z-40 shadow-2xl overflow-y-auto"
+          >
+            {navItems.map((item, index) => (
+              <motion.button
+                key={item}
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: index * 0.05 }}
+                onClick={() => scrollToSection(item)}
+                className={`text-lg font-medium tracking-wide transition-colors ${
+                  activeSection === item.toLowerCase() ? 'text-sky-400 scale-110 font-bold' : 'text-slate-300'
+                }`}
+              >
+                {item}
+              </motion.button>
+            ))}
 
-      <motion.a
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: navItems.length * 0.05 }}
-        href="#contact"
-        onClick={() => setIsOpen(false)}
-        // padding ebong font size arektu compact kora hoyeche
-        className="btn-primary px-6 py-2.5 text-sm rounded-lg mt-4"
-      >
-        Get In Touch
-      </motion.a>
-    </motion.div>
-  )}
+            <motion.a
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              href="#contact"
+              onClick={() => setIsOpen(false)}
+              className="btn-primary px-8 py-2.5 text-sm rounded-full mt-6 shadow-lg shadow-sky-500/20"
+            >
+              Get In Touch
+            </motion.a>
+          </motion.div>
+        )}
       </AnimatePresence>
     </>
   )
