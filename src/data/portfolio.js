@@ -16,14 +16,14 @@ export const portfolioData = {
 
   skills: [
     {
-      category: "Frontend & Design",
+      category: "Frontend & Web",
       icon: "💻",
-      items: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Bootstrap", "Redux Toolkit", "Material-UI", "Figma", "Canva"]
+      items: ["HTML5", "CSS3","React.js", "Next.js", "TypeScript", "Tailwind CSS", "Bootstrap", "Redux Toolkit", "Material-UI"]
     },
     {
       category: "Backend & Cloud",
       icon: "⚙️",
-      items: ["Node.js", "Express.js", "ASP.NET MVC", "Flask", "FastAPI", "REST APIs", "AWS EC2"]
+      items: ["Node.js", "Express.js", "BashScript","ASP.NET MVC", "Flask", "FastAPI", "REST APIs", "AWS EC2", "Docker", "Kubernetes", "Linux"]
     },
     {
       category: "Programming",
@@ -41,9 +41,9 @@ export const portfolioData = {
       items: ["TensorFlow", "Pandas", "NumPy", "Scikit-learn", "NLP", "Deep Learning"]
     },
     {
-      category: "DevOps & Tools",
+      category: "Tools & Design",
       icon: "🛠️",
-      items: ["Git", "Tableau","Docker", "Kubernetes", "Linux"]
+      items: ["Git", "Tableau","Netlify", "Canva","Figma", "Canva", ]
     }
   ],
 
@@ -59,7 +59,9 @@ export const portfolioData = {
         "Gained working knowledge of Data Warehouse architecture and ETL pipeline processes",
         "Assisted in telecom data analysis, including CDR log monitoring",
         "Learned server maintenance including cron jobs, bash scripting and system monitoring"
-      ]
+        
+      ],
+      items: ["Tableau","Python", "SQL","Oracle", "Automation","BashScript", "Data WareHouse", "Web Development" ]
     }
   ],
 
@@ -133,15 +135,6 @@ export const portfolioData = {
       github: "https://github.com/anaTuli133"
     },
     {
-  title: "P5-Odyssey",
-  category: "Generative Art & Gaming",
-  description: "A dynamic web-based game developed using p5.js. The project was inspired by a creative concept on YouTube.",
-  tech: ["p5.js", "JavaScript", "HTML5"],
-  image: "/Project/bingo.png", 
-  demo: "https://editor.p5js.org/anaTuli133/full/K50yZTM-J",
-  github: "https://github.com/anaTuli133/bingoGame"
-    },
-      {
       title: "Foodie - Food Ordering Website",
       category: "Full-Stack Website",
       description: "Developed an online food ordering website featuring interactive menus, order management.",
@@ -149,6 +142,15 @@ export const portfolioData = {
       image: "/Project/foodie1.png",
       demo: "https://drive.google.com/file/d/1ytUSII4Mi3WYJGCM0QhbTs_wCJkyOHtK/view",
       github: "https://github.com/anaTuli133/Food-Ordering-Website"
+    },
+    {
+  title: "P5-Odyssey",
+  category: "Generative Art & Gaming",
+  description: "A dynamic web-based game developed using p5.js. The project was inspired by a creative concept on YouTube.",
+  tech: ["p5.js", "JavaScript", "HTML5"],
+  image: "/Project/bingo.png", 
+  demo: "https://editor.p5js.org/anaTuli133/full/K50yZTM-J",
+  github: "https://github.com/anaTuli133/bingoGame"
     },
        
     {

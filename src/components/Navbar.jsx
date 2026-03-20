@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { HiMenuAlt3, HiX } from 'react-icons/hi'  
+import { HiMenuAlt3, HiX } from 'react-icons/hi'
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
-  const [isOpen, setIsOpen] = useState(false) // Mobile menu state
+  const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,103 +15,139 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const navItems = ['Home', 'Education','Skills', 'Experience', 'Projects', 'Research','Certifications', 'Activities', 'Contact']
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+    return () => {
+      document.body.style.overflow = 'unset'
+    }
+  }, [isOpen])
+
+  const navItems = ['Home', 'About', 'Education', 'Skills', 'Experience', 'Research', 'Projects', 'Certifications', 'Contact']
 
   const scrollToSection = (section) => {
     const element = document.getElementById(section.toLowerCase())
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
       setActiveSection(section.toLowerCase())
-      setIsOpen(false) 
+      setIsOpen(false)
     }
   }
 
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled || isOpen ? 'glass-effect shadow-lg py-4 bg-[#0a192f]/90 backdrop-blur-md' : 'bg-transparent py-6'
-      }`}
-    >
-      <div className="container mx-auto px-6 flex justify-between items-center">
-{/* Logo Section */}
-<motion.div
-  whileHover={{ scale: 1.05 }}
-  className="cursor-pointer"
->
-
-  <img 
-    src="/logo.png" 
-    alt="Anamika Saha" 
-    className="h-8 w-auto object-contain"
-    onError={(e) => {
-      e.target.style.display = 'none';
-      e.target.nextElementSibling.style.display = 'block';
-    }}
-  />
-  {/* Fallback to AS if logo not found */}
-  <div className="text-2xl font-bold gradient-text" style={{display: 'none'}}>AS</div>
-</motion.div>
-
-        {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-8">
-          {navItems.map((item) => (
-            <motion.button
-              key={item}
-              whileHover={{ scale: 1.1 }}
-              onClick={() => scrollToSection(item)}
-              className={`text-sm font-medium transition-colors ${
-                activeSection === item.toLowerCase() ? 'text-blue-400' : 'text-slate-300 hover:text-white'
-              }`}
-            >
-              {item}
-            </motion.button>
-          ))}
-        </div>
-
-        {/* Mobile Toggle Button */}
-        <div className="md:hidden">
-          <button 
-            onClick={() => setIsOpen(!isOpen)}
-            className="text-3xl text-slate-300 focus:outline-none"
-          >
-            {isOpen ? <HiX /> : <HiMenuAlt3 />}
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Menu Overlay */}
-      <AnimatePresence>
-        {isOpen && (
+    <>
+      <motion.nav
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'glass-effect shadow-lg py-4' : 'bg-transparent py-6'
+          }`}
+      >
+        <div className="container mx-auto px-6 flex justify-between items-center">
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: '100vh' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-[#0a192f] absolute top-full left-0 w-full overflow-hidden flex flex-col items-center pt-10 space-y-6"
+            whileHover={{ scale: 1.05 }}
+            className="cursor-pointer z-50"
           >
+            {/* Logo Image */}
+            <img
+              src="/logo.png"
+              alt="Anamika Saha"
+              className="h-8 w-auto object-contain"
+              onError={(e) => {
+                e.target.style.display = 'none';
+                e.target.nextElementSibling.style.display = 'block';
+              }}
+            />
+           
+            <div className="text-2xl font-bold gradient-text" style={{ display: 'none' }}>AS</div>
+          </motion.div>
+
+          {/* Desktop Menu */}
+          <div className="hidden md:flex space-x-8 items-center">
             {navItems.map((item) => (
               <motion.button
                 key={item}
-                initial={{ x: -20, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
                 onClick={() => scrollToSection(item)}
-                className="text-xl font-semibold text-slate-300 hover:text-blue-400"
+                className={`text-sm font-medium transition-colors ${activeSection === item.toLowerCase()
+                    ? 'text-sky-400'
+                    : 'text-slate-300 hover:text-white'
+                  }`}
               >
                 {item}
               </motion.button>
             ))}
+
+            {/* Desktop Get In Touch Button */}
             <motion.a
               href="#contact"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="btn-primary text-sm px-6 py-2"
+            >
+              Get In Touch
+            </motion.a>
+          </div>
+
+          {/* Mobile Menu Toggle */}
+          <motion.button
+            whileTap={{ scale: 0.9 }}
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden text-3xl text-slate-300 z-50 relative"
+          >
+            {isOpen ? <HiX /> : <HiMenuAlt3 />}
+          </motion.button>
+        </div>
+      </motion.nav>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ x: '100%' }}
+            animate={{ x: 0 }}
+            exit={{ x: '100%' }}
+            transition={{
+              type: 'spring',
+              stiffness: 300,
+              damping: 30,
+              duration: 0.9
+            }}
+            className="md:hidden fixed top-0 right-0 w-full h-screen bg-[#0f172a] flex flex-col items-center justify-center space-y-8 z-40"          >
+            {navItems.map((item, index) => (
+              <motion.button
+                key={item}
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{
+                  delay: index * 0.05,
+                  duration: 0.9
+                }}
+                onClick={() => scrollToSection(item)}
+                className="text-2xl font-semibold text-slate-300 hover:text-primary transition-colors"
+              >
+                {item}
+              </motion.button>
+            ))}
+
+            <motion.a
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: navItems.length * 0.05 }}
+              href="#contact"
               onClick={() => setIsOpen(false)}
-              className="btn-primary px-8 py-3 rounded-full mt-4"
+              className="btn-primary px-8 py-3 rounded-xl mt-4"
             >
               Get In Touch
             </motion.a>
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.nav>
+    </>
   )
 }
 

@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center pt-20 lg:pt-0 overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12">
-        {/* Tab-এ গ্রিড গ্যাপ কিছুটা কমানো হয়েছে (gap-8 for tablet, gap-12 for desktop) */}
+     
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           
           {/* Left Side - Text Content */}
@@ -45,7 +45,7 @@ const Hero = () => {
               {personal.description}
             </motion.p>
 
-            {/* Buttons Section - Tab-এ সেন্টারিং ঠিক রাখা হয়েছে */}
+        
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -69,7 +69,7 @@ const Hero = () => {
                   color: "#38bdf8"
                 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-6 py-3 bg-purple-500/10 border border-purple-500/20 rounded-full text-purple-300 font-medium transition-all text-sm md:text-base inline-block"
+                className="px-6 py-3 bg-purple-500/10 border border-purple-500/20 rounded-xl text-purple-300 font-medium transition-all text-sm md:text-base inline-block"
               >
                 View Projects
               </motion.a>
@@ -136,10 +136,10 @@ const Hero = () => {
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 3, repeat: Infinity }}
-                className="absolute bottom-5 -right-2 md:bottom-8 md:-right-4 lg:bottom-10 lg:-right-5 glass-effect rounded-2xl p-3 md:p-4 shadow-xl border-sky-500/30"
+                className="absolute bottom-5 -right-2 md:bottom-8 md:-right-4 lg:bottom-10 lg:-right-5 glass-effect bg-[#4a78dc6d] rounded-2xl p-3 md:p-4 shadow-xl border-sky-500/30"
               >
-                <p className="text-sky-400 font-bold tracking-wider uppercase text-[10px] md:text-[11px] lg:text-xs">Innovative</p>
-                <p className="text-slate-300 font-medium text-sm md:text-base lg:text-base italic">Solutions</p>
+                <p className="text-yellow-300 font-bold tracking-wider uppercase text-[10px] md:text-[11px] lg:text-xs">Innovative</p>
+                <p className="text-slate-200 font-medium uppercase text-xs md:text-base lg:text-base">Learner</p>
               </motion.div>
             </div>
           </motion.div>

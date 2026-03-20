@@ -1,9 +1,34 @@
 import { motion } from 'framer-motion'
+import { useRef, useState } from 'react' 
+import emailjs from '@emailjs/browser' 
 import { portfolioData } from '../data/portfolio'
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaCode, FaInstagram } from 'react-icons/fa'
+import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaGithub, FaCode, FaInstagram, FaPaperPlane } from 'react-icons/fa'
 
 const Contact = () => {
   const { personal } = portfolioData
+  const form = useRef(); 
+  const [isSending, setIsSending] = useState(false); 
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSending(true);
+
+    emailjs.sendForm(
+      'service_y6cvghn', // Service ID
+      'template_rj3asqm', // Template ID
+      form.current, 
+      'PzRaHsyz_B8wfmqC-' // Public Key
+    )
+    .then((result) => {
+        alert("Message Sent Successfully!");
+        e.target.reset(); 
+        setIsSending(false);
+    }, (error) => {
+        console.log(error.text);
+        alert("Failed to send message. Please try again.");
+        setIsSending(false);
+    });
+  };
 
   return (
     <section id="contact" className="py-20">
@@ -20,121 +45,116 @@ const Contact = () => {
           <p className="text-slate-400 text-lg">Let's connect and create something amazing together</p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {/* Contact Info - Added flex-col and items-center for mobile */}
+        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          {/* Left Side: Info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="space-y-6 flex flex-col items-center md:items-start"
+            className="space-y-8"
           >
-            {/* Email Card */}
-            <motion.div
-              whileHover={{ x: 10 }}
-              className="glass-effect rounded-2xl p-6 flex items-center gap-4 w-full"
-            >
-              <div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center flex-shrink-0">
-                <FaEnvelope className="text-2xl text-white" />
-              </div>
-              <div>
-                <h4 className="text-white font-semibold mb-1">Email</h4>
-                <a href={`mailto:${personal.email}`} className="text-slate-400 hover:text-primary transition-colors">
-                  {personal.email}
-                </a>
-              </div>
-            </motion.div>
+            <div className="text-center md:text-left">
+              <h3 className="text-3xl font-bold text-white mb-4">Let's Work Together!</h3>
+              <p className="text-slate-300 text-lg leading-relaxed">
+                I'm always excited to discuss new projects, creative ideas or opportunities.
+              </p>
+            </div>
 
-            {/* Phone Card */}
-            <motion.div
-              whileHover={{ x: 10 }}
-              className="glass-effect rounded-2xl p-6 flex items-center gap-4 w-full"
-            >
-              <div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center flex-shrink-0">
-                <FaPhone className="text-2xl text-white" />
-              </div>
-              <div>
-                <h4 className="text-white font-semibold mb-1">Phone</h4>
-                <a href={`tel:${personal.phone}`} className="text-slate-400 hover:text-primary transition-colors">
-                  {personal.phone}
-                </a>
-              </div>
-            </motion.div>
+            <div className="space-y-4">
+              <motion.div whileHover={{ x: 10 }} className="glass-effect rounded-2xl p-5 flex items-center gap-4">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary text-xl font-bold">
+                  <FaEnvelope />
+                </div>
+                <div>
+                  <p className="text-white font-semibold">Email</p>
+                  <a href={`mailto:${personal.email}`} className="text-slate-400 hover:text-primary transition-colors">
+                    {personal.email}
+                  </a>
+                </div>
+              </motion.div>
 
-            {/* Location Card */}
-            <motion.div
-              whileHover={{ x: 10 }}
-              className="glass-effect rounded-2xl p-6 flex items-center gap-4 w-full"
-            >
-              <div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center flex-shrink-0">
-                <FaMapMarkerAlt className="text-2xl text-white" />
-              </div>
-              <div>
-                <h4 className="text-white font-semibold mb-1">Location</h4>
-                <p className="text-slate-400">{personal.location}</p>
-              </div>
-            </motion.div>
+              <motion.div whileHover={{ x: 10 }} className="glass-effect rounded-2xl p-5 flex items-center gap-4">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary text-xl">
+                  <FaMapMarkerAlt />
+                </div>
+                <div>
+                  <p className="text-white font-semibold">Location</p>
+                  <p className="text-slate-400">{personal.location}</p>
+                </div>
+              </motion.div>
+            </div>
 
-            {/* Social Links - FIXED ALIGNMENT HERE */}
-            <div className="flex justify-center md:justify-start gap-4 pt-4 w-full">
-              <motion.a
-                whileHover={{ scale: 1.2, rotate: 5 }}
-                href={personal.social.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 md:w-14 md:h-14 glass-effect rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
-              >
-                <FaLinkedin className="text-xl md:text-2xl text-primary" />
-              </motion.a>
-              <motion.a
-                whileHover={{ scale: 1.2, rotate: 5 }}
-                href={personal.social.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 md:w-14 md:h-14 glass-effect rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
-              >
-                <FaGithub className="text-xl md:text-2xl text-primary" />
-              </motion.a>
-              <motion.a
-                whileHover={{ scale: 1.2, rotate: 5 }}
-                href={personal.social.leetcode}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 md:w-14 md:h-14 glass-effect rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
-              >
-                <FaCode className="text-xl md:text-2xl text-primary" />
-              </motion.a>
-              <motion.a
-                whileHover={{ scale: 1.2, rotate: 5 }}
-                href={personal.social.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 md:w-14 md:h-14 glass-effect rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
-              >
-                <FaInstagram className="text-xl md:text-2xl text-primary" />
-              </motion.a>
+            {/* Social Icons */}
+            <div className="flex justify-center md:justify-start gap-4 pt-2">
+              {[
+                { icon: FaLinkedin, link: personal.social.linkedin },
+                { icon: FaGithub, link: personal.social.github },
+                { icon: FaCode, link: personal.social.leetcode },
+                { icon: FaInstagram, link: personal.social.instagram }
+              ].map((social, idx) => (
+                <motion.a
+                  key={idx}
+                  whileHover={{ scale: 1.1, y: -5 }}
+                  href={social.link}
+                  target="_blank"
+                  className="w-11 h-11 glass-effect rounded-full flex items-center justify-center text-slate-400 hover:text-primary transition-all border border-white/10"
+                >
+                  <social.icon className="text-xl" />
+                </motion.a>
+              ))}
             </div>
           </motion.div>
 
-          {/* Message Section - Adjusted for mobile center */}
+          {/* Right Side: Form */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="glass-effect rounded-2xl p-8 text-center md:text-left"
+            className="glass-effect rounded-3xl p-8 h-fit"
           >
-            <h3 className="text-2xl font-bold text-white mb-4">Let's Work Together!</h3>
-            <p className="text-slate-300 leading-relaxed mb-6">
-              I'm always excited to discuss new projects, creative ideas or opportunities. 
-              Feel free to reach out!
-            </p>
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href={`mailto:${personal.email}`}
-              className="btn-primary inline-block"
-            >
-              Send Message
-            </motion.a>
+        
+            <form ref={form} onSubmit={handleSubmit} className="space-y-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <input
+                  name="from_name"
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full bg-slate-900/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors"
+                  required
+                />
+                <input
+                  name="from_email"
+                  type="email"
+                  placeholder="Your Email"
+                  className="w-full bg-slate-900/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors"
+                  required
+                />
+              </div>
+              <input
+                name="subject"
+                type="text"
+                placeholder="Subject"
+                className="w-full bg-slate-900/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                className="w-full bg-slate-900/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors resize-none"
+                required
+              ></textarea>
+              
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                type="submit"
+                disabled={isSending}
+                className={`w-full py-4 bg-gradient-to-r from-purple-500 to-secondary text-white font-bold rounded-xl flex items-center justify-center gap-2 hover:shadow-lg transition-all shadow-md ${isSending ? 'opacity-50' : ''}`}
+              >
+                {isSending ? "Sending..." : "Send Message"} <FaPaperPlane className="text-sm" />
+              </motion.button>
+            </form>
           </motion.div>
         </div>
       </div>
