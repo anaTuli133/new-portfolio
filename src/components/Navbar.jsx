@@ -45,7 +45,7 @@ const Navbar = () => {
         }`}
       >
         <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
-          {/* Logo Section - Fixed for Tablet/Mobile */}
+          {/* Logo Section - Tablet/Mobile */}
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="cursor-pointer z-50 flex items-center"
@@ -60,13 +60,13 @@ const Navbar = () => {
                 e.target.nextElementSibling.style.display = 'block';
               }}
             />
-            {/* Logo Name/Initial - Shared Style */}
+          
             <div className="text-xl md:text-2xl font-bold gradient-text ml-2" style={{ display: 'none' }}>
               AS
             </div>
           </motion.div>
 
-          {/* Desktop Menu - Tablet e (lg porjonto) hidden thakbe */}
+          {/* Desktop Menu */}
           <div className="hidden lg:flex space-x-6 xl:space-x-8 items-center">
             {navItems.map((item) => (
               <motion.button

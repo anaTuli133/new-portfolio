@@ -53,11 +53,16 @@ const Hero = () => {
               className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8"
             >
               <a
-                href="/cv/Anamika-Saha-CV.pdf"
-                download="Anamika_Saha_CV.pdf"
+                href={`${window.location.origin}/Anamika-Saha-CV.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary text-sm md:text-base px-6 py-3 cursor-pointer inline-block"
+                onClick={(e) => {
+              
+                  if (!window.confirm("Do you want to open/download the CV?")) {
+                    e.preventDefault();
+                  }
+                }}
               >
                 Download CV
               </a>
@@ -111,7 +116,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative flex justify-center order-1 lg:order-2 mt-8 lg:mt-0"
           >
-            {/* Image container sizes adjusted for Tab (w-72) vs Mobile (w-64) vs Desktop (w-96) */}
+            {/* Image container sizes Tab (w-72) vs Mobile (w-64) vs Desktop (w-96) */}
             <div className="relative w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96">
               <motion.div
                 animate={{
@@ -134,7 +139,7 @@ const Hero = () => {
                 </div>
               </motion.div>
 
-              {/* Floating Badge - Slightly smaller for tab screens */}
+              {/* Floating Badge  */}
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 3, repeat: Infinity }}
