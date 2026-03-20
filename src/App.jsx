@@ -58,9 +58,7 @@ if (isLoading) {
           <p className="text-lg md:text-xl text-slate-300 italic font-serif leading-relaxed">
             “He who asks a question is a fool for five minutes; he who does not ask a question remains a fool forever.”
           </p>
-          <p className="mt-3 text-sky-400/80 text-sm font-mono tracking-widest uppercase mb-10">
-            — Chinese Proverb
-          </p>
+      
 
         
           <motion.p 
