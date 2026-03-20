@@ -53,16 +53,11 @@ const Hero = () => {
               className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8"
             >
               <a
-                href={`${window.location.origin}/Anamika-Saha-CV.pdf`}
+                href="/Anamika-Saha-CV.pdf"
+                download="Anamika_Saha_CV.pdf"
                 target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary text-sm md:text-base px-6 py-3 cursor-pointer inline-block"
-                onClick={(e) => {
-              
-                  if (!window.confirm("Do you want to open/download the CV?")) {
-                    e.preventDefault();
-                  }
-                }}
+                rel="noreferrer"
+                className="btn-primary text-sm md:text-base px-6 py-3"
               >
                 Download CV
               </a>
