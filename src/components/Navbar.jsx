@@ -104,48 +104,52 @@ const Navbar = () => {
         </div>
       </motion.nav>
 
-      {/* Mobile Menu */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ x: '100%' }}
-            animate={{ x: 0 }}
-            exit={{ x: '100%' }}
-            transition={{
-              type: 'spring',
-              stiffness: 300,
-              damping: 30,
-              duration: 0.9
-            }}
-            className="md:hidden fixed top-0 right-0 w-full h-screen bg-[#0f172a] flex flex-col items-center justify-center space-y-8 z-40"          >
-            {navItems.map((item, index) => (
-              <motion.button
-                key={item}
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{
-                  delay: index * 0.05,
-                  duration: 0.9
-                }}
-                onClick={() => scrollToSection(item)}
-                className="text-2xl font-semibold text-slate-300 hover:text-primary transition-colors"
-              >
-                {item}
-              </motion.button>
-            ))}
+{/* Mobile Menu  */}
+<AnimatePresence>
+  {isOpen && (
+    <motion.div
+      initial={{ x: '100%' }}
+      animate={{ x: 0 }}
+      exit={{ x: '100%' }}
+      transition={{
+        type: 'spring',
+        stiffness: 300,
+        damping: 30
+      }}
+    
+      className="md:hidden fixed top-0 right-0 w-full h-screen bg-[#0f172a] flex flex-col items-center justify-start pt-24 pb-10 space-y-5 z-40 overflow-y-auto"
+    >
+      {navItems.map((item, index) => (
+        <motion.button
+          key={item}
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            delay: index * 0.06,
+          }}
+          onClick={() => scrollToSection(item)}
+          // text-2xl theke text-lg kora hoyeche size choto korar jonno
+          className={`text-lg font-medium transition-colors ${
+            activeSection === item.toLowerCase() ? 'text-sky-400' : 'text-slate-300'
+          }`}
+        >
+          {item}
+        </motion.button>
+      ))}
 
-            <motion.a
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: navItems.length * 0.05 }}
-              href="#contact"
-              onClick={() => setIsOpen(false)}
-              className="btn-primary px-8 py-3 rounded-xl mt-4"
-            >
-              Get In Touch
-            </motion.a>
-          </motion.div>
-        )}
+      <motion.a
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: navItems.length * 0.05 }}
+        href="#contact"
+        onClick={() => setIsOpen(false)}
+        // padding ebong font size arektu compact kora hoyeche
+        className="btn-primary px-6 py-2.5 text-sm rounded-lg mt-4"
+      >
+        Get In Touch
+      </motion.a>
+    </motion.div>
+  )}
       </AnimatePresence>
     </>
   )
