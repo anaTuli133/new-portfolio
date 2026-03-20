@@ -64,7 +64,7 @@ if (isLoading) {
           <motion.p 
             animate={{ opacity: [0.4, 1, 0.4] }}
             transition={{ repeat: Infinity, duration: 3 }}
-            className="mt-6 text-slate-300 font-mono tracking-[0.3em] text-[10px] uppercase border-t border-slate-600 pt-4"
+            className="mt-6 text-slate-300 font-mono tracking-[0.3em] text-[10px] uppercase  pt-4"
           >
             Initializing Experience...
           </motion.p>
