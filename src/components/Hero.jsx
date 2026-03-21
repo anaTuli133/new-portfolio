@@ -33,7 +33,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-2xl md:text-2xl lg:text-3xl text-slate-200 mb-6 font-mono"
+              className="text-xl md:text-xl lg:text-3xl text-slate-200 mb-6 font-mono"
             >
               <Typewriter
                 options={{
@@ -135,7 +135,7 @@ const Hero = () => {
                 style={{
                   boxShadow: '0 0 40px rgba(139, 92, 246, 0.3)'
                 }}
-                className="w-full h-full rounded-full bg-gradient-to-br from-purple-500 via-sky-400 to-purple-600 p-1"
+                className="w-full h-full rounded-full bg-gradient-to-br from-purple-500 via-sky-400 to-pink-400 p-1"
               >
                 <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center overflow-hidden">
                   <img
