@@ -153,8 +153,8 @@ const Hero = () => {
                 transition={{ duration: 3, repeat: Infinity }}
                 className="absolute bottom-5 -right-2 md:bottom-8 md:-right-4 lg:bottom-10 lg:-right-5 glass-effect bg-[#4a78dc6d] rounded-2xl p-3 md:p-4 shadow-xl border-sky-500/30"
               >
-                <p className="text-yellow-300 font-bold tracking-wider uppercase text-[10px] md:text-[11px] lg:text-xs">Maverick</p>
-                <p className="text-slate-200 font-medium uppercase text-xs md:text-base lg:text-base">Learner</p>
+                <p className="text-yellow-300 font-bold tracking-wider uppercase text-[12px] md:text-[11px] lg:text-xs">Maverick</p>
+                <p className="text-slate-200 font-bold uppercase text-[12px] md:text-[11px] lg:text-xs">Learner</p>
               </motion.div>
             </div>
           </motion.div>
