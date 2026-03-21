@@ -117,12 +117,12 @@ export const portfolioData = {
       github: "https://github.com/anaTuli133"
     },
     {
-      title: "P5 Odyssey- A Bingo Game",
+      title: "Dino Adventure- A Bingo Game",
       category: "Generative Art & Gaming",
       description: "A dynamic web-based game developed using p5.js. The project was inspired by a creative concept on YouTube.",
-      tech: ["p5.js", "CSS", "HTML5"],
-      image: "/Project/jump.png",
-      demo: "https://editor.p5js.org/anaTuli133/full/TG5E1L9qo",
+      tech: ["p5.js","JavaScript", "CSS", "HTML5"],
+      image: "/Project/day.png",
+      demo: "https://editor.p5js.org/anaTuli133/full/ZoRjR5NDz",
       github: "https://github.com/anaTuli133/bingoGame"
     },
 
