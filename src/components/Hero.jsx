@@ -129,10 +129,9 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative flex justify-center order-1 lg:order-2 mt-8 lg:mt-0"
           >
-            {/* Image container sizes Tab (w-72) vs Mobile (w-64) vs Desktop (w-96) */}
-            <div className="relative w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96">
+            {/* Image container */}
+            <div className="relative w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 -mt-8 md:mt-0">
               <motion.div
-              
                 style={{
                   boxShadow: '0 0 40px rgba(139, 92, 246, 0.3)'
                 }}
