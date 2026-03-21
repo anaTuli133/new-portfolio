@@ -41,7 +41,9 @@ const Experience = () => {
                     <p className="text-sky-400 italic font-medium">{exp.company}</p>
                   </div>
                   <p className="text-slate-500 text-sm mt-2 md:mt-0 font-mono">
-                    {exp.period} <br className="hidden md:block" /> {exp.location}
+                    {exp.period}
+                    <br />
+                    {exp.location}
                   </p>
                 </div>
 
@@ -57,8 +59,8 @@ const Experience = () => {
                 {/* Skills/Items Section */}
                 <div className="flex flex-wrap gap-2 pt-4 border-t border-white/10">
                   {exp.items.map((item, i) => (
-                    <span 
-                      key={i} 
+                    <span
+                      key={i}
                       className="px-3 py-1 text-xs font-medium bg-primary/10 text-white border border-sky-600 rounded-full hover:bg-primary/20 transition-colors"
                     >
                       {item}
