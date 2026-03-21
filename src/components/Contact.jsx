@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion'
-import { useRef, useState } from 'react' 
-import emailjs from '@emailjs/browser' 
+import { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser'
 import { portfolioData } from '../data/portfolio'
 import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaGithub, FaCode, FaInstagram, FaPaperPlane } from 'react-icons/fa'
 
 const Contact = () => {
   const { personal } = portfolioData
-  const form = useRef(); 
-  const [isSending, setIsSending] = useState(false); 
+  const form = useRef();
+  const [isSending, setIsSending] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,18 +16,18 @@ const Contact = () => {
     emailjs.sendForm(
       'service_y6cvghn', // Service ID
       'template_rj3asqm', // Template ID
-      form.current, 
+      form.current,
       'PzRaHsyz_B8wfmqC-' // Public Key
     )
-    .then((result) => {
+      .then((result) => {
         alert("Message Sent Successfully!");
-        e.target.reset(); 
+        e.target.reset();
         setIsSending(false);
-    }, (error) => {
+      }, (error) => {
         console.log(error.text);
         alert("Failed to send message. Please try again.");
         setIsSending(false);
-    });
+      });
   };
 
   return (
@@ -54,8 +54,10 @@ const Contact = () => {
             className="space-y-8"
           >
             <div className="text-center md:text-left">
-              <h3 className="text-3xl font-bold text-white mb-4">Let's Work Together!</h3>
-              <p className="text-slate-300 text-lg leading-relaxed">
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                Let's Work Together!
+              </h3>             
+               <p className="text-slate-300 text-lg leading-relaxed">
                 I'm always excited to discuss new projects, creative ideas or opportunities.
               </p>
             </div>
@@ -112,7 +114,7 @@ const Contact = () => {
             viewport={{ once: true }}
             className="glass-effect rounded-3xl p-8 h-fit"
           >
-        
+
             <form ref={form} onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <input
@@ -144,7 +146,7 @@ const Contact = () => {
                 className="w-full bg-slate-900/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors resize-none"
                 required
               ></textarea>
-              
+
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
