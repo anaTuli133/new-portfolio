@@ -42,14 +42,14 @@ const Hero = () => {
                     'Business Analyst',
                     'Full Stack Developer',
                     'Research Enthusiast',
-                    'Relentless Builder'                    
+                    'Relentless Builder'
                   ],
                   autoStart: true,
                   loop: true,
-                  delay: 40,        
-                  deleteSpeed: 40,   
-                  pauseFor: 2000,    
-                  cursor: "|",       
+                  delay: 40,
+                  deleteSpeed: 40,
+                  pauseFor: 2000,
+                  cursor: "|",
                   wrapperClassName: "text-white-200"
                 }}
               />
@@ -132,14 +132,10 @@ const Hero = () => {
             {/* Image container sizes Tab (w-72) vs Mobile (w-64) vs Desktop (w-96) */}
             <div className="relative w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96">
               <motion.div
-                animate={{
-                  boxShadow: [
-                    '0 0 40px rgba(34, 211, 238, 0.3)',
-                    '0 0 60px rgba(139, 92, 246, 0.3)',
-                    '0 0 40px rgba(34, 211, 238, 0.3)',
-                  ],
+              
+                style={{
+                  boxShadow: '0 0 40px rgba(139, 92, 246, 0.3)'
                 }}
-                transition={{ duration: 4, repeat: Infinity }}
                 className="w-full h-full rounded-full bg-gradient-to-br from-purple-500 via-sky-400 to-purple-600 p-1"
               >
                 <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center overflow-hidden">
