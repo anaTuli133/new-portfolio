@@ -18,7 +18,7 @@ export const portfolioData = {
     {
       category: "Frontend & Web",
       icon: "💻",
-      items: ["HTML5", "CSS3","React.js", "Next.js", "TypeScript", "Tailwind CSS", "Bootstrap"]
+      items: ["HTML5", "CSS3", "React.js", "Next.js", "TypeScript", "Tailwind CSS", "Bootstrap"]
     },
     {
       category: "Backend & Cloud",
@@ -43,7 +43,7 @@ export const portfolioData = {
     {
       category: "Tools & Design",
       icon: "🛠️",
-      items: ["Git", "Tableau","Netlify", "Canva","Figma", "Canva", ]
+      items: ["Git", "Tableau", "Netlify", "Canva", "Figma", "Canva",]
     }
   ],
 
@@ -59,9 +59,9 @@ export const portfolioData = {
         "Gained working knowledge of Data Warehouse architecture and ETL pipeline processes",
         "Assisted in telecom data analysis, including CDR log monitoring",
         "Learned server maintenance including cron jobs, bash scripting and system monitoring"
-        
+
       ],
-      items: ["Tableau","Python", "SQL","Oracle", "Automation","BashScript", "Data WareHouse", "Web Development" ]
+      items: ["Tableau", "Python", "SQL", "Oracle", "Automation", "BashScript", "Data WareHouse", "Web Development"]
     }
   ],
 
@@ -96,25 +96,17 @@ export const portfolioData = {
 
   projects: [
 
-    {
-      title: "Interactive 3D Book Experience",
-      category: "Computer Graphics",
-      description: "Developed a web-based immersive 3D book featuring realistic page-turning physics, dynamic lighting and 360° controls. ",
-      tech: ["Three.js", "WebGL", "Shaders"],
-      image:"/Project/3d book.png",
-      demo: "https://3d-book-cover.netlify.app/",
-      github: "https://github.com/anaTuli133/Interactive-3D-Book-Experience"
-    },
+
     {
       title: "Finsweet - React Frontend",
       category: "Frontend Development",
       description: "Built a responsive static website using React and Vite with structured layouts and clean UI design.",
       tech: ["React", "Vite", "Bootstrap", "JavaScript"],
-      image:"/Project/finswet.png",
+      image: "/Project/finswet.png",
       demo: "https://fins-project-anamika.vercel.app/",
       github: "https://github.com/anaTuli133/Fins-Project"
     },
- 
+
     {
       title: "Mystro - The Fighting Game",
       category: "Game Development",
@@ -124,7 +116,16 @@ export const portfolioData = {
       demo: "https://www.youtube.com/watch?v=Dd0RJEg0hdI",
       github: "https://github.com/anaTuli133"
     },
-    
+    {
+      title: "P5 Odyssey- A Bingo Game",
+      category: "Generative Art & Gaming",
+      description: "A dynamic web-based game developed using p5.js. The project was inspired by a creative concept on YouTube.",
+      tech: ["p5.js", "CSS", "HTML5"],
+      image: "/Project/jump.png",
+      demo: "https://editor.p5js.org/anaTuli133/full/TG5E1L9qo",
+      github: "https://github.com/anaTuli133/bingoGame"
+    },
+
     {
       title: "To-Do App",
       category: "Cloud Deployment",
@@ -143,22 +144,23 @@ export const portfolioData = {
       demo: "https://drive.google.com/file/d/1ytUSII4Mi3WYJGCM0QhbTs_wCJkyOHtK/view",
       github: "https://github.com/anaTuli133/Food-Ordering-Website"
     },
+
     {
-  title: "P5-Odyssey",
-  category: "Generative Art & Gaming",
-  description: "A dynamic web-based game developed using p5.js. The project was inspired by a creative concept on YouTube.",
-  tech: ["p5.js", "JavaScript", "HTML5"],
-  image: "/Project/bingo.png", 
-  demo: "https://editor.p5js.org/anaTuli133/full/K50yZTM-J",
-  github: "https://github.com/anaTuli133/bingoGame"
+      title: "Interactive 3D Book Experience",
+      category: "Computer Graphics",
+      description: "Developed a web-based immersive 3D book featuring realistic page-turning physics, dynamic lighting and 360° controls. ",
+      tech: ["Three.js", "WebGL", "Shaders"],
+      image: "/Project/3d book.png",
+      demo: "https://3d-book-cover.netlify.app/",
+      github: "https://github.com/anaTuli133/Interactive-3D-Book-Experience"
     },
-       
+
     {
       title: "Freelancer Job Board",
       category: "Web Application",
       description: "Developed a web-based freelancing platform enabling job posting, browsing and user management using PHP, Bootstrap and JavaScript.",
       tech: ["PHP", "Bootstrap", "JavaScript"],
-      image:"/Project/freelancer.jpeg",
+      image: "/Project/freelancer.jpeg",
       demo: "https://github.com/Maliha-Akter/Freelancing-Job-Board_Project",
       github: "https://github.com/Maliha-Akter/Freelancing-Job-Board_Project"
     },
@@ -219,16 +221,16 @@ export const portfolioData = {
       ]
     },
     {
-  title: "Campus Ambassador",
-  organization: "ICT Olympiad Bangladesh",
-  period: "Mar 2022 - 2023",
-  icon: "💻", 
-  description: [
-    "Coordinated inter-department student participation in various Olympiad events",
-    "Promoted ICT awareness and successfully drove registration campaigns on campus"
+      title: "Campus Ambassador",
+      organization: "ICT Olympiad Bangladesh",
+      period: "Mar 2022 - 2023",
+      icon: "💻",
+      description: [
+        "Coordinated inter-department student participation in various Olympiad events",
+        "Promoted ICT awareness and successfully drove registration campaigns on campus"
 
-  ]
-},
+      ]
+    },
 
   ]
 };
