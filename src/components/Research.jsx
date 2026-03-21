@@ -40,7 +40,7 @@ const Research = () => {
             
             <p className="text-slate-300 leading-relaxed mb-4">{research.thesis.description}</p>
             
-            {/* Thesis Button - Purple/Sky Theme */}
+            {/* Thesis Button  */}
             <motion.a
               whileHover={{ 
                 scale: 1.05,
@@ -51,7 +51,7 @@ const Research = () => {
               href={research.thesis.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-2 bg-purple-500/10 border border-purple-500/20 rounded-full text-purple-300 transition-all font-medium"
+              className="inline-flex items-center gap-2 px-6 py-2 bg-purple-500/10 border border-purple-500/20 rounded-xl text-purple-300 transition-all font-medium"
             >
               📖 View Thesis <FaExternalLinkAlt className="text-sm" />
             </motion.a>
@@ -70,7 +70,7 @@ const Research = () => {
               whileHover={{ scale: 1.05, y: -5 }}
               className="glass-effect rounded-2xl p-6 hover:shadow-xl hover:shadow-purple-500/10 transition-all"
             >
-              <div className={`inline-block px-3 py-1 rounded-full text-xs font-semibold mb-4 ${
+              <div className={`inline-block px-3 py-1 rounded-xl text-xs font-semibold mb-4 ${
                 pub.status === 'Published' 
                   ? 'bg-green-500/20 text-green-400 border border-green-500/30' 
                   : 'bg-orange-500/20 text-orange-400 border border-orange-500/30'
@@ -80,7 +80,7 @@ const Research = () => {
               <h4 className="text-lg font-semibold text-white mb-3 line-clamp-2">{pub.title}</h4>
               <p className="text-slate-400 text-sm mb-4 line-clamp-3">{pub.description}</p>
               
-              {/* Publication Button - Purple/Sky Theme */}
+              {/* Publication Button*/}
               <motion.a
                 whileHover={pub.link !== '#' ? { 
                   scale: 1.05,

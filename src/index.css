@@ -96,7 +96,7 @@
   right: 30px;
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #0ea5e9, #8b5cf6);
+  background: linear-gradient(80deg, #0ea5e9, #e264cd);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -140,7 +140,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #8b5cf6, #ec4899);
+  background: linear-gradient(to bottom, #8b5cf6, #f4a7ce);
 }
 
 html {

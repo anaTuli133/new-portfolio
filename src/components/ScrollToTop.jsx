@@ -21,7 +21,7 @@ const ScrollToTop = () => {
     }
   }, [])
 
-  // Scroll to top smoothly
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

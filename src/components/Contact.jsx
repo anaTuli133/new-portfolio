@@ -99,7 +99,7 @@ const Contact = () => {
                   whileHover={{ scale: 1.1, y: -5 }}
                   href={social.link}
                   target="_blank"
-                  className="w-11 h-11 glass-effect rounded-full flex items-center justify-center text-slate-400 hover:text-primary transition-all border border-white/10"
+                  className="w-11 h-11 glass-effect rounded-full flex items-center justify-center text-primary hover:text-sky-400 transition-all border border-white/10"
                 >
                   <social.icon className="text-xl" />
                 </motion.a>

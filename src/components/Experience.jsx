@@ -61,7 +61,7 @@ const Experience = () => {
                   {exp.items.map((item, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1 text-xs font-medium bg-primary/10 text-white border border-sky-600 rounded-full hover:bg-primary/20 transition-colors"
+                      className="px-3 py-1 text-xs font-medium bg-primary/10 text-white border border-sky-600 rounded-md  hover:bg-primary/20 transition-colors"
                     >
                       {item}
                     </span>

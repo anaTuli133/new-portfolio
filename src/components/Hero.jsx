@@ -135,7 +135,7 @@ const Hero = () => {
                 style={{
                   boxShadow: '0 0 40px rgba(139, 92, 246, 0.3)'
                 }}
-                className="w-full h-full rounded-full bg-gradient-to-br from-purple-500 via-sky-400 to-pink-400 p-1"
+                className="w-full h-full rounded-full bg-gradient-to-br from-pink-400 via-sky-400 to-purple-500 p-1"
               >
                 <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center overflow-hidden">
                   <img

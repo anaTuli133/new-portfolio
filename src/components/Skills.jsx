@@ -62,7 +62,7 @@ const Skills = () => {
                       borderColor: "rgba(56, 189, 248, 0.5)", // Sky-400 border on hover
                       color: "#38bdf8" // Sky-400 text on hover
                     }}
-                    className="px-3 py-1 bg-purple-500/10 border border-purple-500/20 rounded-full text-sm text-purple-300 transition-all cursor-default font-medium"
+                    className="px-3 py-1 bg-purple-500/10 border border-purple-500/20 rounded-md text-sm text-purple-300 transition-all cursor-default font-medium"
                   >
                     {item}
                   </motion.span>

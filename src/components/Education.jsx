@@ -63,7 +63,7 @@ const Education = () => {
               whileHover={{ scale: 1.02, y: -5 }}
               className="glass-effect rounded-2xl p-6 hover:shadow-xl hover:shadow-purple-500/10 transition-all"
             >
-              {/* Icon & Period Badge - Updated to Purple/Sky */}
+              {/* Icon & Period Badge*/}
               <div className="flex items-center gap-3 mb-3">
                 <span className="text-4xl">{edu.icon}</span>
                 <motion.span 
@@ -73,23 +73,23 @@ const Education = () => {
                     borderColor: "rgba(56, 189, 248, 0.5)",
                     color: "#38bdf8"
                   }}
-                  className="px-4 py-1 bg-purple-500/10 border border-purple-500/20 rounded-full text-purple-300 text-sm font-semibold transition-all cursor-default"
+                  className="px-4 py-1 bg-purple-500/10 border border-purple-500/20 rounded-xl text-purple-300 text-sm font-semibold transition-all cursor-default"
                 >
                   {edu.period}
                 </motion.span>
               </div>
 
-              {/* Degree */}
+
               <h3 className="text-2xl font-bold text-white mb-2">
                 {edu.degree}
               </h3>
 
-              {/* Institution */}
+ 
               <p className="text-white font-semibold text-lg mb-2">
                 {edu.institution}
               </p>
 
-              {/* GPA if available */}
+
               {edu.gpa && (
                 <div className="flex items-center gap-2 mb-3">
                   <FaAward className="text-purple-300" />

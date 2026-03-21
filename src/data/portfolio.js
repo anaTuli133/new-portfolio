@@ -2,7 +2,7 @@ export const portfolioData = {
   personal: {
     name: "Anamika Saha",
     title: "Full-Stack Developer & AI Engineer",
-    description: "Aspiring CSE graduate with expertise in Full-Stack Development, Applied AI/ML and Data Operations. Proficient in architecting scalable applications with hands-on experience in RESTful APIs, databases and enterprise data pipelines.",
+    description: "Aspiring CSE graduate with expertise in Full-Stack Development, Applied AI/ML and Data Operations. Proficient in architecting scalable applications with hands-on experience in databases and enterprise data pipelines.",
     email: "anamikatuli28@gmail.com",
     phone: "+880-1833461622",
     location: "Dhaka, Bangladesh",
@@ -18,12 +18,12 @@ export const portfolioData = {
     {
       category: "Frontend & Web",
       icon: "💻",
-      items: ["HTML5", "CSS3","React.js", "Next.js", "TypeScript", "Tailwind CSS", "Bootstrap", "Redux Toolkit", "Material-UI"]
+      items: ["HTML5", "CSS3","React.js", "Next.js", "TypeScript", "Tailwind CSS", "Bootstrap"]
     },
     {
       category: "Backend & Cloud",
       icon: "⚙️",
-      items: ["Node.js", "Express.js", "BashScript","ASP.NET MVC", "Flask", "FastAPI", "REST APIs", "AWS EC2", "Docker", "Kubernetes", "Linux"]
+      items: ["Node.js", "Express.js", "BashScript", "Flask", "FastAPI", "AWS EC2", "Linux"]
     },
     {
       category: "Programming",
