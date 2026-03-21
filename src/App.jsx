@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-// Framer Motion import kora proyojon, nahole motion.div kaj korbe na
 import { motion } from 'framer-motion' 
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
@@ -28,7 +27,7 @@ function App() {
 if (isLoading) {
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-950 overflow-hidden relative">
-      {/* Background Glows for Loading Screen */}
+   
       <div className="absolute top-[-10%] right-[-10%] w-[400px] h-[400px] bg-sky-500/5 rounded-full blur-[120px]"></div>
       <div className="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] bg-purple-500/5 rounded-full blur-[120px]"></div>
       

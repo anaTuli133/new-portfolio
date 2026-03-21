@@ -1,3 +1,4 @@
+import Typewriter from 'typewriter-effect';
 import { motion } from 'framer-motion'
 import { FaGithub, FaLinkedin, FaCode, FaInstagram } from 'react-icons/fa'
 import { portfolioData } from '../data/portfolio'
@@ -27,13 +28,31 @@ const Hero = () => {
               <span className="gradient-text">{personal.name}</span>
             </motion.h1>
 
+
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-2xl md:text-3xl lg:text-4xl text-slate-300 mb-6"
+              className="text-3xl md:text-3xl lg:text-3xl text-slate-200 mb-6 font-mono"
             >
-              {personal.title}
+              <Typewriter
+                options={{
+                  strings: [
+                    'Software Engineer',
+                    'Business Analyst',
+                    'Full Stack Developer',
+                    'Research Enthusiast',
+                    'Relentless Builder'                    
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  delay: 40,        
+                  deleteSpeed: 40,   
+                  pauseFor: 2000,    
+                  cursor: "|",       
+                  wrapperClassName: "text-white-200"
+                }}
+              />
             </motion.h2>
 
             <motion.p
@@ -139,7 +158,7 @@ const Hero = () => {
                 transition={{ duration: 3, repeat: Infinity }}
                 className="absolute bottom-5 -right-2 md:bottom-8 md:-right-4 lg:bottom-10 lg:-right-5 glass-effect bg-[#4a78dc6d] rounded-2xl p-3 md:p-4 shadow-xl border-sky-500/30"
               >
-                <p className="text-yellow-300 font-bold tracking-wider uppercase text-[10px] md:text-[11px] lg:text-xs">Innovative</p>
+                <p className="text-yellow-300 font-bold tracking-wider uppercase text-[10px] md:text-[11px] lg:text-xs">Maverick</p>
                 <p className="text-slate-200 font-medium uppercase text-xs md:text-base lg:text-base">Learner</p>
               </motion.div>
             </div>

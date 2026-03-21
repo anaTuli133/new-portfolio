@@ -54,7 +54,7 @@ const Navbar = () => {
             <img
               src="/logo.png"
               alt="Anamika Saha"
-              className="h-10 w-auto object-contain block" // block deya hoyeche jate shob jaygay dekhay
+              className="h-10 w-auto object-contain block"
               onError={(e) => {
                 e.target.style.display = 'none';
                 e.target.nextElementSibling.style.display = 'block';
@@ -121,7 +121,7 @@ const Navbar = () => {
                 transition={{ delay: index * 0.05 }}
                 onClick={() => scrollToSection(item)}
                 className={`text-lg font-medium tracking-wide transition-colors ${
-                  activeSection === item.toLowerCase() ? 'text-sky-400 scale-110 font-bold' : 'text-slate-300'
+                  activeSection === item.toLowerCase() ? 'text-sky-400 scale-110 font-bold' : 'text-slate-200'
                 }`}
               >
                 {item}
