@@ -24,7 +24,7 @@ const Navbar = () => {
     return () => { document.body.style.overflow = 'unset' }
   }, [isOpen])
 
-  const navItems = ['Home', 'About', 'Education', 'Skills', 'Experience', 'Research', 'Projects', 'Certifications', 'Contact']
+  const navItems = ['Home', 'About', 'Education', 'Skills', 'Experience', 'Research', 'Projects', 'Certifications']
 
   const scrollToSection = (section) => {
     const element = document.getElementById(section.toLowerCase())
