@@ -23,16 +23,16 @@
     z-index: 1;
     background-image: 
       radial-gradient(3px 3px at 12% 18%, rgba(139, 92, 246, 0.4), transparent),
-      radial-gradient(3px 3px at 85% 25%, rgba(51, 168, 240, 0.833), transparent),
+      radial-gradient(3px 3px at 85% 25%, rgba(51, 167, 240, 0.557), transparent),
       radial-gradient(4px 4px at 28% 45%, rgba(236, 72, 153, 0.4), transparent),
       radial-gradient(3px 3px at 72% 58%, rgba(139, 92, 246, 0.35), transparent),
       radial-gradient(4px 4px at 48% 72%, rgba(190, 79, 217, 0.675), transparent),
-      radial-gradient(3px 3px at 18% 82%, rgba(236, 72, 153, 0.35), transparent),
-      radial-gradient(4px 4px at 88% 12%, rgba(138, 92, 246, 0.82), transparent),
+      radial-gradient(3px 3px at 18% 82%, rgba(236, 72, 154, 0.464), transparent),
+      radial-gradient(4px 4px at 88% 12%, rgba(138, 92, 246, 0.56), transparent),
       radial-gradient(3px 3px at 38% 38%, rgba(57, 116, 244, 0.833), transparent),
       radial-gradient(4px 4px at 62% 88%, rgba(236, 72, 153, 0.4), transparent),
       radial-gradient(3px 3px at 8% 52%, rgba(139, 92, 246, 0.35), transparent),
-      radial-gradient(4px 4px at 92% 68%, rgba(49, 204, 251, 0.705), transparent),
+      radial-gradient(4px 4px at 92% 68%, rgba(49, 204, 251, 0.551), transparent),
       radial-gradient(3px 3px at 55% 15%, rgba(236, 72, 154, 0.76), transparent);
     background-size: 200% 200%;
    
