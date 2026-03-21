@@ -58,7 +58,7 @@ const Contact = () => {
                 Let's Work Together!
               </h3>             
                <p className="text-slate-300 text-lg leading-relaxed">
-                I'm always excited to discuss new projects, creative ideas or opportunities. Feel free to reach out through the contact form!  
+                I'm always excited to discuss new projects, creative ideas or opportunities. Feel free to message me!  
               </p>
             </div>
 
