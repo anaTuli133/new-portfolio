@@ -53,7 +53,7 @@
 
 @layer components {
   .gradient-text {
-    background: linear-gradient(to right, #38bdf8, #c084fc);
+    background: linear-gradient(to right, #38bdf8, #c084fc );
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
