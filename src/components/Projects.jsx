@@ -34,8 +34,8 @@ const Projects = () => {
               {/* Project Image Container */}
               <div className="relative h-48 overflow-hidden group">
                 {project.image ? (
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     onError={(e) => {
@@ -44,23 +44,23 @@ const Projects = () => {
                     }}
                   />
                 ) : null}
-                
+
                 {/* Fallback Gradient */}
-                <div 
+                <div
                   className={`absolute inset-0 bg-gradient-to-br ${project.gradient || 'from-sky-500/40 to-purple-500/40'} flex items-center justify-center`}
                   style={{ display: project.image ? 'none' : 'flex' }}
                 >
-                   <div className="text-center p-4">
-                      <h3 className="text-white text-xl font-bold">{project.title}</h3>
-                      <p className="text-white/70 text-xs mt-1 uppercase tracking-widest">{project.category}</p>
-                   </div>
+                  <div className="text-center p-4">
+                    <h3 className="text-white text-xl font-bold">{project.title}</h3>
+                    <p className="text-white/70 text-xs mt-1 uppercase tracking-widest">{project.category}</p>
+                  </div>
                 </div>
 
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                   <span className="bg-slate-900/80 text-white px-3 py-1 rounded-full text-[10px] font-semibold backdrop-blur-sm border border-white/10 tracking-wider">
-                     {project.category}
-                   </span>
+                  <span className="bg-slate-900/80 text-white px-3 py-1 rounded-full text-[10px] font-semibold backdrop-blur-sm border border-white/10 tracking-wider">
+                    {project.category}
+                  </span>
                 </div>
               </div>
 
@@ -71,7 +71,7 @@ const Projects = () => {
                   {project.description}
                 </p>
 
-                {/* Tech Stack - Color Matched to Sky/Purple */}
+                {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2 mb-6 mt-auto">
                   {project.tech.map((tech, i) => (
                     <span
@@ -94,10 +94,9 @@ const Projects = () => {
                     className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-sky-500 to-purple-500 text-white rounded-lg text-[11px] font-bold shadow-lg shadow-sky-500/20 transition-all uppercase tracking-tighter"
                   >
                     <FaExternalLinkAlt size={10} />
-                    {/* Last 3 projects 'View Work'  */}
-                    {index >= projects.length - 4 ? "View Work" : "Live Demo"}
+                    {/* Logic for Live Demo vs View Work */}
+                    {[0, 2, 3, 5].includes(index) ? "Live Demo" : "View Work"}
                   </motion.a>
-                  
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
