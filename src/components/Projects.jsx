@@ -94,8 +94,13 @@ const Projects = () => {
                     className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-sky-500 to-purple-500 text-white rounded-lg text-[11px] font-bold shadow-lg shadow-sky-500/20 transition-all uppercase tracking-tighter"
                   >
                     <FaExternalLinkAlt size={10} />
-                    {/* Logic for Live Demo vs View Work */}
-                    {[0, 2, 3, 5].includes(index) ? "Live Demo" : "View Work"}
+                    {/* Specific Logic for Play Game, Live Demo and View Work */}
+                    {index === 2
+                      ? "Play Game"
+                      : [0, 3, 5].includes(index)
+                        ? "Live Demo"
+                        : "View Work"
+                    }
                   </motion.a>
                   <motion.a
                     whileHover={{ scale: 1.05 }}
