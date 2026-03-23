@@ -84,12 +84,12 @@ const Hero = () => {
                 href="#projects"
                 whileHover={{
                   scale: 1.05,
-                  backgroundColor: "rgba(139, 92, 246, 0.2)",
+                  backgroundColor: "sky-600",
                   borderColor: "rgba(56, 189, 248, 0.5)",
                   color: "#38bdf8"
                 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-6 py-3 bg-purple-500/10 border border-purple-500/20 rounded-xl text-purple-300 font-medium transition-all text-sm md:text-base inline-block"
+                className="px-6 py-3 bg-sky-500/10 border border-sky-500/20 rounded-xl text-sky-300 font-medium transition-all text-sm md:text-base inline-block"
               >
                 View Projects
               </motion.a>
@@ -114,7 +114,7 @@ const Hero = () => {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 md:w-12 md:h-12 glass-effect rounded-full flex items-center justify-center hover:bg-purple-500/20 transition-colors text-purple-400 text-xl md:text-2xl"
+                  className="w-10 h-10 md:w-12 md:h-12 glass-effect rounded-full flex items-center justify-center hover:bg-purple-500/20 transition-colors text-sky-500 text-xl md:text-2xl"
                 >
                   {item.icon}
                 </motion.a>
@@ -135,7 +135,7 @@ const Hero = () => {
                 style={{
                   boxShadow: '0 0 40px rgba(139, 92, 246, 0.3)'
                 }}
-                className="w-full h-full rounded-full bg-gradient-to-br from-pink-400 via-sky-400 to-purple-500 p-1"
+                className="w-full h-full rounded-full bg-gradient-to-br from-sky-600 to-sky-500 p-1"
               >
                 <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center overflow-hidden">
                   <img
@@ -147,15 +147,7 @@ const Hero = () => {
                 </div>
               </motion.div>
 
-              {/* Floating Badge  */}
-              <motion.div
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 3, repeat: Infinity }}
-                className="absolute bottom-5 -right-2 md:bottom-8 md:-right-4 lg:bottom-10 lg:-right-5 glass-effect bg-[#4a78dc6d] rounded-2xl p-3 md:p-4 shadow-xl border-sky-500/30"
-              >
-                <p className="text-yellow-300 font-bold tracking-wider uppercase text-[12px] md:text-[11px] lg:text-xs">Maverick</p>
-                <p className="text-slate-200 font-bold uppercase text-[12px] md:text-[11px] lg:text-xs">Learner</p>
-              </motion.div>
+              
             </div>
           </motion.div>
         </div>

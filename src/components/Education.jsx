@@ -74,7 +74,7 @@ const Education = () => {
                     borderColor: "rgba(56, 189, 248, 0.5)",
                     color: "#38bdf8"
                   }}
-                  className="px-4 py-1 bg-purple-500/10 border border-purple-500/20 rounded-xl text-purple-300 text-sm font-semibold transition-all cursor-default"
+                  className="px-4 py-1 bg-sky-500/10 border border-sky-500/20 rounded-xl text-sky-300 text-sm font-semibold transition-all cursor-default"
                 >
                   {edu.period}
                 </motion.span>
@@ -93,8 +93,8 @@ const Education = () => {
 
               {edu.gpa && (
                 <div className="flex items-center gap-2 mb-3">
-                  <FaAward className="text-purple-300" />
-                  <span className="text-purple-300 font-semibold">{edu.gpa}</span>
+                  <FaAward className="text-sky-300" />
+                  <span className="text-sky-300 font-semibold">{edu.gpa}</span>
                 </div>
               )}
 
@@ -102,7 +102,7 @@ const Education = () => {
               <ul className="space-y-2 text-slate-300">
                 {edu.details.map((detail, i) => (
                   <li key={i} className="flex items-start gap-2">
-                    <span className="text-purple-400 mt-1">▹</span>
+                    <span className="text-sky-500 mt-1">▹</span>
                     <span>{detail}</span>
                   </li>
                 ))}

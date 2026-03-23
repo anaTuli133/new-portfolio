@@ -40,9 +40,8 @@ const Navbar = () => {
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          scrolled ? 'glass-effect shadow-lg py-3' : 'bg-transparent py-5'
-        }`}
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'glass-effect shadow-lg py-3' : 'bg-transparent py-5'
+          }`}
       >
         <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
           {/* Logo Section - Tablet/Mobile */}
@@ -52,16 +51,16 @@ const Navbar = () => {
             onClick={() => scrollToSection('home')}
           >
             <img
-              src="/logo.png"
+              src="/analogo2.png"
               alt="Anamika Saha"
-              className="h-10 w-auto object-contain block"
+              className="h-10 w-auto object-contain block rounded-md overflow-hidden"
               onError={(e) => {
                 e.target.style.display = 'none';
                 e.target.nextElementSibling.style.display = 'block';
               }}
             />
-          
-            <div className="text-xl md:text-2xl font-bold gradient-text ml-2" style={{ display: 'none' }}>
+
+            <div className="text-md md:text-2xl font-bold gradient-text ml-2" style={{ display: 'none' }}>
               AS
             </div>
           </motion.div>
@@ -74,9 +73,8 @@ const Navbar = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => scrollToSection(item)}
-                className={`text-sm font-medium transition-colors ${
-                  activeSection === item.toLowerCase() ? 'text-sky-400' : 'text-slate-300 hover:text-white'
-                }`}
+                className={`text-sm font-medium transition-colors ${activeSection === item.toLowerCase() ? 'text-sky-500' : 'text-slate-300 hover:text-white'
+                  }`}
               >
                 {item}
               </motion.button>
@@ -120,9 +118,8 @@ const Navbar = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.05 }}
                 onClick={() => scrollToSection(item)}
-                className={`text-lg font-medium tracking-wide transition-colors ${
-                  activeSection === item.toLowerCase() ? 'text-sky-400 scale-110 font-bold' : 'text-slate-200'
-                }`}
+                className={`text-lg font-medium tracking-wide transition-colors ${activeSection === item.toLowerCase() ? 'text-sky-400 scale-110 font-bold' : 'text-slate-200'
+                  }`}
               >
                 {item}
               </motion.button>

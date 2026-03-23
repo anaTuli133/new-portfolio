@@ -58,11 +58,11 @@ const Skills = () => {
                     key={i}
                     whileHover={{ 
                       scale: 1.1,
-                      backgroundColor: "rgba(139, 92, 246, 0.2)", // Purple-500 with opacity
-                      borderColor: "rgba(56, 189, 248, 0.5)", // Sky-400 border on hover
-                      color: "#38bdf8" // Sky-400 text on hover
+                      backgroundColor: "rgba(139, 92, 246, 0.2)", 
+                      borderColor: "rgba(56, 189, 248, 0.5)", 
+                      color: "#38bdf8"
                     }}
-                    className="px-3 py-1 bg-purple-500/10 border border-purple-500/20 rounded-md text-sm text-purple-300 transition-all cursor-default font-medium"
+                    className="px-3 py-1 bg-sky-500/10 border border-sky-500/20 rounded-md text-sm text-sky-300 transition-all cursor-default font-medium"
                   >
                     {item}
                   </motion.span>

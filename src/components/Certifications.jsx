@@ -173,7 +173,7 @@ const Certifications = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setShowAll(!showAll)}
-            className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-sky-500 to-purple-500 text-white rounded-full font-semibold shadow-lg shadow-purple-500/25 transition-all"
+            className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-purple-700 to-sky-600 text-white rounded-xl font-semibold shadow-lg shadow-purple-500/25 transition-all"
           >
             {showAll ? (
               <>Show Less <FaChevronUp /></>

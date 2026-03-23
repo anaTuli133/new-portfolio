@@ -85,7 +85,7 @@ const About = () => {
                   whileHover={{ scale: 1.05, y: -5 }}
                   className="glass-effect rounded-xl p-6 flex items-start gap-4 hover:shadow-lg hover:shadow-primary/10 transition-all"
                 >
-                  <div className="text-purple-400 bg-primary/20 p-3 rounded-lg">
+                  <div className="text-sky-500 bg-primary/20 p-3 rounded-lg">
                     {quality.icon}
                   </div>
                   <div>

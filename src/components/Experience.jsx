@@ -27,9 +27,9 @@ const Experience = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
-              className="relative pl-8 pb-12 border-l-2 border-primary/30 last:pb-0"
+              className="relative pl-8 pb-12 border-l-2 border-sky-600/30 last:pb-0"
             >
-              <div className="absolute left-0 top-0 w-4 h-4 bg-primary rounded-full -translate-x-[9px] shadow-lg shadow-primary/50"></div>
+              <div className="absolute left-0 top-0 w-4 h-4 bg-sky-600 rounded-full -translate-x-[9px] shadow-lg shadow-sky-600/50"></div>
 
               <motion.div
                 whileHover={{ scale: 1.01 }}
@@ -50,7 +50,7 @@ const Experience = () => {
                 <ul className="space-y-3 mb-6">
                   {exp.responsibilities.map((resp, i) => (
                     <li key={i} className="text-slate-300 flex gap-3 text-sm leading-relaxed">
-                      <span className="text-primary mt-1">▹</span>
+                      <span className="text-sky-500 mt-1">▹</span>
                       <span>{resp}</span>
                     </li>
                   ))}

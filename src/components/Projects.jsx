@@ -91,7 +91,7 @@ const Projects = () => {
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-sky-500 to-purple-500 text-white rounded-lg text-[11px] font-bold shadow-lg shadow-sky-500/20 transition-all uppercase tracking-tighter"
+                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-sky-600 to-sky-700 text-white rounded-lg text-[11px] font-bold shadow-lg shadow-sky-500/20 transition-all uppercase tracking-tighter"
                   >
                     <FaExternalLinkAlt size={10} />
                     {/* Specific Logic for Play Game, Live Demo and View Work */}
