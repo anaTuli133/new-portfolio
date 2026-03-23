@@ -69,7 +69,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-white font-semibold">Email</p>
-                  <a href={`mailto:${personal.email}`} className="text-slate-400 hover:text-primary transition-colors">
+                  <a href={`mailto:${personal.email}`} className="text-slate-400 hover:text-sky-500 transition-colors">
                     {personal.email}
                   </a>
                 </div>
@@ -99,7 +99,7 @@ const Contact = () => {
                   whileHover={{ scale: 1.1, y: -5 }}
                   href={social.link}
                   target="_blank"
-                  className="w-11 h-11 glass-effect rounded-full flex items-center justify-center text-sky-500 hover:text-purple-400 transition-all border border-white/10"
+                  className="w-11 h-11 glass-effect rounded-full flex items-center justify-center text-sky-500 hover:text-sky-400 transition-all border border-white/10"
                 >
                   <social.icon className="text-xl" />
                 </motion.a>

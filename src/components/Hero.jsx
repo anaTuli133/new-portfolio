@@ -59,7 +59,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="text-slate-400 text-base md:text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0"
+              className="text-slate-300 text-base md:text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0"
             >
               {personal.description}
             </motion.p>
