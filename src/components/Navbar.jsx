@@ -51,7 +51,7 @@ const Navbar = () => {
             onClick={() => scrollToSection('home')}
           >
             <img
-              src="/analogo2.png"
+              src="/analogo.png"
               alt="Anamika Saha"
               className="h-10 w-auto object-contain block rounded-md overflow-hidden"
               onError={(e) => {

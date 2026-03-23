@@ -2,7 +2,7 @@ export const portfolioData = {
   personal: {
     name: "Anamika Saha",
     title: "Full-Stack Developer & AI Engineer",
-    description: "Aspiring CSE graduate and Software Engineer with expertise in Full-Stack Development, Applied AI/ML and Data Operations. Proficient in architecting scalable applications, databases and enterprise data pipelines, with a strong focus on Business Intelligence and predictive modeling.",
+    description: "Aspiring CSE graduate and Software Engineer with expertise in Full-Stack Development, Applied AI/ML and Data Operations. Proficient in architecting scalable applications and enterprise data pipelines, with a strong focus on BI and predictive modeling.",
     email: "anamikatuli28@gmail.com",
     phone: "+880-1833461622",
     location: "Dhaka, Bangladesh",
@@ -133,7 +133,7 @@ export const portfolioData = {
     {
       title: "To-Do App",
       category: "Cloud Deployment",
-      description: "Built a web-based task manager with full CRUD functionality, hosted on AWS EC2 using PHP and MySQL.",
+      description: "Built a web-based task manager with full CRUD functionality, hosted on AWS EC2.",
       tech: ["PHP","AWS EC2", "CSS3", "HTML5"],
       image: "/Project/To Do app.png",
       demo: "https://anamika-to-do-app.netlify.app/",
@@ -197,7 +197,7 @@ export const portfolioData = {
       period: "May 2024 - Aug 2025",
       icon: "🎨",
       description: [
-        "Led the design team to create event posters and digital content",
+        "Led the graphic design team to create event posters and digital content",
         "Co-led Guests and Judges Handling for ARC 2.0",
         "Hosted and anchored National Robotics Event's Prize-Giving Ceremony"
       ]

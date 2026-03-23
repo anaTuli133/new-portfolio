@@ -7,10 +7,10 @@ const Certifications = () => {
 
   const certifications = [
      {
-      title: "Automation Essentials: Demonstration of Industrial Process Control System Design",
+      title: "Demonstration of Industrial Process Control System Design",
       organization: "AUST Robotics Club (AUSTRC)",
       date: "2024",
-      description: "In-depth exploration of industrial process control systems, demonstrating how automation streamlines operations and optimizes efficiency in various industries",
+      description: "Exploration of how automation streamlines operations and optimizes efficiency in various industries",
       image: "/certificates/process.jpeg",
       credential: "https://www.linkedin.com/posts/aust-robotics-club_%F0%9D%90%80%F0%9D%90%94%F0%9D%90%92%F0%9D%90%93-%F0%9D%90%91%F0%9D%90%A8%F0%9D%90%9B%F0%9D%90%A8%F0%9D%90%AD%F0%9D%90%A2%F0%9D%90%9C%F0%9D%90%AC-%F0%9D%90%82%F0%9D%90%A5%F0%9D%90%AE%F0%9D%90%9B-along-ugcPost-7202704240031506433-0mjY?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFI47g0BbrWTAqoFwcMJdgOW_QGL9Kv-8ZU",
     
@@ -37,7 +37,7 @@ const Certifications = () => {
       title: "Charting Saturn’s Secrets: The Cassini Mission & Beyond",
       organization: "AIAA AUST Student Branch",
       date: "January 24, 2025",
-      description: "A fascinating webinar led by Todd Barber, Senior Propulsion Engineer at NASA JPL (Jet Propulsion Laboratory)—the hub of legendary missions like Cassini, Mars Rovers and Voyager.",
+      description: "Led by Todd Barber, Senior Propulsion Engineer at NASA JPL— the hub of legendary missions like Cassini, Mars Rovers and Voyager.",
       image: "/certificates/saturn.jpeg",
       credential: "https://drive.google.com/file/d/1S7cz-YZya1w4KkvmqLlq3WkeMtRUi-F0/view?usp=drive_link",
 
@@ -46,7 +46,7 @@ const Certifications = () => {
       title: "Deputy Executive - Graphics Design Team",
       organization: "AUST Robotics Club",
       date: "May 2024 - Aug 2025",
-      description: "Led the design team to create event posters and digital content",
+      description: "Led the graphic design team to create event posters and digital content",
       image: "/certificates/DEX (2).jpg",
       credential: "https://drive.google.com/file/d/1mEKr_tg4-JffNZJBn6xfRfNOgrPQvlZ2/view?usp=drive_link",
 
@@ -55,7 +55,7 @@ const Certifications = () => {
       title: "Organizer - AUST Rover Challenge 2.0",
       organization: "AUST Robotics Club",
       date: "12-13 July, 2025",
-      description: "National Robotics Event Organizer",
+      description: "Co- Led, host and anchor for the National Robotics Event’s Prize-Giving Ceremony.",
       image: "/certificates/organizer.jpeg",
       credential: "https://drive.google.com/file/d/1y2L0pdC0hBTkszao_iH2kkzYmgJztINz/view?usp=drive_link",
 
@@ -145,7 +145,7 @@ const Certifications = () => {
 
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-2 line-clamp-2 text-justify">{cert.title}</h3>
+                  <h3 className="text-xl font-bold text-white mb-2 line-clamp-2 ">{cert.title}</h3>
                   <p className="text-white font-semibold mb-1">{cert.organization}</p>
                   <p className="text-slate-400 text-sm mb-3">{cert.date}</p>
                   {cert.description && <p className="text-slate-300 text-sm mb-4 line-clamp-2 text-justify">{cert.description}</p>}

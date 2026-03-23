@@ -19,7 +19,7 @@ function App() {
 
   useEffect(() => {
 
-    const timer = setTimeout(() => setIsLoading(false), 5500)
+    const timer = setTimeout(() => setIsLoading(false), 1500)
     return () => clearTimeout(timer)
   }, [])
 
@@ -53,17 +53,12 @@ if (isLoading) {
           transition={{ duration: 0.8 }}
           className="max-w-md mx-auto"
         >
-          {/* Quote Section */}
-          <p className="text-lg md:text-xl text-slate-300 italic font-serif leading-relaxed">
-            “He who asks a question is a fool for five minutes; he who does not ask a question remains a fool forever.”
-          </p>
-      
+         
 
         
           <motion.p 
-            animate={{ opacity: [0.4, 1, 0.4] }}
-            transition={{ repeat: Infinity, duration: 3 }}
-            className="mt-6 text-slate-300 font-mono tracking-[0.3em] text-[10px] uppercase  pt-4"
+            
+            className="mt-2 text-slate-300 font-mono tracking-[0.3em] text-[12px] uppercase  pt-4"
           >
             Initializing Experience...
           </motion.p>

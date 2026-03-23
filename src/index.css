@@ -133,6 +133,22 @@
 html {
   scroll-behavior: smooth;
 }
+
+
+
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 5px;
+    display: block;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #109ed2; 
+    border-radius: 100vh;
+  }
+}
+
+
 /* Typewriter cursor - slower animation */
 .Typewriter__cursor {
   color: #ffffff; 

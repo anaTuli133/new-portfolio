@@ -34,7 +34,7 @@ const Research = () => {
             <h3 className="text-2xl font-bold text-white mb-2 flex items-center gap-2 text-justify">
               🎓 Thesis
             </h3>
-            <h4 className="text-xl text-purple-300 mb-2 font-semibold text-justify">{research.thesis.title}</h4>
+            <h4 className="text-xl text-purple-300 mb-2 font-semibold">{research.thesis.title}</h4>
 
             <p className="text-sky-400 italic mb-4">{research.thesis.supervisor}</p>
 
@@ -85,7 +85,7 @@ const Research = () => {
                 }`}>
                 {pub.status}
               </div>
-              <h4 className="text-lg font-semibold text-white mb-3 line-clamp-2">{pub.title}</h4>
+              <h4 className="text-lg font-semibold text-white mb-3 line-clamp-4">{pub.title}</h4>
               <p className="text-slate-400 text-sm mb-4 line-clamp-3">{pub.description}</p>
               {/* Publication Tech Stack */}
               <div className="flex flex-wrap gap-2 mb-6 mt-auto">
