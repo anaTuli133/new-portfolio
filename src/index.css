@@ -22,22 +22,18 @@
     pointer-events: none;
     z-index: 1;
     background-image: 
-      radial-gradient(3px 3px at 12% 18%, rgba(139, 92, 246, 0.4), transparent),
-      radial-gradient(3px 3px at 85% 25%, rgba(51, 167, 240, 0.557), transparent),
-      radial-gradient(4px 4px at 28% 45%, rgba(236, 72, 153, 0.4), transparent),
-      radial-gradient(3px 3px at 72% 58%, rgba(139, 92, 246, 0.35), transparent),
-      radial-gradient(4px 4px at 48% 72%, rgba(190, 79, 217, 0.675), transparent),
-      radial-gradient(3px 3px at 18% 82%, rgba(236, 72, 154, 0.464), transparent),
-      radial-gradient(4px 4px at 88% 12%, rgba(138, 92, 246, 0.56), transparent),
-      radial-gradient(3px 3px at 38% 38%, rgba(57, 116, 244, 0.833), transparent),
-      radial-gradient(4px 4px at 62% 88%, rgba(236, 72, 153, 0.4), transparent),
-      radial-gradient(3px 3px at 8% 52%, rgba(139, 92, 246, 0.35), transparent),
-      radial-gradient(4px 4px at 92% 68%, rgba(49, 204, 251, 0.551), transparent),
-      radial-gradient(3px 3px at 55% 15%, rgba(236, 72, 154, 0.76), transparent);
-    background-size: 200% 200%;
+  radial-gradient(3px 3px at 10% 18%, rgba(122, 193, 231, 0.59), transparent),
+  radial-gradient(4px 4px at 28% 45%, rgba(226, 109, 195, 0.542), transparent),
+  radial-gradient(3px 3px at 72% 58%, rgba(92, 228, 246, 0.591), transparent),
+  radial-gradient(4px 4px at 28% 45%, rgba(229, 164, 212, 0.325), transparent),
+  radial-gradient(3px 3px at 72% 58%, rgba(101, 140, 173, 0.445), transparent),
+  radial-gradient(3px 3px at 72% 58%, rgba(89, 221, 210, 0.591), transparent),
+  radial-gradient(4px 4px at 28% 45%, rgba(229, 164, 212, 0.325), transparent),
+  radial-gradient(3px 3px at 72% 58%, rgba(223, 137, 244, 0.847), transparent),
+  radial-gradient(4px 4px at 48% 72%, rgba(190, 79, 217, 0.675), transparent);
+    background-size: 150% 150%;
    
-    animation: smoothFloat 50s ease-in-out infinite;
-    will-change: background-position;
+    animation: smoothFloat 90s ease-in-out infinite;
     transform: translate3d(0, 0, 0);
   }
   

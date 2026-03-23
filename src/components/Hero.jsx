@@ -72,7 +72,7 @@ const Hero = () => {
               className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8"
             >
               <a
-                href="/anamikasahacv.pdf"
+                href="/AnamikaSahaCV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary text-sm md:text-base px-6 py-3 cursor-pointer"

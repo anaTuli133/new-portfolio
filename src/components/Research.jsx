@@ -35,19 +35,28 @@ const Research = () => {
               🎓 Thesis
             </h3>
             <h4 className="text-xl text-purple-300 mb-2 font-semibold">{research.thesis.title}</h4>
-            
+
             <p className="text-sky-400 italic mb-4">{research.thesis.supervisor}</p>
-            
+
             <p className="text-slate-300 leading-relaxed mb-4">{research.thesis.description}</p>
-            
+            {/* Thesis Tech Stack */}
+            <div className="flex flex-wrap gap-2 mb-6">
+              {research.thesis.tech?.map((tech, i) => (
+                <span key={i} className="px-3 py-1 bg-sky-500/10 border border-sky-500/20 rounded-lg text-[10px] text-sky-300 font-medium uppercase tracking-wider">
+                  {tech}
+                </span>
+              ))}
+            </div>
+
             {/* Thesis Button  */}
             <motion.a
-              whileHover={{ 
+              whileHover={{
                 scale: 1.05,
                 backgroundColor: "rgba(139, 92, 246, 0.2)",
                 borderColor: "rgba(56, 189, 248, 0.5)",
                 color: "#38bdf8"
               }}
+
               href={research.thesis.link}
               target="_blank"
               rel="noopener noreferrer"
@@ -70,19 +79,26 @@ const Research = () => {
               whileHover={{ scale: 1.05, y: -5 }}
               className="glass-effect rounded-2xl p-6 hover:shadow-xl hover:shadow-purple-500/10 transition-all"
             >
-              <div className={`inline-block px-3 py-1 rounded-xl text-xs font-semibold mb-4 ${
-                pub.status === 'Published' 
-                  ? 'bg-green-500/20 text-green-400 border border-green-500/30' 
+              <div className={`inline-block px-3 py-1 rounded-xl text-xs font-semibold mb-4 ${pub.status === 'Published'
+                  ? 'bg-green-500/20 text-green-400 border border-green-500/30'
                   : 'bg-orange-500/20 text-orange-400 border border-orange-500/30'
-              }`}>
+                }`}>
                 {pub.status}
               </div>
               <h4 className="text-lg font-semibold text-white mb-3 line-clamp-2">{pub.title}</h4>
               <p className="text-slate-400 text-sm mb-4 line-clamp-3">{pub.description}</p>
-              
+              {/* Publication Tech Stack */}
+              <div className="flex flex-wrap gap-2 mb-6 mt-auto">
+                {pub.tech?.map((tech, i) => (
+                  <span key={i} className="px-2 py-1 bg-purple-500/10 border border-purple-500/20 rounded-md text-[10px] text-purple-300 font-medium">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
               {/* Publication Button*/}
               <motion.a
-                whileHover={pub.link !== '#' ? { 
+                whileHover={pub.link !== '#' ? {
                   scale: 1.05,
                   backgroundColor: "rgba(139, 92, 246, 0.2)",
                   borderColor: "rgba(56, 189, 248, 0.5)",
@@ -91,13 +107,12 @@ const Research = () => {
                 href={pub.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm transition-all font-medium ${
-                  pub.link === '#'
+                className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm transition-all font-medium ${pub.link === '#'
                     ? 'bg-slate-700/50 text-slate-500 cursor-not-allowed border border-transparent'
                     : 'bg-purple-500/10 border border-purple-500/20 text-purple-300'
-                }`}
+                  }`}
               >
-                📄 {index === research.publications.length - 1 ? "View Work" : "Read Paper"} 
+                📄 {index === research.publications.length - 1 ? "View Work" : "Read Paper"}
                 {pub.link !== '#' && <FaExternalLinkAlt className="text-xs" />}
               </motion.a>
             </motion.div>

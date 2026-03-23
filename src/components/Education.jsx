@@ -19,7 +19,8 @@ const Education = () => {
       period: "2018 - 2020",
       gpa: "GPA: 5.00/5.00",
       details: [
-        "Developed strong communication and critical thinking skills through active participation in co-curricular activities."
+        "Developed strong communication and critical thinking skills",
+        "Active participation in co-curricular activities"
       ],
       icon: "📚"
     },

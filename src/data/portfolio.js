@@ -66,33 +66,37 @@ export const portfolioData = {
   ],
 
   research: {
-    thesis: {
-      title: "Cardiovascular Disease Prediction: A Machine Learning Approach",
-      supervisor: "Supervisor: Ms. Syeda Shabnam Hasan, Asst. Professor, AUST CSE",
-      description: "Researched predictive ML models using demographic, clinical and lifestyle data. Evaluated multiple algorithms including LightGBM, CatBoost, XGBoost and ANN, achieving 90%+ accuracy.",
-      link: "https://drive.google.com/file/d/1Z2zfzc6zyRxAyQIPkrXPl9hD_hJSS4N0/view"
-    },
-    publications: [
-      {
-        title: "Common Reasons for Chest X-ray Examinations in Hospitals",
-        description: "Understanding causes, diagnoses, and raising awareness in Dhaka, Bangladesh",
-        status: "Journal Published",
-        link: "https://eu-opensci.org/index.php/ejmed/article/view/42412"
-      },
-      {
-        title: "Artificial Intelligence in Chest Radiography",
-        description: "Comparative study with hospital radiologists reports in Dhaka, Bangladesh",
-        status: "Journal Published",
-        link: "https://eu-opensci.org/index.php/ejai/article/view/1085"
-      },
-      {
-        title: "An Edge-AI CNN Framework for Real-Time Waste Classification with Integrated Biometric Authentication and Cryptographically Secure Logging ",
-        description: "Engineered an automated waste management system integrating Edge-AI for real-time classification and Biometric Authentication.",
-        status: "Journal Pre-proceedings",
-        link: "https://drive.google.com/drive/u/0/folders/1RRTAIim9eTYHrrvoFxtGEO0S7Gu-LeoT"
-      }
-    ]
+  thesis: {
+    title: "Cardiovascular Disease Prediction: A Machine Learning Approach",
+    supervisor: "Supervisor: Ms. Syeda Shabnam Hasan, Asst. Professor, AUST CSE",
+    description: "Researched predictive ML models using demographic, clinical and lifestyle data. Evaluated multiple algorithms including LightGBM, CatBoost, XGBoost and ANN, achieving 90%+ accuracy.",
+    link: "https://drive.google.com/file/d/1Z2zfzc6zyRxAyQIPkrXPl9hD_hJSS4N0/view",
+    tech: ["Python", "XGBoost", "LightGBM", "CatBoost", "ANN", "Scikit-Learn", "SMOTE"]
   },
+  publications: [
+    {
+      title: "Common Reasons for Chest X-ray Examinations in Hospitals",
+      description: "Understanding causes, diagnoses and raising awareness in Dhaka, Bangladesh",
+      status: "Journal Published",
+      link: "https://eu-opensci.org/index.php/ejmed/article/view/42412",
+      tech: ["Machine Learning", "Data Analysis", "Healthcare IT"] 
+    },
+    {
+      title: "Artificial Intelligence in Chest Radiography",
+      description: "Comparative study with hospital radiologists reports in Dhaka, Bangladesh",
+      status: "Journal Published",
+      link: "https://eu-opensci.org/index.php/ejai/article/view/1085",
+      tech: ["AI", "Deep Learning", "CNN"] 
+    },
+    {
+      title: "An Edge-AI CNN Framework for Real-Time Waste Classification...",
+      description: "Engineered an automated waste management system integrating Edge-AI...",
+      status: "Journal Pre-proceedings",
+      link: "https://drive.google.com/drive/u/0/folders/1RRTAIim9eTYHrrvoFxtGEO0S7Gu-LeoT",
+      tech: ["CNN", "IoT", "Biometrics", "Edge-AI", "Python"]
+    }
+  ]
+},
 
   projects: [
 
@@ -117,10 +121,10 @@ export const portfolioData = {
       github: "https://github.com/anaTuli133"
     },
     {
-      title: "Dino Adventure- A Bingo Game",
+      title: "Dino Adventure - A Bingo Game",
       category: "Generative Art & Gaming",
       description: "A dynamic web-based game developed using p5.js. The project was inspired by a creative concept on YouTube.",
-      tech: ["p5.js","JavaScript", "CSS", "HTML5"],
+      tech: ["p5.js","JavaScript", "CSS3", "HTML5"],
       image: "/Project/day.png",
       demo: "https://editor.p5js.org/anaTuli133/full/ZoRjR5NDz",
       github: "https://github.com/anaTuli133/bingoGame"
@@ -130,7 +134,7 @@ export const portfolioData = {
       title: "To-Do App",
       category: "Cloud Deployment",
       description: "Built a web-based task manager with full CRUD functionality, hosted on AWS EC2 using PHP and MySQL.",
-      tech: ["PHP", "AWS EC2", "MySQL"],
+      tech: ["PHP","AWS EC2", "CSS3", "HTML5"],
       image: "/Project/To Do app.png",
       demo: "https://anamika-to-do-app.netlify.app/",
       github: "https://github.com/anaTuli133"
@@ -168,7 +172,7 @@ export const portfolioData = {
       title: "MindEase: Social Media Mental Health Monitor",
       category: "NLP & Sentiment Analysis",
       description: "Built a sentiment analysis pipeline using NLTK and Scikit-learn to detect emotional patterns in mental health datasets with TF-IDF feature extraction.",
-      tech: ["Python", "NLTK", "Scikit-learn"],
+      tech: ["Python", "NLTK", "Scikit-learn","NumPy","TF-IDF"],
       image: "/Project/mindease.png",
       demo: "https://drive.google.com/file/d/1OTCN9y_9tlO5YTJ-KS9aBPR5fIvFm7Z4/view?usp=drive_link",
       github: "https://github.com/Fabbih/MindEase"
