@@ -75,10 +75,12 @@ const Hero = () => {
                 href="/anamikasahaCV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
+                download="Anamika_Saha_CV.pdf"
                 className="btn-primary text-sm md:text-base px-6 py-3 cursor-pointer"
               >
                 Download CV
               </a>
+
 
               <motion.a
                 href="#projects"
@@ -147,7 +149,7 @@ const Hero = () => {
                 </div>
               </motion.div>
 
-              
+
             </div>
           </motion.div>
         </div>
