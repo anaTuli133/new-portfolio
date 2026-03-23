@@ -47,7 +47,7 @@ const Experience = () => {
                   </p>
                 </div>
 
-                <ul className="space-y-3 mb-6">
+                <ul className="space-y-3 mb-6 text-justify">
                   {exp.responsibilities.map((resp, i) => (
                     <li key={i} className="text-slate-300 flex gap-3 text-sm leading-relaxed">
                       <span className="text-sky-500 mt-1">▹</span>

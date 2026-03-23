@@ -31,14 +31,14 @@ const Research = () => {
             whileHover={{ scale: 1.02 }}
             className="glass-effect rounded-2xl p-8 hover:shadow-xl hover:shadow-purple-500/10 transition-all"
           >
-            <h3 className="text-2xl font-bold text-white mb-2 flex items-center gap-2">
+            <h3 className="text-2xl font-bold text-white mb-2 flex items-center gap-2 text-justify">
               🎓 Thesis
             </h3>
-            <h4 className="text-xl text-purple-300 mb-2 font-semibold">{research.thesis.title}</h4>
+            <h4 className="text-xl text-purple-300 mb-2 font-semibold text-justify">{research.thesis.title}</h4>
 
             <p className="text-sky-400 italic mb-4">{research.thesis.supervisor}</p>
 
-            <p className="text-slate-300 leading-relaxed mb-4">{research.thesis.description}</p>
+            <p className="text-slate-300 leading-relaxed mb-4 text-justify">{research.thesis.description}</p>
             {/* Thesis Tech Stack */}
             <div className="flex flex-wrap gap-2 mb-6">
               {research.thesis.tech?.map((tech, i) => (

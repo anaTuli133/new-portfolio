@@ -2,7 +2,7 @@ export const portfolioData = {
   personal: {
     name: "Anamika Saha",
     title: "Full-Stack Developer & AI Engineer",
-    description: "Aspiring CSE graduate with expertise in Full-Stack Development, Applied AI/ML and Data Operations. Proficient in architecting scalable applications with hands-on experience in databases and enterprise data pipelines.",
+    description: "Aspiring CSE graduate and Software Engineer with expertise in Full-Stack Development, Applied AI/ML and Data Operations. Proficient in architecting scalable applications, databases and enterprise data pipelines, with a strong focus on Business Intelligence and predictive modeling.",
     email: "anamikatuli28@gmail.com",
     phone: "+880-1833461622",
     location: "Dhaka, Bangladesh",
@@ -89,8 +89,8 @@ export const portfolioData = {
       tech: ["AI", "Deep Learning", "CNN"] 
     },
     {
-      title: "An Edge-AI CNN Framework for Real-Time Waste Classification...",
-      description: "Engineered an automated waste management system integrating Edge-AI...",
+      title: "An Edge-AI CNN Framework for Real-Time Waste Classification with Integrated Biometric Authentication and Cryptographically Secure Logging",
+      description: "Engineered an automated waste management system integrating Edge-AI, Biometric Authentication & Blockchain-based incentive mechanism",
       status: "Journal Pre-proceedings",
       link: "https://drive.google.com/drive/u/0/folders/1RRTAIim9eTYHrrvoFxtGEO0S7Gu-LeoT",
       tech: ["CNN", "IoT", "Biometrics", "Edge-AI", "Python"]

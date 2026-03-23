@@ -59,7 +59,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="text-slate-300 text-base md:text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0"
+              className="text-slate-300 text-base md:text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0 text-justify"
             >
               {personal.description}
             </motion.p>
@@ -72,7 +72,7 @@ const Hero = () => {
               className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8"
             >
               <a
-                href="/AnamikaSahaCV.pdf"
+                href="/anamikasahaCV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary text-sm md:text-base px-6 py-3 cursor-pointer"

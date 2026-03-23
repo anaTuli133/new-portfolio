@@ -67,7 +67,7 @@ const Projects = () => {
               {/* Content */}
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed mb-4 line-clamp-3">
+                <p className="text-slate-400 text-sm leading-relaxed mb-4 line-clamp-3 text-justify">
                   {project.description}
                 </p>
 

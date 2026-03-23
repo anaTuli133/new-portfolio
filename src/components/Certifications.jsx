@@ -145,10 +145,10 @@ const Certifications = () => {
 
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-2 line-clamp-2">{cert.title}</h3>
+                  <h3 className="text-xl font-bold text-white mb-2 line-clamp-2 text-justify">{cert.title}</h3>
                   <p className="text-white font-semibold mb-1">{cert.organization}</p>
                   <p className="text-slate-400 text-sm mb-3">{cert.date}</p>
-                  {cert.description && <p className="text-slate-300 text-sm mb-4 line-clamp-2">{cert.description}</p>}
+                  {cert.description && <p className="text-slate-300 text-sm mb-4 line-clamp-2 text-justify">{cert.description}</p>}
                   
                   <motion.a
                     whileHover={{ scale: 1.05, backgroundColor: "rgba(139, 92, 246, 0.2)", borderColor: "rgba(56, 189, 248, 0.5)", color: "#38bdf8" }}

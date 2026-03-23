@@ -51,7 +51,7 @@ const About = () => {
               Hello! I'm Anamika Saha
             </h3>
             
-            <div className="space-y-4 text-slate-300 text-lg leading-relaxed">
+            <div className="space-y-4 text-slate-300 text-lg leading-relaxed text-justify">
               <p className="text-xl italic text-sky-400 border-l-4 border-sky-400 pl-4">
                 "I don't just build systems; I seek to understand the core mechanics that power them!"
               </p>
