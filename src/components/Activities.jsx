@@ -36,7 +36,7 @@ const Activities = () => {
               <p className="text-slate-400 text-sm mb-4">{activity.period}</p>
               <ul className="space-y-2">
                 {activity.description.map((desc, i) => (
-                  <li key={i} className="text-slate-300 text-sm flex gap-2 text-justify">
+                  <li key={i} className="text-slate-300 text-sm flex gap-2">
                     <span className="text-sky-500">▹</span>
                     <span>{desc}</span>
                   </li>
