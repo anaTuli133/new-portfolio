@@ -92,7 +92,7 @@ export const portfolioData = {
       title: "A Deployment-Oriented Edge-AI Framework for Real-Time Waste Classification with Bio-metric Authentication and Secure Logging",
       description: "Engineered an automated waste management system integrating Edge-AI, Biometric Authentication & Blockchain-based incentive mechanism",
       status: "Journal Pre-proceedings",
-      link: "https://drive.google.com/drive/folders/1PQhtyDQvVed8BfngO1PN3CfaOjMByo5A",
+      link: "https://drive.google.com/file/d/1ujZaIVh0Eeq8se396vEAPpkeFGXWQxgi/view?usp=drive_link",
       tech: ["CNN", "IoT", "Biometrics", "Edge-AI", "Python"]
     }
   ]
