@@ -89,7 +89,7 @@ export const portfolioData = {
       tech: ["AI", "Deep Learning", "CNN"] 
     },
     {
-      title: "An Edge-AI CNN Framework for Real-Time Waste Classification with Integrated Biometric Authentication and Cryptographically Secure Logging",
+      title: "A Deployment-Oriented Edge-AI Framework for Real-Time Waste Classification with Bio-metric Authentication andSecure Logging",
       description: "Engineered an automated waste management system integrating Edge-AI, Biometric Authentication & Blockchain-based incentive mechanism",
       status: "Journal Pre-proceedings",
       link: "https://drive.google.com/drive/folders/1PQhtyDQvVed8BfngO1PN3CfaOjMByo5A",

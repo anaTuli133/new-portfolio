@@ -85,8 +85,8 @@ const Research = () => {
                 }`}>
                 {pub.status}
               </div>
-              <h4 className="text-lg font-semibold text-white mb-3 line-clamp-4">{pub.title}</h4>
-              <p className="text-slate-400 text-sm mb-4 line-clamp-3">{pub.description}</p>
+              <h4 className="text-lg font-semibold text-white mb-4 line-clamp-4">{pub.title}</h4>
+              <p className="text-slate-400 text-sm mb-5 line-clamp-3">{pub.description}</p>
               {/* Publication Tech Stack */}
               <div className="flex flex-wrap gap-2 mb-6 mt-auto">
                 {pub.tech?.map((tech, i) => (
