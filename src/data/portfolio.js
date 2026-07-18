@@ -74,13 +74,13 @@ export const portfolioData = {
     },
     publications: [
       {
-        title: "Common Reasons for Chest X-ray Examinations in Hospitals",
+        title: "Common Reasons for Chest X-ray Examinations in Hospitals: Understanding Causes, Diagnoses,and Raising Awareness in Dhaka, Bangladesh",
         description: "Investigated the clinical indications, diagnostic outcomes, and public awareness of chest X-ray examinations through a cross-sectional study across multiple hospitals in Dhaka, providing insights for improved diagnostic practices and healthcare awareness.", status: "Journal Published",
         link: "https://eu-opensci.org/index.php/ejmed/article/view/42412",
         tech: ["Machine Learning", "Data Analysis", "Healthcare IT"]
       },
       {
-        title: "Artificial Intelligence in Chest Radiography",
+        title: "Artificial Intelligence in Chest Radiography Comparative Study with Hospital Radiologists’ Reports in Dhaka, Bangladesh",
         description: "Evaluated the effectiveness of a DenseNet-121 deep learning model against hospital radiologists' reports, highlighting AI's role in enhancing diagnostic accuracy and supporting clinical workflows.",
         status: "Journal Published",
         link: "https://eu-opensci.org/index.php/ejai/article/view/1085",
