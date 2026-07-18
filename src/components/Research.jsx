@@ -68,7 +68,7 @@ const Research = () => {
         </motion.div>
 
         {/* Publications */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {research.publications.map((pub, index) => (
             <motion.div
               key={index}
@@ -76,50 +76,69 @@ const Research = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              whileHover={{ scale: 1.05, y: -5 }}
-              className="glass-effect rounded-2xl p-6 hover:shadow-xl hover:shadow-purple-500/10 transition-all"
+              whileHover={{ scale: 1.03, y: -5 }}
+              className="glass-effect rounded-2xl p-7 hover:shadow-xl hover:shadow-purple-500/10 transition-all flex flex-col"
             >
-              <div className={`inline-block px-3 py-1 rounded-xl text-xs font-semibold mb-4 ${pub.status === 'Published'
-                ? 'bg-green-500/20 text-green-400 border border-green-500/30'
-                : 'bg-orange-500/20 text-orange-400 border border-orange-500/30'
-                }`}>
+              {/* Status */}
+              <div
+                className={`inline-block w-fit px-3 py-1 rounded-xl text-xs font-semibold mb-5 ${pub.status === "Published"
+                    ? "bg-green-500/20 text-green-400 border border-green-500/30"
+                    : "bg-orange-500/20 text-orange-400 border border-orange-500/30"
+                  }`}
+              >
                 {pub.status}
               </div>
-              <h4 className="text-lg font-semibold text-white mb-4 line-clamp-4">{pub.title}</h4>
-              <p className="text-slate-400 text-sm mb-5 line-clamp-3">{pub.description}</p>
-              {/* Publication Tech Stack */}
-              <div className="flex flex-wrap gap-2 mb-6 mt-auto">
+
+              {/* Title */}
+              <h4 className="text-xl font-semibold text-white leading-snug mb-4 min-h-[84px]">
+                {pub.title}
+              </h4>
+
+              {/* Description */}
+              <p className="text-slate-400 text-sm leading-relaxed mb-6 min-h-[72px]">
+                {pub.description}
+              </p>
+
+              {/* Tech Stack */}
+              <div className="flex flex-wrap gap-2 mb-6">
                 {pub.tech?.map((tech, i) => (
-                  <span key={i} className="px-2 py-1 bg-purple-500/10 border border-purple-500/20 rounded-md text-[10px] text-purple-300 font-medium">
+                  <span
+                    key={i}
+                    className="px-2 py-1 bg-purple-500/10 border border-purple-500/20 rounded-md text-[10px] text-purple-300 font-medium"
+                  >
                     {tech}
                   </span>
                 ))}
               </div>
 
-              {/* Publication Button*/}
+              {/* Button */}
               <motion.a
-                whileHover={pub.link !== '#' ? {
-                  scale: 1.05,
-                  backgroundColor: "rgba(139, 92, 246, 0.2)",
-                  borderColor: "rgba(56, 189, 248, 0.5)",
-                  color: "#38bdf8"
-                } : {}}
+                whileHover={
+                  pub.link !== "#"
+                    ? {
+                      scale: 1.05,
+                      backgroundColor: "rgba(139, 92, 246, 0.2)",
+                      borderColor: "rgba(56, 189, 248, 0.5)",
+                      color: "#38bdf8",
+                    }
+                    : {}
+                }
                 href={pub.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm transition-all font-medium ${pub.link === '#'
-                  ? 'bg-slate-700/50 text-slate-500 cursor-not-allowed border border-transparent'
-                  : 'bg-purple-500/10 border border-purple-500/20 text-purple-300'
+                className={`inline-flex mt-auto w-fit items-center gap-2 px-4 py-2 rounded-lg text-sm transition-all font-medium ${pub.link === "#"
+                    ? "bg-slate-700/50 text-slate-500 cursor-not-allowed border border-transparent"
+                    : "bg-purple-500/10 border border-purple-500/20 text-purple-300"
                   }`}
               >
-                📄 {
-                  index === research.publications.length - 1
-                    ? "View Manuscript"
-                    : index === research.publications.length - 2
-                      ? "View Work"
-                      : "Read Paper"
-                }
-                {pub.link !== '#' && <FaExternalLinkAlt className="text-xs" />}
+                📄{" "}
+                {index === research.publications.length - 1
+                  ? "View Manuscript"
+                  : index === research.publications.length - 2
+                    ? "View Work"
+                    : "Read Paper"}
+
+                {pub.link !== "#" && <FaExternalLinkAlt className="text-xs" />}
               </motion.a>
             </motion.div>
           ))}
