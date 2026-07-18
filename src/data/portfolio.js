@@ -69,13 +69,15 @@ export const portfolioData = {
     thesis: {
       title: "Cardiovascular Disease Prediction: A Machine Learning Approach",
       supervisor: "Supervisor: Ms. Syeda Shabnam Hasan, Asst. Professor, AUST CSE",
-      description: "Developed and evaluated multiple machine learning models for cardiovascular disease prediction using demographic, clinical, and lifestyle data, achieving up to 90.69% accuracy with LightGBM for early risk assessment.", link: "https://drive.google.com/file/d/1Z2zfzc6zyRxAyQIPkrXPl9hD_hJSS4N0/view",
+      description: "Developed and evaluated multiple machine learning models for cardiovascular disease prediction using demographic, clinical and lifestyle data, achieving up to 90.69% accuracy with LightGBM for early risk assessment.", 
+      link: "https://drive.google.com/file/d/1Z2zfzc6zyRxAyQIPkrXPl9hD_hJSS4N0/view",
       tech: ["Python", "XGBoost", "LightGBM", "CatBoost", "ANN", "Scikit-Learn", "SMOTE"]
     },
     publications: [
       {
         title: "Common Reasons for Chest X-ray Examinations in Hospitals: Understanding Causes, Diagnoses,and Raising Awareness in Dhaka, Bangladesh",
-        description: "Investigated the clinical indications, diagnostic outcomes, and public awareness of chest X-ray examinations through a cross-sectional study across multiple hospitals in Dhaka, providing insights for improved diagnostic practices and healthcare awareness.", status: "Journal Published",
+        description: "Investigated the clinical indications, diagnostic outcomes, and public awareness of chest X-ray examinations through a cross-sectional study across multiple hospitals in Dhaka, providing insights for improved diagnostic practices and healthcare awareness.",
+        status: "Journal Published",
         link: "https://eu-opensci.org/index.php/ejmed/article/view/42412",
         tech: ["Machine Learning", "Data Analysis", "Healthcare IT"]
       },
@@ -88,13 +90,15 @@ export const portfolioData = {
       },
       {
         title: "A Deployment-Oriented Edge-AI Framework for Real-Time Waste Classification with Bio-metric Authentication and Secure Logging",
-        description: "Designed an Edge-AI-based waste classification framework combining lightweight deep learning, biometric authentication, and secure logging to enhance real-time recycling, security, and system scalability.", status: "Journal Pre-proceedings",
+        description: "Designed an Edge-AI-based waste classification framework combining lightweight deep learning, biometric authentication, and secure logging to enhance real-time recycling, security and system scalability.", 
+        status: "Journal Pre-proceedings",
         link: "https://drive.google.com/file/d/1ujZaIVh0Eeq8se396vEAPpkeFGXWQxgi/view?usp=drive_link",
         tech: ["CNN", "IoT", "Biometrics", "Edge-AI", "Python"]
       },
       {
         title: "ZETA: A Zero-Knowledge and Threshold-Cryptographic Architecture for Scalable and MEV-Resilient Sharded Blockchains",
-        description: "Proposed a scalable blockchain architecture integrating Zero-Knowledge Proofs, Threshold Cryptography, and sharding techniques to improve security, transaction throughput, and resistance against MEV attacks.", status: "Journal Pre-proceedings",
+        description: "Proposed a scalable blockchain architecture integrating Zero-Knowledge Proofs, Threshold Cryptography, and sharding techniques to improve security, transaction throughput and resistance against MEV attacks.", 
+        status: "Journal Pre-proceedings",
         link: "https://drive.google.com/file/d/1Ep89Am56vscyHVd0gWv40xesoZhZk8RV/view?usp=drive_link",
         tech: ["Blockchain", "Zero-Knowledge Proofs", "Threshold Cryptography", "Python", "Sharding"]
       },
@@ -116,7 +120,7 @@ export const portfolioData = {
     {
       title: "Teletalk Subscriber Analytics Bot",
       category: "AI & Data Analytics",
-      description: "Built an AI-powered subscriber analytics chatbot for Teletalk Bangladesh featuring natural language querying, ML-based subscriber clustering, bulk MSISDN analysis, and campaign recommendation on an offline LAN environment.",
+      description: "Built an AI-powered subscriber analytics chatbot for Teletalk Bangladesh featuring natural language querying, ML-based subscriber clustering, bulk MSISDN analysis and campaign recommendation on an offline LAN environment.",
       tech: ["Python", "FastAPI", "Llama 3.2", "Oracle", "Machine Learning"],
       image: "/Project/SubscriberAnalyticsBot.png",
       demo: "",
@@ -125,7 +129,7 @@ export const portfolioData = {
     {
       title: "CDR14 Web Application",
       category: "Enterprise Web Application",
-      description: "Enhanced Teletalk's internal CDR investigation system by implementing time-based filtering, Oracle SQL integration, Flask web interface, CSV export, and comprehensive testing for telecom data analysis workflows.",
+      description: "Enhanced Teletalk's internal CDR investigation system by implementing time-based filtering, Oracle SQL integration, Flask web interface, CSV export and comprehensive testing for telecom data analysis workflows.",
       tech: ["Python", "Flask", "Oracle SQL", "PyQt5", "HTML"],
       image: "/Project/CDR14.png",
       demo: "https://drive.google.com/file/d/18MloCGevfZkT2BPDgrVzIKVhDziQaKJB/view?usp=sharing",
@@ -267,11 +271,11 @@ export const portfolioData = {
     {
       title: "Sports & Event Organizer",
       organization: "AUST CSE Department",
-      period: "Fall 2022 - Spring 2024",
+      period: "Spring 2021 - Fall 2024",
       icon: "🏆",
       description: [
-        "Represented the department in Football and Cricket tournaments across multiple semesters, serving as Football Team Captain (Fall 2022)",
-        "Organized major departmental events including CSE Cricket Tournament, CSE Picnic, and CSE Revelry (CSE Fest) as an Organizing Committee Member"
+        "Represented the department in Football and Cricket tournaments across multiple semesters, serving as Football Team Captain (Fall 2021)",
+        "Organized major departmental events including CSE Cricket Tournament, CSE Picnic and CSE Revelry (CSE Fest) as an Organizing Committee Member"
       ]
     },
   ]
