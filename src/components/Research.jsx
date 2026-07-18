@@ -80,8 +80,8 @@ const Research = () => {
               className="glass-effect rounded-2xl p-6 hover:shadow-xl hover:shadow-purple-500/10 transition-all"
             >
               <div className={`inline-block px-3 py-1 rounded-xl text-xs font-semibold mb-4 ${pub.status === 'Published'
-                  ? 'bg-green-500/20 text-green-400 border border-green-500/30'
-                  : 'bg-orange-500/20 text-orange-400 border border-orange-500/30'
+                ? 'bg-green-500/20 text-green-400 border border-green-500/30'
+                : 'bg-orange-500/20 text-orange-400 border border-orange-500/30'
                 }`}>
                 {pub.status}
               </div>
@@ -108,11 +108,17 @@ const Research = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm transition-all font-medium ${pub.link === '#'
-                    ? 'bg-slate-700/50 text-slate-500 cursor-not-allowed border border-transparent'
-                    : 'bg-purple-500/10 border border-purple-500/20 text-purple-300'
+                  ? 'bg-slate-700/50 text-slate-500 cursor-not-allowed border border-transparent'
+                  : 'bg-purple-500/10 border border-purple-500/20 text-purple-300'
                   }`}
               >
-                📄 {index === research.publications.length - 1 ? "View Work" : "Read Paper"}
+                📄 {
+                  index === research.publications.length - 1
+                    ? "View Manuscript"
+                    : index === research.publications.length - 2
+                      ? "View Work"
+                      : "Read Paper"
+                }
                 {pub.link !== '#' && <FaExternalLinkAlt className="text-xs" />}
               </motion.a>
             </motion.div>

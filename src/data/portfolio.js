@@ -66,37 +66,44 @@ export const portfolioData = {
   ],
 
   research: {
-  thesis: {
-    title: "Cardiovascular Disease Prediction: A Machine Learning Approach",
-    supervisor: "Supervisor: Ms. Syeda Shabnam Hasan, Asst. Professor, AUST CSE",
-    description: "Researched predictive ML models using demographic, clinical and lifestyle data. Evaluated multiple algorithms including LightGBM, CatBoost, XGBoost and ANN, achieving 90%+ accuracy.",
-    link: "https://drive.google.com/file/d/1Z2zfzc6zyRxAyQIPkrXPl9hD_hJSS4N0/view",
-    tech: ["Python", "XGBoost", "LightGBM", "CatBoost", "ANN", "Scikit-Learn", "SMOTE"]
+    thesis: {
+      title: "Cardiovascular Disease Prediction: A Machine Learning Approach",
+      supervisor: "Supervisor: Ms. Syeda Shabnam Hasan, Asst. Professor, AUST CSE",
+      description: "Researched predictive ML models using demographic, clinical and lifestyle data. Evaluated multiple algorithms including LightGBM, CatBoost, XGBoost and ANN, achieving 90%+ accuracy.",
+      link: "https://drive.google.com/file/d/1Z2zfzc6zyRxAyQIPkrXPl9hD_hJSS4N0/view",
+      tech: ["Python", "XGBoost", "LightGBM", "CatBoost", "ANN", "Scikit-Learn", "SMOTE"]
+    },
+    publications: [
+      {
+        title: "Common Reasons for Chest X-ray Examinations in Hospitals",
+        description: "Understanding causes, diagnoses and raising awareness in Dhaka, Bangladesh",
+        status: "Journal Published",
+        link: "https://eu-opensci.org/index.php/ejmed/article/view/42412",
+        tech: ["Machine Learning", "Data Analysis", "Healthcare IT"]
+      },
+      {
+        title: "Artificial Intelligence in Chest Radiography",
+        description: "Comparative study with hospital radiologists reports in Dhaka, Bangladesh",
+        status: "Journal Published",
+        link: "https://eu-opensci.org/index.php/ejai/article/view/1085",
+        tech: ["AI", "Deep Learning", "CNN"]
+      },
+      {
+        title: "A Deployment-Oriented Edge-AI Framework for Real-Time Waste Classification with Bio-metric Authentication and Secure Logging",
+        description: "Engineered an automated waste management system integrating Edge-AI, Biometric Authentication & Blockchain-based incentive mechanism",
+        status: "Journal Pre-proceedings",
+        link: "https://drive.google.com/file/d/1ujZaIVh0Eeq8se396vEAPpkeFGXWQxgi/view?usp=drive_link",
+        tech: ["CNN", "IoT", "Biometrics", "Edge-AI", "Python"]
+      },
+      {
+        title: "ZETA: A Zero-Knowledge and Threshold-Cryptographic Architecture for Scalable and MEV-Resilient Sharded Blockchains",
+        description: "Designed a scalable blockchain architecture integrating Zero-Knowledge Proofs, Threshold Cryptography, Erasure-Coded Sharding, and MEV-resistant transaction processing for secure, high-throughput decentralized networks.",
+        status: "Journal Pre-proceedings",
+        link: "https://drive.google.com/file/d/1Ep89Am56vscyHVd0gWv40xesoZhZk8RV/view?usp=drive_link",
+        tech: ["Blockchain", "Zero-Knowledge Proofs", "Threshold Cryptography", "Python", "Sharding"]
+      },
+    ]
   },
-  publications: [
-    {
-      title: "Common Reasons for Chest X-ray Examinations in Hospitals",
-      description: "Understanding causes, diagnoses and raising awareness in Dhaka, Bangladesh",
-      status: "Journal Published",
-      link: "https://eu-opensci.org/index.php/ejmed/article/view/42412",
-      tech: ["Machine Learning", "Data Analysis", "Healthcare IT"] 
-    },
-    {
-      title: "Artificial Intelligence in Chest Radiography",
-      description: "Comparative study with hospital radiologists reports in Dhaka, Bangladesh",
-      status: "Journal Published",
-      link: "https://eu-opensci.org/index.php/ejai/article/view/1085",
-      tech: ["AI", "Deep Learning", "CNN"] 
-    },
-    {
-      title: "A Deployment-Oriented Edge-AI Framework for Real-Time Waste Classification with Bio-metric Authentication and Secure Logging",
-      description: "Engineered an automated waste management system integrating Edge-AI, Biometric Authentication & Blockchain-based incentive mechanism",
-      status: "Journal Pre-proceedings",
-      link: "https://drive.google.com/file/d/1ujZaIVh0Eeq8se396vEAPpkeFGXWQxgi/view?usp=drive_link",
-      tech: ["CNN", "IoT", "Biometrics", "Edge-AI", "Python"]
-    }
-  ]
-},
 
   projects: [
 
@@ -110,7 +117,24 @@ export const portfolioData = {
       demo: "https://fins-project-anamika.vercel.app/",
       github: "https://github.com/anaTuli133/Fins-Project"
     },
-
+    {
+  title: "Teletalk Subscriber Analytics Bot",
+  category: "AI & Data Analytics",
+  description: "Built an AI-powered subscriber analytics chatbot for Teletalk Bangladesh featuring natural language querying, ML-based subscriber clustering, bulk MSISDN analysis, and campaign recommendation on an offline LAN environment.",
+  tech: ["Python", "FastAPI", "Llama 3.2", "Oracle", "Machine Learning"],
+  image: "/Project/SubscriberAnalyticsBot.png",
+  demo: "",
+  github: "https://github.com/anaTuli133/Ai-campaign-bot"
+},
+{
+  title: "CDR14 Time Filter Web Application",
+  category: "Enterprise Web Application",
+  description: "Enhanced Teletalk's internal CDR investigation system by implementing time-based filtering, Oracle SQL integration, Flask web interface, CSV export, and comprehensive testing for telecom data analysis workflows.",
+  tech: ["Python", "Flask", "Oracle SQL", "PyQt5", "HTML"],
+  image: "/Project/CDR14.png",
+  demo: "",
+  github: "https://github.com/anaTuli133/14-column-cdr-time-"
+},
     {
       title: "Mystro - The Fighting Game",
       category: "Game Development",
@@ -124,7 +148,7 @@ export const portfolioData = {
       title: "Dino Adventure - A Bingo Game",
       category: "Generative Art & Gaming",
       description: "A dynamic web-based game developed using p5.js. The project was inspired by a creative concept on YouTube.",
-      tech: ["p5.js","JavaScript", "CSS3", "HTML5"],
+      tech: ["p5.js", "JavaScript", "CSS3", "HTML5"],
       image: "/Project/day.png",
       demo: "https://editor.p5js.org/anaTuli133/full/ZoRjR5NDz",
       github: "https://github.com/anaTuli133/bingoGame"
@@ -134,7 +158,7 @@ export const portfolioData = {
       title: "To-Do App",
       category: "Cloud Deployment",
       description: "Built a web-based task manager with full CRUD functionality, hosted on AWS EC2.",
-      tech: ["PHP","AWS EC2", "CSS3", "HTML5"],
+      tech: ["PHP", "AWS EC2", "CSS3", "HTML5"],
       image: "/Project/To Do app.png",
       demo: "https://anamika-to-do-app.netlify.app/",
       github: "https://github.com/anaTuli133"
@@ -172,7 +196,7 @@ export const portfolioData = {
       title: "MindEase: Social Media Mental Health Monitor",
       category: "NLP & Sentiment Analysis",
       description: "Built a sentiment analysis pipeline using NLTK and Scikit-learn to detect emotional patterns in mental health datasets with TF-IDF feature extraction.",
-      tech: ["Python", "NLTK", "Scikit-learn","NumPy","TF-IDF"],
+      tech: ["Python", "NLTK", "Scikit-learn", "NumPy", "TF-IDF"],
       image: "/Project/mindease.png",
       demo: "https://drive.google.com/file/d/1OTCN9y_9tlO5YTJ-KS9aBPR5fIvFm7Z4/view?usp=drive_link",
       github: "https://github.com/Fabbih/MindEase"
