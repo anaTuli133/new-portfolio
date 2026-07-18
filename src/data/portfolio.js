@@ -127,12 +127,12 @@ export const portfolioData = {
   github: "https://github.com/anaTuli133/Ai-campaign-bot"
 },
 {
-  title: "CDR14 Time Filter Web Application",
+  title: "CDR14 Web Application",
   category: "Enterprise Web Application",
   description: "Enhanced Teletalk's internal CDR investigation system by implementing time-based filtering, Oracle SQL integration, Flask web interface, CSV export, and comprehensive testing for telecom data analysis workflows.",
   tech: ["Python", "Flask", "Oracle SQL", "PyQt5", "HTML"],
   image: "/Project/CDR14.png",
-  demo: "",
+  demo: "https://drive.google.com/file/d/18MloCGevfZkT2BPDgrVzIKVhDziQaKJB/view?usp=sharing",
   github: "https://github.com/anaTuli133/14-column-cdr-time-"
 },
     {
