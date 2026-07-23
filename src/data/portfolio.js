@@ -145,6 +145,15 @@ export const portfolioData = {
       github: "https://github.com/anaTuli133/cdr-log-monitor"
     },
     {
+      title: "MSISDN to IMEI Conversion API",
+      category: "Enterprise REST API / Data Platform",
+      description: "Built a production-grade FastAPI service for Teletalk enabling real-time conversion of subscriber numbers (MSISDN) to device identifiers (IMEI), featuring batch processing, HTTP Basic Auth, an interactive web dashboard, and a searchable view over 7.2M+ records via Oracle materialized views.",
+      tech: ["Python", "FastAPI", "Oracle SQL", "SQLite", "REST API", "Swagger"],
+      image: "/Project/MsisdnImeiAPI.png",
+      demo: "https://drive.google.com/file/d/1WL7__ST38Bk31PEcxgmSJfJ67YiUrSI8/view?usp=drive_link",
+      github: "https://github.com/anaTuli133/msisdn-to-imei"
+    },
+    {
       title: "Mystro - The Fighting Game",
       category: "Game Development",
       description: "Developed a 2D fighting game implementing game logic, interactive graphics and real-time rendering using C++ and iGraphics library.",
