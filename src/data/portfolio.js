@@ -257,6 +257,18 @@ export const portfolioData = {
       ]
     },
     {
+      title: "Sports & Event Organizer",
+      organization: "AUST CSE Department",
+      period: "Spring 2021 - Fall 2024",
+      icon: "🏆",
+      description: [
+        "Represented the department in Football and Cricket tournaments across multiple semesters, serving as Football Team Captain (Fall 2021)",
+        "Awarded Man of the Match - Spring'22 (Cricket) & Man of the Match - Fall'23 (Football)",
+        "Organized major departmental events including CSE Cricket Tournament, CSE Picnic and CSE Revelry (CSE Fest) - Spring 2024"
+
+      ]
+    },
+    {
       title: "Campus Ambassador",
       organization: "ICT Olympiad Bangladesh",
       period: "Mar 2022 - 2023",
@@ -277,17 +289,6 @@ export const portfolioData = {
         "Contributed to organizing cultural events and supporting club activities alongside executive members"
       ]
     },
-    {
-      title: "Sports & Event Organizer",
-      organization: "AUST CSE Department",
-      period: "Spring 2021 - Fall 2024",
-      icon: "🏆",
-      description: [
-        "Represented the department in Football and Cricket tournaments across multiple semesters, serving as Football Team Captain (Fall 2021)",
-        "Awarded Man of the Match - Spring'22 (Cricket) & Man of the Match - Fall'23 (Football)",
-        "Organized major departmental events including CSE Cricket Tournament, CSE Picnic and CSE Revelry (CSE Fest) - Spring 2024"
 
-      ]
-    },
   ]
 };
