@@ -58,7 +58,7 @@ export const portfolioData = {
         "Worked with Oracle databases for tablespace monitoring, SQL validation and data loading using SQL Developer",
         "Gained working knowledge of Data Warehouse architecture and ETL pipeline processes",
         "Performed in telecom data analysis, including CDR log monitoring and basic CDR validation",
-        "Automated server maintenance tasks throughcron jobs and bash scripting, optimizing pipeline flow and system monitoring"
+        "Automated server maintenance tasks through cron jobs and bash scripting, optimizing pipeline flow and system monitoring"
 
       ],
       items: ["Tableau", "Python", "SQL", "Oracle", "Automation", "BashScript", "Data WareHouse", "Web Development"]
