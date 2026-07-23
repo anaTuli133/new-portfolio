@@ -23,27 +23,27 @@ export const portfolioData = {
     {
       category: "Backend & Cloud",
       icon: "⚙️",
-      items: ["Node.js", "Express.js", "BashScript", "Flask", "FastAPI", "AWS EC2", "Linux"]
+      items: ["Node.js", "Express.js", "BashScript", "Flask", "FastAPI", "REST APIs", "Uvicorn", "AWS EC2", "Linux"]
     },
     {
       category: "Programming",
       icon: "👩🏻‍💻",
-      items: ["Python", "JavaScript", "C++", "C", "Java", "PHP"]
+      items: ["Python", "JavaScript", "C++", "C", "Java", "PHP", "SQL"]
     },
     {
       category: "Databases",
       icon: "🗄️",
-      items: ["MySQL", "MongoDB", "Oracle SQL", "MS SQL Server", "Firebase"]
+      items: ["MySQL", "MongoDB Atlas", "Oracle SQL", "MS SQL Server", "Firebase"]
     },
     {
       category: "Data & ML",
       icon: "🤖",
-      items: ["TensorFlow", "Pandas", "NumPy", "Scikit-learn", "NLP", "Deep Learning"]
+      items: ["TensorFlow", "Pandas", "NumPy", "Scikit-learn", "PyTorch", "NLP", "Deep Learning"]
     },
     {
       category: "Tools & Design",
       icon: "🛠️",
-      items: ["Git", "Tableau", "Netlify", "Canva", "Figma", "Canva",]
+      items: ["Git", "Tableau", "Docker", "Netlify", "Canva", "Figma", "Canva",]
     }
   ],
 
@@ -69,7 +69,7 @@ export const portfolioData = {
     thesis: {
       title: "Cardiovascular Disease Prediction: A Machine Learning Approach",
       supervisor: "Supervisor: Ms. Syeda Shabnam Hasan, Asst. Professor, AUST CSE",
-      description: "Developed and evaluated multiple machine learning models for cardiovascular disease prediction using demographic, clinical and lifestyle data, achieving up to 90.69% accuracy with LightGBM for early risk assessment.", 
+      description: "Developed and evaluated multiple machine learning models for cardiovascular disease prediction using demographic, clinical and lifestyle data, achieving up to 90.69% accuracy with LightGBM for early risk assessment.",
       link: "https://drive.google.com/file/d/1Z2zfzc6zyRxAyQIPkrXPl9hD_hJSS4N0/view",
       tech: ["Python", "XGBoost", "LightGBM", "CatBoost", "ANN", "Scikit-Learn", "SMOTE"]
     },
@@ -90,14 +90,14 @@ export const portfolioData = {
       },
       {
         title: "A Deployment-Oriented Edge-AI Framework for Real-Time Waste Classification with Bio-metric Authentication and Secure Logging",
-        description: "Designed an Edge-AI-based waste classification framework combining lightweight deep learning, biometric authentication, and secure logging to enhance real-time recycling, security and system scalability.", 
+        description: "Designed an Edge-AI-based waste classification framework combining lightweight deep learning, biometric authentication, and secure logging to enhance real-time recycling, security and system scalability.",
         status: "Journal Pre-proceedings",
         link: "https://drive.google.com/file/d/1ujZaIVh0Eeq8se396vEAPpkeFGXWQxgi/view?usp=drive_link",
         tech: ["CNN", "IoT", "Biometrics", "Edge-AI", "Python"]
       },
       {
         title: "ZETA: A Zero-Knowledge and Threshold-Cryptographic Architecture for Scalable and MEV-Resilient Sharded Blockchains",
-        description: "Proposed a scalable blockchain architecture integrating Zero-Knowledge Proofs, Threshold Cryptography, and sharding techniques to improve security, transaction throughput and resistance against MEV attacks.", 
+        description: "Proposed a scalable blockchain architecture integrating Zero-Knowledge Proofs, Threshold Cryptography, and sharding techniques to improve security, transaction throughput and resistance against MEV attacks.",
         status: "Journal Pre-proceedings",
         link: "https://drive.google.com/file/d/1Ep89Am56vscyHVd0gWv40xesoZhZk8RV/view?usp=drive_link",
         tech: ["Blockchain", "Zero-Knowledge Proofs", "Threshold Cryptography", "Python", "Sharding"]
@@ -121,9 +121,9 @@ export const portfolioData = {
       title: "Teletalk Subscriber Analytics Bot",
       category: "AI & Data Analytics",
       description: "Built an AI-powered subscriber analytics chatbot for Teletalk Bangladesh featuring natural language querying, ML-based subscriber clustering, bulk MSISDN analysis and campaign recommendation on an offline LAN environment.",
-      tech: ["Python", "FastAPI", "Llama 3.2", "Oracle", "Machine Learning"],
+      tech: ["Python", "FastAPI", "Llama 3.2", "Oracle", "Docker", "Uvicorn", "Machine Learning"],
       image: "/Project/SubscriberAnalyticsBot.png",
-      demo: "",
+      demo: "https://drive.google.com/file/d/1tqgLBefYE9ajIWUTBex8_2jskGxwmx6t/view?usp=drive_link",
       github: "https://github.com/anaTuli133/Ai-campaign-bot"
     },
     {
@@ -134,6 +134,15 @@ export const portfolioData = {
       image: "/Project/CDR14.png",
       demo: "https://drive.google.com/file/d/18MloCGevfZkT2BPDgrVzIKVhDziQaKJB/view?usp=sharing",
       github: "https://github.com/anaTuli133/14-column-cdr-time-"
+    },
+    {
+      title: "CDR Log Monitor Dashboard",
+      category: "Real-Time Monitoring System",
+      description: "Built a real-time CDR pipeline monitoring dashboard for Teletalk, tracking file registration, merge, and L1 loading stages across multiple CBS and MSC (Huawei/Nokia) servers via SSH. Features live file-count tracking, IPDR/NTMC/TMS transfer monitoring, auto-refreshing multi-tab UI, and background threads for continuous log parsing.",
+      tech: ["Python", "Flask", "Paramiko (SSH)", "Multithreading", "REST API", "HTML/CSS/JS"],
+      image: "/Project/CDRMonitor.png",
+      demo: "https://drive.google.com/file/d/1u_Hmm5y7Hd2SSuDRYUlL9y36q_NyqYgH/view?usp=drive_link",
+      github: "https://github.com/anaTuli133/cdr-log-monitor"
     },
     {
       title: "Mystro - The Fighting Game",
@@ -275,7 +284,9 @@ export const portfolioData = {
       icon: "🏆",
       description: [
         "Represented the department in Football and Cricket tournaments across multiple semesters, serving as Football Team Captain (Fall 2021)",
-        "Organized major departmental events including CSE Cricket Tournament, CSE Picnic and CSE Revelry (CSE Fest) as an Organizing Committee Member"
+        "Awarded Man of the Match - Spring'22 (Cricket) & Man of the Match - Fall'23 (Football)",
+        "Organized major departmental events including CSE Cricket Tournament, CSE Picnic and CSE Revelry (CSE Fest) - Spring 2024"
+
       ]
     },
   ]
