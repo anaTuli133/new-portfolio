@@ -209,6 +209,15 @@ export const portfolioData = {
       image: "/Project/mindease.png",
       demo: "https://drive.google.com/file/d/1OTCN9y_9tlO5YTJ-KS9aBPR5fIvFm7Z4/view?usp=drive_link",
       github: "https://github.com/Fabbih/MindEase"
+    },
+    {
+      title: "Bangla Literature AI: Summarization & Classification",
+      category: "NLP / Low-Resource Language Processing",
+      description: "Built an end-to-end NLP pipeline for Bangla literature featuring TF-IDF based extractive summarization with TextRank (graph-based ranking) and Multinomial Naive Bayes text classification, evaluated using ROUGE-1/ROUGE-2 metrics.",
+      tech: ["Python", "Scikit-learn", "NLTK", "NetworkX", "TF-IDF", "TextRank"],
+      image: "/Project/BanglaLiteratureAI.png",
+      demo: "https://drive.google.com/file/d/1J61EMX48BcrUl4dMjv8KiRHhQhktSpgb/view?usp=drive_link",
+      github: "https://github.com/Fabbih/bangla-literature-ai"
     }
 
   ],
