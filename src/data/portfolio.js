@@ -49,16 +49,16 @@ export const portfolioData = {
 
   experience: [
     {
-      title: "Jr. Software Engineer (Data Maintenance & BI)",
+      title: "Jr. Software Engineer (Business Intelligence & Data Maintenance)",
       company: "Teletalk Bangladesh Ltd.",
       location: "Gulshan, Dhaka",
       period: "January 2026 - Present",
       responsibilities: [
-        "Hands-on experience with Tableau Server monitoring and BI reporting workflows",
-        "Worked with Oracle databases for tablespace monitoring, SQL validation and data loading",
+        "Managed Tableau Server monitoring and BI reporting workflows to support telecom data-driven decision making",
+        "Worked with Oracle databases for tablespace monitoring, SQL validation and data loading using SQL Developer",
         "Gained working knowledge of Data Warehouse architecture and ETL pipeline processes",
-        "Assisted in telecom data analysis, including CDR log monitoring",
-        "Learned server maintenance including cron jobs, bash scripting and system monitoring"
+        "Performed in telecom data analysis, including CDR log monitoring and basic CDR validation",
+        "Automated server maintenance tasks throughcron jobs and bash scripting, optimizing pipeline flow and system monitoring"
 
       ],
       items: ["Tableau", "Python", "SQL", "Oracle", "Automation", "BashScript", "Data WareHouse", "Web Development"]
