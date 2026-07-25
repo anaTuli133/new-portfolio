@@ -217,7 +217,7 @@ export const portfolioData = {
       tech: ["Python", "NLTK", "Scikit-learn", "NumPy", "TF-IDF"],
       image: "/Project/mindease.png",
       demo: "https://drive.google.com/file/d/1OTCN9y_9tlO5YTJ-KS9aBPR5fIvFm7Z4/view?usp=drive_link",
-      github: "https://github.com/Fabbih/MindEase"
+      github: "https://github.com/anaTuli133/mindEase"
     },
     {
       title: "Bangla Literature AI: Summarization & Classification",
@@ -226,7 +226,7 @@ export const portfolioData = {
       tech: ["Python", "Scikit-learn", "NLTK", "NetworkX", "TF-IDF", "TextRank"],
       image: "/Project/BanglaLiteratureAI.png",
       demo: "https://drive.google.com/file/d/1J61EMX48BcrUl4dMjv8KiRHhQhktSpgb/view?usp=drive_link",
-      github: "https://github.com/Fabbih/bangla-literature-ai"
+      github: "https://github.com/anaTuli133/Bangla-Literature-AI"
     }
 
   ],
