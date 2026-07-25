@@ -153,6 +153,16 @@ export const portfolioData = {
       demo: "https://drive.google.com/file/d/1WL7__ST38Bk31PEcxgmSJfJ67YiUrSI8/view?usp=drive_link",
       github: "https://github.com/anaTuli133/msisdn-to-imei"
     },
+
+    {
+      title: "Foodie - Food Ordering Website",
+      category: "Full-Stack Website",
+      description: "Developed an online food ordering website featuring interactive menus, order management.",
+      tech: ["C#", "ASP.NET MVC", "MySQL"],
+      image: "/Project/foodie1.png",
+      demo: "http://food-ordering-website.runasp.net/User/Default.aspx",
+      github: "https://github.com/anaTuli133/Food-Ordering-Website"
+    },
     {
       title: "Mystro - The Fighting Game",
       category: "Game Development",
@@ -180,15 +190,6 @@ export const portfolioData = {
       image: "/Project/To Do app.png",
       demo: "https://anamika-to-do-app.netlify.app/",
       github: "https://github.com/anaTuli133"
-    },
-    {
-      title: "Foodie - Food Ordering Website",
-      category: "Full-Stack Website",
-      description: "Developed an online food ordering website featuring interactive menus, order management.",
-      tech: ["C#", "ASP.NET MVC", "MySQL"],
-      image: "/Project/foodie1.png",
-      demo: "https://drive.google.com/file/d/1ytUSII4Mi3WYJGCM0QhbTs_wCJkyOHtK/view",
-      github: "https://github.com/anaTuli133/Food-Ordering-Website"
     },
 
     {

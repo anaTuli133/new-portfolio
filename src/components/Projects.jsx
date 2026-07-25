@@ -102,9 +102,9 @@ const Projects = () => {
                     >
                       <FaExternalLinkAlt size={10} />
                       {/* Specific Logic for Play Game, Live Demo and View Work */}
-                      {index === 6
+                      {index === 7
                         ? "Play Game"
-                        : [0, 7, 9].includes(index)
+                        : [0, 5, 8, 10].includes(index)
                           ? "Live Demo"
                           : "View Work"
                       }
