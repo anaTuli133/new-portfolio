@@ -211,7 +211,7 @@ export const portfolioData = {
       github: "https://github.com/Maliha-Akter/Freelancing-Job-Board_Project"
     },
     {
-      title: "MindEase: Social Media Mental Health Monitor",
+      title: "MindEase: A NLP AND ML-BASED SYSTEM TO DETECT MENTAL DISTRESS FROM SOCIAL MEDIA POSTS.",
       category: "NLP & Sentiment Analysis",
       description: "Built a sentiment analysis pipeline using NLTK and Scikit-learn to detect emotional patterns in mental health datasets with TF-IDF feature extraction.",
       tech: ["Python", "NLTK", "Scikit-learn", "NumPy", "TF-IDF"],
@@ -220,7 +220,7 @@ export const portfolioData = {
       github: "https://github.com/anaTuli133/mindEase"
     },
     {
-      title: "Bangla Literature AI: Summarization & Classification",
+      title: "Bangla Literature AI: AI POWERED BENGALI LITERATURE SUMMARIZER",
       category: "NLP / Low-Resource Language Processing",
       description: "Built an end-to-end NLP pipeline for Bangla literature featuring TF-IDF based extractive summarization with TextRank (graph-based ranking) and Multinomial Naive Bayes text classification, evaluated using ROUGE-1/ROUGE-2 metrics.",
       tech: ["Python", "Scikit-learn", "NLTK", "NetworkX", "TF-IDF", "TextRank"],
