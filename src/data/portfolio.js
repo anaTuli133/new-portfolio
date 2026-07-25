@@ -1,8 +1,8 @@
 export const portfolioData = {
   personal: {
     name: "Anamika Saha",
-    title: "Full-Stack Developer & AI Engineer",
-    description: "Computer Science graduate with research interests in Artificial Intelligence, Machine Learning, Data Science, Deep Learning, Natural Language Processing and Health Informatics. Experienced in Full-Stack Development, Business Intelligence and Data Operations, with Passionate about leveraging technology to solve real-world problems and drive innovation in the field of computer science.",
+    title: "Software Engineer & AI Researcher",
+    description: "Computer Science graduate with research interests in Artificial Intelligence, Machine Learning, Data Science, Deep Learning, Natural Language Processing and Health Informatics. Currently working as a Junior Software Engineer with experience in Business Intelligence, enterprise data operations, Oracle SQL and Full-Stack Development. My work combines software engineering with AI research, focusing on developing intelligent, scalable and data-driven solutions to real-world problems.",
     email: "anamikatuli28@gmail.com",
     phone: "+880-1833461622",
     location: "Dhaka, Bangladesh",

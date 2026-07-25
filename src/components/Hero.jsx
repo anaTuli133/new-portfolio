@@ -39,9 +39,9 @@ const Hero = () => {
                 options={{
                   strings: [
                     'Software Engineer',
-                    'Business Analyst',
-                    'Full Stack Developer',
-                    'Research Enthusiast',
+                    'AI & ML Researcher',
+                    'Business Intelligence Engineer',
+                    'Full-Stack Developer',
                     'Relentless Builder'
                   ],
                   autoStart: true,
