@@ -57,7 +57,7 @@ const About = () => {
               </p>
               
               <p>
-                I am a Computer Science graduate and Junior Software Engineer with interests in Artificial Intelligence, Machine Learning, Data Science, Full-Stack Development, and Business Intelligence. My experience includes enterprise data operations, Oracle SQL, web application development, and AI-based research projects. I enjoy building scalable software solutions while exploring intelligent systems that solve practical problems in healthcare and data-driven environments.
+                I am a Computer Science graduate and Junior Software Engineer with interests in Artificial Intelligence, Machine Learning, Data Science, Full-Stack Development and Business Intelligence. My experience includes enterprise data operations, Oracle SQL, web application development and AI-based research projects. I enjoy building scalable software solutions while exploring intelligent systems that solve practical problems in healthcare and data-driven environments.
 
               </p>
 
