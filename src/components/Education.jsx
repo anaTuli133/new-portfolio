@@ -7,6 +7,7 @@ const Education = () => {
       degree: "B.Sc. in Computer Science & Engineering",
       institution: "Ahsanullah University of Science & Technology",
       period: "2021 - 2025",
+      gpa: "CGPA: 2.871/4.00 | Last Two Years CGPA: 3.061/4.00",
       details: [
         "Core Competencies: AI/ML, Blockchain, IoT, Full-Stack Development and Data Visualization",
         "Completed thesis on Cardiovascular Disease Prediction using Machine Learning"

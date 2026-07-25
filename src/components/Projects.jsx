@@ -104,7 +104,7 @@ const Projects = () => {
                       {/* Specific Logic for Play Game, Live Demo and View Work */}
                       {index === 7
                         ? "Play Game"
-                        : [0, 5, 8, 10].includes(index)
+                        : [0, 5, 8, 9].includes(index)
                           ? "Live Demo"
                           : "View Work"
                       }
