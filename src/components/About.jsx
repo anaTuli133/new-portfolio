@@ -53,16 +53,16 @@ const About = () => {
             
             <div className="space-y-4 text-slate-300 text-lg leading-relaxed text-justify">
               <p className="text-xl italic text-sky-400 border-l-4 border-sky-400 pl-4">
-                "I don't just build systems; I seek to understand the core mechanics that power them!"
+                I believe understanding the fundamentals is the first step toward building impactful technology!
               </p>
               
               <p>
-                I am an emerging Full-Stack Developer & AI/ML Engineer driven by an insatiable curiosity for the architecture of intelligent systems. My approach is rooted in rigorous exploration—moving beyond the surface to master the fundamental principles of scalable software and data-driven solutions.
+                I am a Computer Science graduate and Junior Software Engineer with interests in Artificial Intelligence, Machine Learning, Data Science, Full-Stack Development, and Business Intelligence. My experience includes enterprise data operations, Oracle SQL, web application development, and AI-based research projects. I enjoy building scalable software solutions while exploring intelligent systems that solve practical problems in healthcare and data-driven environments.
+
               </p>
-              
+
               <p>
-                From architecting enterprise data pipelines to implementing healthcare AI models, I treat every project as a journey of continuous learning. I thrive on deconstructing complex problems and turning them into efficient, under-the-hood engineered realities.
-              </p>
+                I am continuously learning new technologies and conducting research with the goal of contributing to impactful innovations in computer science.              </p>
             </div>
           </motion.div>
 
