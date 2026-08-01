@@ -72,10 +72,10 @@ const Hero = () => {
               className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8"
             >
               <a
-                href="/Anamika_Saha_CV.pdf"
+                href="/anamikasahacv.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                download="Anamika_Saha_CV.pdf"
+                download="anamikasahacv.pdf"
                 className="btn-primary text-sm md:text-base px-6 py-3 cursor-pointer"
               >
                 Download CV

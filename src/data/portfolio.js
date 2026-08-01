@@ -76,29 +76,33 @@ export const portfolioData = {
     publications: [
       {
         title: "Common Reasons for Chest X-ray Examinations in Hospitals: Understanding Causes, Diagnoses,and Raising Awareness in Dhaka, Bangladesh",
-        description: "Investigated the clinical indications, diagnostic outcomes, and public awareness of chest X-ray examinations through a cross-sectional study across multiple hospitals in Dhaka, providing insights for improved diagnostic practices and healthcare awareness.",
-        status: "Journal Published at European Journal of Medical and Health Sciences",
+        description: "Analyzed the clinical reasons for chest X-ray examinations across hospitals in Dhaka, evaluating diagnostic outcomes and public awareness to identify trends and support improved healthcare practices.",
+        status: "Published",
+        journal: "European Journal of Medical and Health Sciences",
         link: "https://eu-opensci.org/index.php/ejmed/article/view/42412",
         tech: ["Machine Learning", "Data Analysis", "Healthcare IT"]
       },
       {
         title: "Artificial Intelligence in Chest Radiography Comparative Study with Hospital Radiologists’ Reports in Dhaka, Bangladesh",
-        description: "Evaluated the effectiveness of a DenseNet-121 deep learning model against hospital radiologists' reports, highlighting AI's role in enhancing diagnostic accuracy and supporting clinical workflows.",
-        status: "Journal Published at European Journal of Artificial Intelligence and Machine Learning",
+        description: "Compared a DenseNet-121 AI model with hospital radiologists' chest X-ray reports to evaluate diagnostic agreement, identify reporting differences, and assess AI's potential as a clinical decision-support tool.",
+        status: "Published",
+        journal: "European Journal of Artificial Intelligence and Machine Learning",
         link: "https://eu-opensci.org/index.php/ejai/article/view/1085",
         tech: ["AI", "Deep Learning", "CNN"]
       },
       {
         title: "A Deployment-Oriented Edge-AI Framework for Real-Time Waste Classification with Bio-metric Authentication and Secure Logging",
         description: "Designed an Edge-AI-based waste classification framework combining lightweight deep learning, biometric authentication, and secure logging to enhance real-time recycling, security and system scalability.",
-        status: "Manuscript under review at PLOS ONE",
+        status: "Under Review",
+        journal: "PLOS ONE",
         link: "https://drive.google.com/file/d/1ujZaIVh0Eeq8se396vEAPpkeFGXWQxgi/view?usp=drive_link",
         tech: ["CNN", "IoT", "Biometrics", "Edge-AI", "Python"]
       },
       {
         title: "ZETA: A Zero-Knowledge and Threshold-Cryptographic Architecture for Scalable and MEV-Resilient Sharded Blockchains",
         description: "Proposed a scalable blockchain architecture integrating Zero-Knowledge Proofs, Threshold Cryptography, and sharding techniques to improve security, transaction throughput and resistance against MEV attacks.",
-        status: "Manuscript under review at Engineering Reports",
+        status: "Under Review",
+        journal: "Engineering Reports (Wiley)",
         link: "https://drive.google.com/file/d/1Ep89Am56vscyHVd0gWv40xesoZhZk8RV/view?usp=drive_link",
         tech: ["Blockchain", "Zero-Knowledge Proofs", "Threshold Cryptography", "Python", "Sharding"]
       },
@@ -255,13 +259,44 @@ export const portfolioData = {
       ]
     },
     {
-      title: "Graphic Designer & Project Member",
+      title: "Graphic Designer",
       organization: "Satellite Communication Lab, AUST",
       period: "2024 - 2025",
       icon: "🛰️",
       description: [
         "Designed posters and visuals for internal and external communication",
         "Worked as Logistics sub-team member for AUST Nanosatellite Project"
+      ]
+    },
+    {
+      title: "Campus Ambassador",
+      organization: "Robo Tech Valley",
+      period: "Oct 2024 - Nov 2024",
+      icon: "🎓",
+      description: [
+        "Worked as a Campus Ambassador in the 4th International Robo Tech Olympiad 2024",
+        "Promoted robotics and IT programs among university students",
+      ]
+    },
+    {
+      title: "Event Ambassador",
+      organization: "Interactive Cares",
+      period: "Aug 2023 - Dec 2023",
+      icon: "📣",
+      description: [
+        "Represented Interactive Cares during university events",
+        "Promoted career-focused webinars and workshops, increasing student participation",
+      ]
+    },
+        {
+      title: "Campus Ambassador",
+      organization: "ICT Olympiad Bangladesh",
+      period: "Mar 2022 - 2023",
+      icon: "💻",
+      description: [
+        "Coordinated inter-department student participation in various Olympiad events",
+        "Promoted ICT awareness and successfully drove registration campaigns on campus"
+
       ]
     },
     {
@@ -287,17 +322,7 @@ export const portfolioData = {
 
       ]
     },
-    {
-      title: "Campus Ambassador",
-      organization: "ICT Olympiad Bangladesh",
-      period: "Mar 2022 - 2023",
-      icon: "💻",
-      description: [
-        "Coordinated inter-department student participation in various Olympiad events",
-        "Promoted ICT awareness and successfully drove registration campaigns on campus"
 
-      ]
-    },
     {
       title: "Junior Sub Executive",
       organization: "AUST Cultural Club",
