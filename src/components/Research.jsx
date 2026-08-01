@@ -86,7 +86,8 @@ const Research = () => {
                     : "bg-orange-500/20 text-orange-400 border border-orange-500/30"
                   }`}
               >
-                {pub.status}
+                {pub.status}{" "}
+                {pub.journal && `at ${pub.journal}`}
               </div>
 
               {/* Title */}
@@ -127,8 +128,8 @@ const Research = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`inline-flex mt-auto w-fit items-center gap-2 px-4 py-2 rounded-lg text-sm transition-all font-medium ${pub.link === "#"
-                    ? "bg-slate-700/50 text-slate-500 cursor-not-allowed border border-transparent"
-                    : "bg-purple-500/10 border border-purple-500/20 text-purple-300"
+                  ? "bg-slate-700/50 text-slate-500 cursor-not-allowed border border-transparent"
+                  : "bg-purple-500/10 border border-purple-500/20 text-purple-300"
                   }`}
               >
                 📄{" "}
