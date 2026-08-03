@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { HiMenuAlt3, HiX } from 'react-icons/hi'
+import { HiMenuAlt3, HiX, HiSun, HiMoon } from 'react-icons/hi'
 
-const Navbar = () => {
+const Navbar = ({ theme, toggleTheme }) => {
   const [scrolled, setScrolled] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
   const [isOpen, setIsOpen] = useState(false)
@@ -73,7 +73,7 @@ const Navbar = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => scrollToSection(item)}
-                className={`text-sm font-medium transition-colors ${activeSection === item.toLowerCase() ? 'text-sky-500' : 'text-slate-300 hover:text-white'
+                className={`text-sm font-bold transition-colors ${activeSection === item.toLowerCase() ? 'text-sky-500' : 'text-slate-300 hover:text-white'
                   }`}
               >
                 {item}
@@ -88,16 +88,36 @@ const Navbar = () => {
             >
               Get In Touch
             </motion.a>
+
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              onClick={toggleTheme}
+              aria-label="Toggle theme"
+              className="w-9 h-9 flex items-center justify-center rounded-lg glass-effect text-slate-200 hover:text-sky-400 transition-colors"
+            >
+              {theme === 'dark' ? <HiSun className="text-lg" /> : <HiMoon className="text-lg" />}
+            </motion.button>
           </div>
 
           {/* Hamburger Icon - Visible on Mobile & Tablet (lg:hidden) */}
-          <motion.button
-            whileTap={{ scale: 0.9 }}
-            onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden text-3xl text-slate-200 z-50 relative p-2"
-          >
-            {isOpen ? <HiX className="text-sky-400" /> : <HiMenuAlt3 />}
-          </motion.button>
+          <div className="lg:hidden flex items-center gap-2 z-50">
+            <motion.button
+              whileTap={{ scale: 0.9 }}
+              onClick={toggleTheme}
+              aria-label="Toggle theme"
+              className="w-9 h-9 flex items-center justify-center rounded-lg glass-effect text-slate-200 relative"
+            >
+              {theme === 'dark' ? <HiSun className="text-lg" /> : <HiMoon className="text-lg" />}
+            </motion.button>
+            <motion.button
+              whileTap={{ scale: 0.9 }}
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-3xl text-slate-200 relative p-2"
+            >
+              {isOpen ? <HiX className="text-sky-400" /> : <HiMenuAlt3 />}
+            </motion.button>
+          </div>
         </div>
       </motion.nav>
 
@@ -118,7 +138,7 @@ const Navbar = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.05 }}
                 onClick={() => scrollToSection(item)}
-                className={`text-lg font-medium tracking-wide transition-colors ${activeSection === item.toLowerCase() ? 'text-sky-400 scale-110 font-bold' : 'text-slate-200'
+                className={`text-lg font-bold tracking-wide transition-colors ${activeSection === item.toLowerCase() ? 'text-sky-400 scale-110 font-bold' : 'text-slate-200'
                   }`}
               >
                 {item}

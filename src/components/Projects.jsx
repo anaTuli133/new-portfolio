@@ -98,7 +98,7 @@ const Projects = () => {
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-sky-600 to-sky-700 text-white rounded-lg text-[11px] font-bold shadow-lg shadow-sky-500/20 transition-all uppercase tracking-tighter"
+                      className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-sky-500 to-sky-600 text-white rounded-lg text-[11px] font-bold shadow-lg shadow-sky-500/20 transition-all uppercase tracking-tighter keep-white-text"
                     >
                       <FaExternalLinkAlt size={10} />
                       {/* Specific Logic for Play Game, Live Demo and View Work */}
@@ -133,8 +133,7 @@ const Projects = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setShowAll(!showAll)}
-              className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-purple-700 to-sky-600 text-white rounded-xl font-semibold shadow-lg shadow-purple-500/25 transition-all"
-            >
+              className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-purple-600 to-sky-500 text-white rounded-xl font-semibold shadow-lg shadow-purple-500/25 transition-all keep-white-text" >
               {showAll ? (
                 <>Show Less <FaChevronUp /></>
               ) : (

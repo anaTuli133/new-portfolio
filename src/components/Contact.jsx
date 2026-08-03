@@ -56,9 +56,9 @@ const Contact = () => {
             <div className="text-center md:text-left">
               <h3 className="text-2xl md:text-3xl font-bold text-slate-100 mb-4">
                 Let's Work Together!
-              </h3>             
-               <p className="text-slate-300 text-lg leading-relaxed">
-                I'm always excited to discuss new projects, creative ideas or opportunities. Feel free to message me!  
+              </h3>
+              <p className="text-slate-300 text-lg leading-relaxed">
+                I'm always excited to discuss new projects, creative ideas or opportunities. Feel free to message me!
               </p>
             </div>
 
@@ -152,7 +152,7 @@ const Contact = () => {
                 whileTap={{ scale: 0.98 }}
                 type="submit"
                 disabled={isSending}
-                className={`w-full py-4 bg-gradient-to-r from-sky-600 to-sky-500 text-white font-bold rounded-xl flex items-center justify-center gap-2 hover:shadow-lg transition-all shadow-md ${isSending ? 'opacity-50' : ''}`}
+                className={`w-full py-4 bg-gradient-to-r from-sky-600 to-sky-500 text-white font-bold rounded-xl flex items-center justify-center gap-2 hover:shadow-lg transition-all shadow-md keep-white-text ${isSending ? 'opacity-50' : ''}`}
               >
                 {isSending ? "Sending..." : "Send Message"} <FaPaperPlane className="text-sm" />
               </motion.button>

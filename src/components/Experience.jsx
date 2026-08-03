@@ -27,10 +27,8 @@ const Experience = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
-              className="relative pl-8 pb-12 border-l-2 border-sky-600/30 last:pb-0"
+              className="relative pb-12 last:pb-0"
             >
-              <div className="absolute left-0 top-0 w-4 h-4 bg-sky-600 rounded-full -translate-x-[9px] shadow-lg shadow-sky-600/50"></div>
-
               <motion.div
                 whileHover={{ scale: 1.01 }}
                 className="glass-effect rounded-2xl p-6 hover:shadow-xl hover:shadow-primary/10 transition-all border border-white/5"

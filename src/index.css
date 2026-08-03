@@ -149,6 +149,120 @@ html {
 }
 
 
+/* ================================
+   LIGHT THEME
+   ================================ */
+
+:root.light body {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+:root.light body::before {
+  opacity: 0.25;
+}
+
+
+:root.light .blur-3xl.animate-pulse {
+  display: none !important;
+}
+
+/* Backgrounds */
+:root.light .bg-slate-950 { background-color: #ffffff !important; }
+:root.light .bg-slate-900 { background-color: #ffffff !important; }
+:root.light .bg-slate-900\/50 { background-color: #ffffff !important; }
+
+/* Text colors */
+:root.light .text-white { color: #0f172a !important; }
+:root.light .text-slate-100 { color: #0f172a !important; }
+:root.light .text-slate-200 { color: #1e293b !important; }
+:root.light .text-slate-300 { color: #334155 !important; }
+:root.light .text-slate-400 { color: #64748b !important; }
+
+
+
+:root.light .glass-effect {
+  background: #ffffff;
+  border: 1.5px solid #e2d0d0;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 4px 16px rgba(15, 23, 42, 0.05);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+:root.light .border-white\/10 { border-color: rgba(15, 23, 42, 0.1) !important; }
+:root.light .border-white\/5 { border-color: rgba(15, 23, 42, 0.06) !important; }
+
+:root.light .text-sky-300,
+:root.light .text-sky-400 { color: #0369a1 !important; }
+:root.light .text-purple-300,
+:root.light .text-purple-400 { color: #7e22ce !important; }
+:root.light .text-green-300,
+:root.light .text-green-400 { color: #15803d !important; }
+:root.light .text-orange-300,
+:root.light .text-orange-400 { color: #c2410c !important; }
+:root.light .text-pink-300,
+:root.light .text-pink-400 { color: #be185d !important; }
+:root.light .text-red-300,
+:root.light .text-red-400 { color: #b91c1c !important; }
+:root.light .text-amber-300,
+:root.light .text-amber-400 { color: #b45309 !important; }
+
+
+:root.light .bg-sky-500\/10 { background-color: rgba(14, 165, 233, 0.12) !important; }
+:root.light .bg-purple-500\/10 { background-color: rgba(147, 51, 234, 0.12) !important; }
+:root.light .bg-green-500\/10,
+:root.light .bg-green-400\/10 { background-color: rgba(34, 197, 94, 0.12) !important; }
+:root.light .bg-orange-500\/10,
+:root.light .bg-orange-400\/10 { background-color: rgba(249, 115, 22, 0.12) !important; }
+:root.light .bg-primary\/20 { background-color: rgba(99, 102, 241, 0.14) !important; }
+
+:root.light .border-sky-500\/20 { border-color: rgba(14, 165, 233, 0.3) !important; }
+:root.light .border-purple-500\/20 { border-color: rgba(147, 51, 234, 0.3) !important; }
+:root.light .border-green-500\/20,
+:root.light .border-green-400\/20 { border-color: rgba(34, 197, 94, 0.3) !important; }
+:root.light .border-orange-500\/20,
+:root.light .border-orange-400\/20 { border-color: rgba(249, 115, 22, 0.3) !important; }
+
+/* Form fields */
+:root.light input,
+:root.light textarea {
+  color: #0f172a !important;
+  border-color: rgba(15, 23, 42, 0.12) !important;
+}
+:root.light input::placeholder,
+:root.light textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Nav mobile sidebar */
+:root.light .bg-\[\#0f172a\]\/95 { background-color: rgba(248, 250, 252, 0.97) !important; }
+
+/* Scrollbar in light mode */
+:root.light ::-webkit-scrollbar-track { background: #e2e8f0; }
+
+
+:root.light .btn-primary,
+:root.light .btn-primary * {
+  color: #ffffff !important;
+}
+
+
+:root.light .gradient-text {
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  -webkit-text-fill-color: initial;
+  color: #0f172a !important;
+}
+
+:root.light .keep-white-text,
+:root.light .keep-white-text * {
+  color: #ffffff !important;
+}
+
+:root.light .bg-slate-900\/30 {
+  background-color: #ffffff !important;
+}
+
 /* Typewriter cursor - slower animation */
 .Typewriter__cursor {
   color: #ffffff; 

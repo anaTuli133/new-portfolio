@@ -73,8 +73,6 @@ const Hero = () => {
             >
               <a
                 href="/anamikasahacv.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
                 download="anamikasahacv.pdf"
                 className="btn-primary text-sm md:text-base px-6 py-3 cursor-pointer"
               >
@@ -132,16 +130,16 @@ const Hero = () => {
             className="relative flex justify-center order-1 lg:order-2 mt-8 lg:mt-0"
           >
             {/* Image container */}
-            <div className="relative w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 -mt-8 md:mt-0">
+            <div className="relative w-64 h-80 md:w-72 md:h-[22rem] lg:w-96 lg:h-[28rem] -mt-8 md:mt-0">
               <motion.div
                 style={{
                   boxShadow: '0 0 40px rgba(139, 92, 246, 0.3)'
                 }}
-                className="w-full h-full rounded-full bg-gradient-to-br from-sky-600 to-sky-500 p-1"
+                className="w-full h-full rounded-3xl bg-gradient-to-br from-slate-500 to-slate-400 p-1"
               >
-                <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center overflow-hidden">
+                <div className="w-full h-full rounded-[1.35rem] bg-slate-900 flex items-center justify-center overflow-hidden">
                   <img
-                    src="/profile.png"
+                    src="/profile2.jpg"
                     alt="Anamika Saha"
                     className="w-full h-full object-cover"
                     style={{ objectPosition: 'center 18%' }}
