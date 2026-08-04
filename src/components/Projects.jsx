@@ -7,7 +7,7 @@ const Projects = () => {
   const { projects } = portfolioData
   const [showAll, setShowAll] = useState(false);
 
-  const initialDisplayCount = 6;
+  const initialDisplayCount = 9;
   const visibleProjects = showAll ? projects : projects.slice(0, initialDisplayCount);
 
   return (
@@ -102,9 +102,9 @@ const Projects = () => {
                     >
                       <FaExternalLinkAlt size={10} />
                       {/* Specific Logic for Play Game, Live Demo and View Work */}
-                      {index === 7
+                      {index === 8
                         ? "Play Game"
-                        : [0, 5, 8, 9].includes(index)
+                        : [0,1, 6, 9, 10].includes(index)
                           ? "Live Demo"
                           : "View Work"
                       }

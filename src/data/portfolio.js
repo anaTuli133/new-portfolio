@@ -110,8 +110,15 @@ export const portfolioData = {
   },
 
   projects: [
-
-
+    {
+      title: "Clicon - eCommerce Frontend",
+      category: "Frontend Development",
+      description: "Built a fully responsive eCommerce storefront using React and Tailwind CSS, featuring product listing with filters, cart, wishlist, compare, checkout flow, and authentication with mock Google sign-in.",
+      tech: ["React", "Vite", "Tailwind CSS", "React Router"],
+      image: "/Project/clicon.png",
+      demo: "https://e-commerce-clicon.vercel.app/",
+      github: "https://github.com/anaTuli133/e-commerce-clicon-"
+    },
     {
       title: "Finsweet - React Frontend",
       category: "Frontend Development",
@@ -288,7 +295,7 @@ export const portfolioData = {
         "Promoted career-focused webinars and workshops, increasing student participation",
       ]
     },
-        {
+    {
       title: "Campus Ambassador",
       organization: "ICT Olympiad Bangladesh",
       period: "Mar 2022 - 2023",
