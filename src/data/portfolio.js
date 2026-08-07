@@ -111,13 +111,22 @@ export const portfolioData = {
 
   projects: [
     {
-      title: "Clicon - eCommerce Frontend",
-      category: "Frontend Development",
-      description: "Built a fully responsive eCommerce storefront using React and Tailwind CSS, featuring product listing with filters, cart, wishlist, compare, checkout flow, and authentication with mock Google sign-in.",
-      tech: ["React", "Vite", "Tailwind CSS", "React Router"],
+      title: "Clicon - E-Commerce Store",
+      category: "Full stack Development",
+      description: "Built a fully responsive eCommerce storefront using React, Node, MongoDB, featuring product listing with filters, cart, wishlist, compare, checkout flow, and authentication with mock Google sign-in.",
+      tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "React Router"],
       image: "/Project/clicon.png",
       demo: "https://e-commerce-clicon.vercel.app/",
       github: "https://github.com/anaTuli133/e-commerce-clicon-"
+    },
+{
+      title: "Platform 10 - E-Ticket Booking System",
+      category: "Full Stack Development",
+      description: "Built a fully functional and responsive e-ticket booking system using React, Node.js, Express, and MongoDB, featuring real-time seat selection, duplicate checking, seat limits, and automated email notifications using Nodemailer.",
+      tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Nodemailer"],
+      image: "/Project/e-ticket.png",
+      demo: "https://e-ticket-booking-system-two.vercel.app/",
+      github: "https://github.com/anaTuli133/E-Ticket-Booking-System"
     },
     {
       title: "Finsweet - React Frontend",
