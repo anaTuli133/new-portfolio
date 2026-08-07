@@ -275,18 +275,50 @@ html {
   50% { opacity: 0.3; }
 }
 
-:root.light #experience .bg-slate-900 {
+/* Experience card - full light theme coverage (phone + laptop) */
+:root.light .experience-card {
   background-color: #ffffff !important;
   border-color: #0f172a !important;
-  color: #0f172a !important;
 }
-/*experience */
-:root.light #experience .bg-slate-900 * {
+
+:root.light .experience-title,
+:root.light .experience-text,
+:root.light .experience-text span {
   color: #0f172a !important;
 }
 
-:root.light #experience .bg-slate-900 .text-sky-400 {
+:root.light .experience-company,
+:root.light .experience-bullet {
   color: #0284c7 !important;
+}
+
+:root.light .experience-meta {
+  color: #475569 !important;
+}
+
+:root.light .experience-divider {
+  border-color: rgba(15, 23, 42, 0.15) !important;
+}
+
+:root.light .experience-pill {
+  background-color: rgba(14, 165, 233, 0.1) !important;
+  color: #0369a1 !important;
+  border-color: rgba(14, 165, 233, 0.35) !important;
+}
+
+/* Project category badge (shown on hover on desktop, always shown on mobile) */
+.category-badge {
+  background-color: rgba(15, 23, 42, 0.8);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+:root.light .category-badge {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid #0f172a !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
 

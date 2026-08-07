@@ -63,9 +63,9 @@ const Projects = () => {
                     </div>
                   </div>
 
-                  {/* Hover Overlay */}
-                  <div className="absolute inset-0 bg-purple-600/10 opacity-0 md:group-hover:opacity-100 transition-opacity pointer-events-none flex items-center justify-center">
-                    <span className="bg-slate-900/80 text-white px-3 py-1 rounded-full text-[10px] font-semibold backdrop-blur-sm border border-white/10 tracking-wider">
+                  {/* Hover Overlay (always visible on mobile since there's no hover there; hover-reveal on desktop) */}
+                  <div className="absolute inset-0 bg-purple-600/10 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity pointer-events-none flex items-center justify-center">
+                    <span className="category-badge bg-slate-900/80 text-white px-3 py-1 rounded-full text-[10px] font-semibold backdrop-blur-sm border border-white/10 tracking-wider">
                       {project.category}
                     </span>
                   </div>
