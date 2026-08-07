@@ -36,7 +36,7 @@ const Projects = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.3 }}
                 whileHover={{ y: -10 }}
-                className="glass-effect bg-white dark:bg-slate-900/80 rounded-2xl overflow-hidden shadow-lg dark:shadow-none hover:shadow-2xl hover:shadow-purple-500/20 transition-all border border-slate-300 dark:border-white/10 flex flex-col h-full"
+                className="project-card glass-effect rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-purple-500/20 transition-all border flex flex-col h-full"
               >
                 {/* Project Image Container */}
                 <div className="relative h-48 overflow-hidden group">
@@ -63,8 +63,8 @@ const Projects = () => {
                     </div>
                   </div>
 
-                  {/* Hover Overlay (always visible on mobile since there's no hover there; hover-reveal on desktop) */}
-                  <div className="absolute inset-0 bg-purple-600/10 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity pointer-events-none flex items-center justify-center">
+                  {/* Hover Overlay - same opacity-0/group-hover:opacity-100 on all screens, so mobile relies on native touch-hover just like desktop mouse-hover */}
+                  <div className="absolute inset-0 bg-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none flex items-center justify-center">
                     <span className="category-badge bg-slate-900/80 text-white px-3 py-1 rounded-full text-[10px] font-semibold backdrop-blur-sm border border-white/10 tracking-wider">
                       {project.category}
                     </span>
@@ -73,8 +73,8 @@ const Projects = () => {
 
                 {/* Content */}
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{project.title}</h3>
-                  <p className="text-slate-700 dark:text-slate-400 text-sm leading-relaxed mb-4 line-clamp-3 text-justify">
+                  <h3 className="project-title text-xl font-bold mb-2">{project.title}</h3>
+                  <p className="project-description text-sm leading-relaxed mb-4 line-clamp-3 text-justify">
                     {project.description}
                   </p>
 
@@ -83,7 +83,7 @@ const Projects = () => {
                     {project.tech.map((tech, i) => (
                       <span
                         key={i}
-                        className="px-2 py-1 bg-purple-500/10 dark:bg-purple-500/10 border border-purple-500/30 dark:border-purple-500/20 rounded text-[10px] text-purple-700 dark:text-purple-300 font-medium"
+                        className="project-tech-tag px-2 py-1 rounded text-[10px] font-medium border"
                       >
                         {tech}
                       </span>
@@ -114,7 +114,7 @@ const Projects = () => {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-white/10 border border-slate-300 dark:border-transparent rounded-lg text-slate-800 dark:text-slate-300 text-[11px] font-bold transition-colors uppercase tracking-tighter"
+                      className="project-github-btn flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-lg text-[11px] font-bold transition-colors uppercase tracking-tighter"
                     >
                       <FaGithub size={12} /> GitHub
                     </motion.a>

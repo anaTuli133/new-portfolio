@@ -16,7 +16,7 @@ const Experience = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="gradient-text">Professional Experience</span>
           </h2>
-          <p className="text-slate-600 dark:text-slate-400 text-lg">My journey in the tech industry</p>
+          <p className="text-slate-600 dark:text-slate-500 text-lg">My journey in the tech industry</p>
         </motion.div>
 
         <div className="max-w-4xl mx-auto">
@@ -73,3 +73,5 @@ const Experience = () => {
     </section>
   )
 }
+
+export default Experience
