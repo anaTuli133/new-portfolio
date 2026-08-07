@@ -119,7 +119,7 @@ export const portfolioData = {
       demo: "https://e-commerce-clicon.vercel.app/",
       github: "https://github.com/anaTuli133/e-commerce-clicon-"
     },
-{
+    {
       title: "Platform 10 - E-Ticket Booking System",
       category: "Full Stack Development",
       description: "Built a fully functional and responsive e-ticket booking system using React, Node.js, Express, and MongoDB, featuring real-time seat selection, duplicate checking, seat limits, and automated email notifications using Nodemailer.",
@@ -184,15 +184,6 @@ export const portfolioData = {
       github: "https://github.com/anaTuli133/Food-Ordering-Website"
     },
     {
-      title: "Mystro - The Fighting Game",
-      category: "Game Development",
-      description: "Developed a 2D fighting game implementing game logic, interactive graphics and real-time rendering using C++ and iGraphics library.",
-      tech: ["C++", "iGraphics", "OOP"],
-      image: "/Project/Mystro.png",
-      demo: "https://www.youtube.com/watch?v=Dd0RJEg0hdI",
-      github: "https://github.com/anaTuli133"
-    },
-    {
       title: "Dino Adventure - A Bingo Game",
       category: "Generative Art & Gaming",
       description: "A dynamic web-based game developed using p5.js. The project was inspired by a creative concept on YouTube.",
@@ -201,6 +192,16 @@ export const portfolioData = {
       demo: "https://editor.p5js.org/anaTuli133/full/ZoRjR5NDz",
       github: "https://github.com/anaTuli133/bingoGame"
     },
+    {
+      title: "Mystro - The Fighting Game",
+      category: "Game Development",
+      description: "Developed a 2D fighting game implementing game logic, interactive graphics and real-time rendering using C++ and iGraphics library.",
+      tech: ["C++", "iGraphics", "OOP"],
+      image: "/Project/Mystro.png",
+      demo: "https://www.youtube.com/watch?v=Dd0RJEg0hdI",
+      github: "https://github.com/anaTuli133"
+    },
+
 
     {
       title: "To-Do App",
