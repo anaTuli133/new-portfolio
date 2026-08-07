@@ -55,14 +55,9 @@ const About = () => {
               <p className="text-xl italic text-sky-400 border-l-4 border-sky-400 pl-4">
                 I believe understanding the fundamentals is the first step toward building impactful technology!
               </p>
-              
-              <p>
-                I am a Computer Science graduate and Junior Software Engineer with interests in Artificial Intelligence, Machine Learning, Data Science, Full-Stack Development and Business Intelligence. My experience includes enterprise data operations, Oracle SQL, web application development and AI-based research projects. I enjoy building scalable software solutions while exploring intelligent systems that solve practical problems in healthcare and data-driven environments.
-
-              </p>
 
               <p>
-                I am continuously learning new technologies and conducting research with the goal of contributing to impactful innovations in computer science.              </p>
+                I am continuously learning new technologies and conducting research with the goal of contributing to impactful innovations in computer science. </p>
             </div>
           </motion.div>
 
