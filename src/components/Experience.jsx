@@ -5,7 +5,7 @@ const Experience = () => {
   const { experience } = portfolioData
 
   return (
-    <section id="experience" className="py-20 bg-white dark:bg-slate-950">
+    <section id="experience" className="py-20 bg-slate-950">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -16,7 +16,7 @@ const Experience = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="gradient-text">Professional Experience</span>
           </h2>
-          <p className="text-slate-600 dark:text-slate-400 text-lg">My journey in the tech industry</p>
+          <p className="text-slate-400 text-lg">My journey in the tech industry</p>
         </motion.div>
 
         <div className="max-w-4xl mx-auto">
@@ -31,14 +31,14 @@ const Experience = () => {
             >
               <motion.div
                 whileHover={{ scale: 1.01 }}
-                className="bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-xl shadow-slate-200/50 dark:shadow-none hover:shadow-2xl transition-all border border-slate-100 dark:border-white/5"
+                className="bg-slate-900/90 rounded-2xl p-6 shadow-xl shadow-purple-500/5 hover:shadow-2xl transition-all border border-white/10"
               >
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                   <div>
-                    <h3 className="text-2xl font-bold text-slate-900 dark:text-white">{exp.title}</h3>
-                    <p className="text-sky-600 dark:text-sky-400 italic font-medium">{exp.company}</p>
+                    <h3 className="text-2xl font-bold text-white">{exp.title}</h3>
+                    <p className="text-sky-400 italic font-medium">{exp.company}</p>
                   </div>
-                  <p className="text-slate-500 text-sm mt-2 md:mt-0 font-mono">
+                  <p className="text-slate-400 text-sm mt-2 md:mt-0 font-mono">
                     {exp.period}
                     <br />
                     {exp.location}
@@ -47,19 +47,19 @@ const Experience = () => {
 
                 <ul className="space-y-3 mb-6 text-justify">
                   {exp.responsibilities.map((resp, i) => (
-                    <li key={i} className="text-slate-700 dark:text-slate-300 flex gap-3 text-sm leading-relaxed">
-                      <span className="text-sky-500 mt-1">▹</span>
+                    <li key={i} className="text-slate-300 flex gap-3 text-sm leading-relaxed">
+                      <span className="text-sky-400 mt-1">▹</span>
                       <span>{resp}</span>
                     </li>
                   ))}
                 </ul>
 
                 {/* Skills/Items Section */}
-                <div className="flex flex-wrap gap-2 pt-4 border-t border-slate-100 dark:border-white/10">
+                <div className="flex flex-wrap gap-2 pt-4 border-t border-white/10">
                   {exp.items.map((item, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1 text-xs font-medium bg-sky-50 dark:bg-primary/10 text-sky-700 dark:text-white border border-sky-200 dark:border-sky-600 rounded-md hover:bg-sky-100 dark:hover:bg-primary/20 transition-colors"
+                      className="px-3 py-1 text-xs font-medium bg-sky-500/10 text-sky-300 border border-sky-500/30 rounded-md hover:bg-sky-500/20 transition-colors"
                     >
                       {item}
                     </span>
