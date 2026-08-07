@@ -5,7 +5,7 @@ const Experience = () => {
   const { experience } = portfolioData
 
   return (
-    <section id="experience" className="py-20 bg-slate-900/5">
+    <section id="experience" className="py-20 bg-white dark:bg-slate-950">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -31,7 +31,7 @@ const Experience = () => {
             >
               <motion.div
                 whileHover={{ scale: 1.01 }}
-                className="bg-white dark:bg-slate-900/80 rounded-2xl p-6 shadow-md dark:shadow-none hover:shadow-xl transition-all border border-slate-200 dark:border-white/5"
+                className="bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-xl shadow-slate-200/50 dark:shadow-none hover:shadow-2xl transition-all border border-slate-100 dark:border-white/5"
               >
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                   <div>
