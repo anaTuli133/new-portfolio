@@ -22,7 +22,7 @@ const Projects = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="gradient-text">Featured Projects</span>
           </h2>
-          <p className="text-slate-400 text-lg">Some of my development work</p>
+          <p className="text-slate-600 dark:text-slate-400 text-lg">Some of my development work</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -36,7 +36,7 @@ const Projects = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.3 }}
                 whileHover={{ y: -10 }}
-                className="glass-effect rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-purple-500/20 transition-all flex flex-col h-full"
+                className="glass-effect bg-white dark:bg-slate-900/80 rounded-2xl overflow-hidden shadow-lg dark:shadow-none hover:shadow-2xl hover:shadow-purple-500/20 transition-all border border-slate-300 dark:border-white/10 flex flex-col h-full"
               >
                 {/* Project Image Container */}
                 <div className="relative h-48 overflow-hidden group">
@@ -73,8 +73,8 @@ const Projects = () => {
 
                 {/* Content */}
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
-                  <p className="text-slate-400 text-sm leading-relaxed mb-4 line-clamp-3 text-justify">
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{project.title}</h3>
+                  <p className="text-slate-700 dark:text-slate-400 text-sm leading-relaxed mb-4 line-clamp-3 text-justify">
                     {project.description}
                   </p>
 
@@ -83,7 +83,7 @@ const Projects = () => {
                     {project.tech.map((tech, i) => (
                       <span
                         key={i}
-                        className="px-2 py-1 bg-purple-500/10 border border-purple-500/20 rounded text-[10px] text-purple-300 font-medium"
+                        className="px-2 py-1 bg-purple-500/10 dark:bg-purple-500/10 border border-purple-500/30 dark:border-purple-500/20 rounded text-[10px] text-purple-700 dark:text-purple-300 font-medium"
                       >
                         {tech}
                       </span>
@@ -101,7 +101,6 @@ const Projects = () => {
                       className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-sky-500 to-sky-600 text-white rounded-lg text-[11px] font-bold shadow-lg shadow-sky-500/20 transition-all uppercase tracking-tighter keep-white-text"
                     >
                       <FaExternalLinkAlt size={10} />
-                      {/* Specific Logic for Play Game, Live Demo and View Work */}
                       {index === 8
                         ? "Play Game"
                         : [0,1,2, 7, 10, 11].includes(index)
@@ -115,7 +114,7 @@ const Projects = () => {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 flex items-center justify-center gap-2 px-4 py-2 glass-effect hover:bg-white/10 rounded-lg text-slate-300 text-[11px] font-bold transition-colors uppercase tracking-tighter"
+                      className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-white/10 border border-slate-300 dark:border-transparent rounded-lg text-slate-800 dark:text-slate-300 text-[11px] font-bold transition-colors uppercase tracking-tighter"
                     >
                       <FaGithub size={12} /> GitHub
                     </motion.a>
@@ -126,7 +125,7 @@ const Projects = () => {
           </AnimatePresence>
         </div>
 
-        {/* SEE MORE / SEE LESS Button — only show if there are more than initialDisplayCount projects */}
+        {/* SEE MORE / SEE LESS Button */}
         {projects.length > initialDisplayCount && (
           <div className="mt-12 text-center">
             <motion.button
