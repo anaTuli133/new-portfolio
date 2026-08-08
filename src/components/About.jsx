@@ -57,7 +57,7 @@ const About = () => {
               </p>
 
               <p>
-                I am continuously learning new technologies and conducting research with the goal of contributing to impactful innovations in computer science. </p>
+                I am continuously learning new technologies and conducting research with the goal of contributing to impactful innovations in computer science. Passionate about building intelligent, scalable and data-driven solutions that transform research into real-world impact. </p>
             </div>
           </motion.div>
 
