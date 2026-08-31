@@ -49,7 +49,7 @@ export const portfolioData = {
 
   experience: [
     {
-      title: "Jr. Software Engineer (Business Intelligence & Data Maintenance)",
+      title: "BI & Data Platform Engineer",
       company: "Teletalk Bangladesh Ltd. (through Opus Technology Limited)",
       location: "Gulshan, Dhaka",
       period: "January 2026 - Present",
