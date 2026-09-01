@@ -40,8 +40,8 @@ const Hero = () => {
                   strings: [
                     'Software Engineer',
                     'AI & ML Researcher',
-                    'Business Intelligence Engineer',
-                    'Full-Stack Developer',
+                    'BI & Data Platform Engineer',
+                    'Full-Stack Web Developer',
                     'Relentless Builder'
                   ],
                   autoStart: true,
