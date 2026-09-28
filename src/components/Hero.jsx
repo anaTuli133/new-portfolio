@@ -139,7 +139,7 @@ const Hero = () => {
               >
                 <div className="w-full h-full rounded-[1.35rem] bg-slate-900 flex items-center justify-center overflow-hidden">
                   <img
-                    src="/profile3.png"
+                    src="/profile4.png"
                     alt="Anamika Saha"
                     className="w-full h-full object-cover"
                     style={{ objectPosition: 'center 18%' }}
