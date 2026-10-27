@@ -1,152 +1,41 @@
-import { motion } from 'framer-motion'
-import { portfolioData } from '../data/portfolio'
 import { FaExternalLinkAlt } from 'react-icons/fa'
+import { portfolioData } from '../data/portfolio'
+import { Section, Tags, Ext } from './ui'
 
 const Research = () => {
-  const { research } = portfolioData
-
+  const { thesis, publications } = portfolioData.research
+  const n = publications.length
   return (
-    <section id="research" className="py-20 bg-slate-900/30">
-      <div className="container mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-text">Research & Publications</span>
-          </h2>
-          <p className="text-slate-400 text-lg">Academic contributions and thesis work</p>
-        </motion.div>
-
-        {/* Thesis */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="max-w-4xl mx-auto mb-12"
-        >
-          <motion.div
-            whileHover={{ scale: 1.02 }}
-            className="glass-effect rounded-2xl p-8 hover:shadow-xl hover:shadow-purple-500/10 transition-all"
-          >
-            <h3 className="text-2xl font-bold text-white mb-2 flex items-center gap-2 text-justify">
-              🎓 Thesis
-            </h3>
-            <h4 className="text-xl text-purple-300 mb-2 font-semibold">{research.thesis.title}</h4>
-
-            <p className="text-sky-400 italic mb-4">{research.thesis.supervisor}</p>
-
-            <p className="text-slate-300 leading-relaxed mb-4 text-justify">{research.thesis.description}</p>
-            {/* Thesis Tech Stack */}
-            <div className="flex flex-wrap gap-2 mb-6">
-              {research.thesis.tech?.map((tech, i) => (
-                <span key={i} className="px-3 py-1 bg-sky-500/10 border border-sky-500/20 rounded-lg text-[10px] text-sky-300 font-medium uppercase tracking-wider">
-                  {tech}
-                </span>
-              ))}
-            </div>
-
-            {/* Thesis Button  */}
-            <motion.a
-              whileHover={{
-                scale: 1.05,
-                backgroundColor: "rgba(139, 92, 246, 0.2)",
-                borderColor: "rgba(56, 189, 248, 0.5)",
-                color: "#38bdf8"
-              }}
-
-              href={research.thesis.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-2 bg-purple-500/10 border border-purple-500/20 rounded-xl text-purple-300 transition-all font-medium"
-            >
-              📖 View Thesis <FaExternalLinkAlt className="text-sm" />
-            </motion.a>
-          </motion.div>
-        </motion.div>
-
-        {/* Publications */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {research.publications.map((pub, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ scale: 1.03, y: -5 }}
-              className="glass-effect rounded-2xl p-7 hover:shadow-xl hover:shadow-purple-500/10 transition-all flex flex-col"
-            >
-              {/* Status */}
-              <div
-                className={`inline-block w-fit px-3 py-1 rounded-xl text-xs font-semibold mb-5 ${pub.status === "Published"
-                    ? "bg-green-500/20 text-green-400 border border-green-500/30"
-                    : "bg-orange-500/20 text-orange-400 border border-orange-500/30"
-                  }`}
-              >
-                {pub.status}{" "}
-                {pub.journal && `at ${pub.journal}`}
-              </div>
-
-              {/* Title */}
-              <h4 className="text-xl font-semibold text-white leading-snug mb-4 min-h-[84px]">
-                {pub.title}
-              </h4>
-
-              {/* Description */}
-              <p className="text-slate-400 text-sm leading-relaxed mb-6 min-h-[72px]">
-                {pub.description}
-              </p>
-
-              {/* Tech Stack */}
-              <div className="flex flex-wrap gap-2 mb-6">
-                {pub.tech?.map((tech, i) => (
-                  <span
-                    key={i}
-                    className="px-2 py-1 bg-purple-500/10 border border-purple-500/20 rounded-md text-[10px] text-purple-300 font-medium"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-
-              {/* Button */}
-              <motion.a
-                whileHover={
-                  pub.link !== "#"
-                    ? {
-                      scale: 1.05,
-                      backgroundColor: "rgba(139, 92, 246, 0.2)",
-                      borderColor: "rgba(56, 189, 248, 0.5)",
-                      color: "#38bdf8",
-                    }
-                    : {}
-                }
-                href={pub.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`inline-flex mt-auto w-fit items-center gap-2 px-4 py-2 rounded-lg text-sm transition-all font-medium ${pub.link === "#"
-                  ? "bg-slate-700/50 text-slate-500 cursor-not-allowed border border-transparent"
-                  : "bg-purple-500/10 border border-purple-500/20 text-purple-300"
-                  }`}
-              >
-                📄{" "}
-                {index === research.publications.length - 1
-                  ? "View Manuscript"
-                  : index === research.publications.length - 2
-                    ? "View Work"
-                    : "Read Paper"}
-
-                {pub.link !== "#" && <FaExternalLinkAlt className="text-xs" />}
-              </motion.a>
-            </motion.div>
-          ))}
-        </div>
+    <Section id="research" title="Research & Publications" note="Academic contributions and thesis work">
+      <div className="card p-6 md:p-8 mb-8 border-l-4 !border-l-accent">
+        <p className="text-sm font-semibold text-accent mb-2">🎓 Thesis</p>
+        <h3 className="text-2xl font-bold leading-snug mb-2">{thesis.title}</h3>
+        <p className="text-mute italic mb-4">{thesis.supervisor}</p>
+        <p className="text-mute leading-relaxed max-w-3xl mb-5">{thesis.description}</p>
+        <Tags items={thesis.tech} className="mb-6" />
+        <Ext href={thesis.link} className="btn btn-solid">📖 View Thesis <FaExternalLinkAlt size={11} /></Ext>
       </div>
-    </section>
+
+      <ol className="divide-y divide-line border-y border-line">
+        {publications.map((p, i) => {
+          const done = p.status === 'Published'
+          return (
+            <li key={i} className="py-8 grid lg:grid-cols-12 gap-4 lg:gap-8">
+              <div className="lg:col-span-3">
+                <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${done ? 'bg-accent/15 text-accent' : 'bg-warm/15 text-warm'}`}>{p.status}</span>
+                {p.journal && <p className="text-sm text-mute mt-3">{p.journal}</p>}
+              </div>
+              <div className="lg:col-span-9">
+                <h3 className="text-xl font-semibold leading-snug mb-3">{p.title}</h3>
+                <p className="text-mute text-sm leading-relaxed mb-4">{p.description}</p>
+                <Tags items={p.tech} className="mb-5" />
+                <Ext href={p.link} className="btn btn-ghost !py-2 text-xs">📄 {i === n - 1 ? 'View Manuscript' : i === n - 2 ? 'View Work' : 'Read Paper'} <FaExternalLinkAlt size={10} /></Ext>
+              </div>
+            </li>
+          )
+        })}
+      </ol>
+    </Section>
   )
 }
-
 export default Research
