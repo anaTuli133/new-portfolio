@@ -65,14 +65,17 @@ export const About = () => (
   <Section id="about" title="About Me">
     <div className="grid xl:grid-cols-5 gap-10">
       <div className="xl:col-span-3">
-        <h3 className="text-2xl font-bold mb-5">Hello! I'm Anamika Saha</h3>
-        <p className="text-xl italic text-accent border-l-2 border-accent pl-4 mb-5">I believe understanding the fundamentals is the first step toward building impactful technology!</p>
+        <h3 className="text-2xl font-bold mb-5 text-center xl:text-left">Hello! I'm Anamika Saha</h3>
+        <p className="text-xl italic text-accent border-l-2 border-accent pl-4 mb-5 text-left">
+          I believe understanding the fundamentals is the first step toward building impactful technology!
+        </p>
+        {/* Ekhane text-left mobile er jonno ebong lg:text-justify desktop er jonno set kora holo */}
         <p className="text-mute text-lg leading-relaxed text-left lg:text-justify">
           I am continuously learning new technologies and conducting research with the goal of contributing to impactful innovations in computer science. Passionate about building intelligent, scalable and data-driven solutions that transform research into real-world impact.
         </p>
       </div>
       <div className="xl:col-span-2">
-        <h3 className="text-sm font-semibold text-mute mb-4">Core Qualities</h3>
+        <h3 className="text-sm font-semibold text-mute mb-4 text-center xl:text-left">Core Qualities</h3>
         <ul className="divide-y divide-line border-y border-line">
           {qualities.map((q, i) => {
             const I = ICONS[q.icon]
