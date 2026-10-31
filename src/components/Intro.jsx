@@ -28,9 +28,12 @@ export const Hero = () => {
           <div className="mt-6 text-xl md:text-2xl text-accent font-display font-medium h-8 flex justify-center lg:justify-start">
             <Typewriter options={{ strings: ['Software Engineer', 'AI & ML Researcher', 'BI & Data Platform Engineer', 'Full-Stack Web Developer', 'Relentless Builder'], autoStart: true, loop: true, delay: 40, deleteSpeed: 40, pauseFor: 2000, cursor: '|' }} />
           </div>
-          <p className="mt-8 max-w-2xl text-lg leading-relaxed text-mute text-left lg:text-justify">
+          
+          {/* Direct style diye justify kora holo */}
+          <p className="mt-8 max-w-2xl text-lg leading-relaxed text-mute" style={{ textAlign: 'justify' }}>
             {personal.description}
           </p>
+
           <div className="mt-10 flex flex-wrap justify-center lg:justify-start gap-3">
             <a href="/anamikasahacv.pdf" download="anamikasahacv.pdf" className="btn btn-solid">Download CV</a>
             <a href="#projects" className="btn btn-ghost">View Projects</a>
@@ -65,17 +68,18 @@ export const About = () => (
   <Section id="about" title="About Me">
     <div className="grid xl:grid-cols-5 gap-10">
       <div className="xl:col-span-3">
-        <h3 className="text-2xl font-bold mb-5 text-center xl:text-left">Hello! I'm Anamika Saha</h3>
-        <p className="text-xl italic text-accent border-l-2 border-accent pl-4 mb-5 text-left">
+        <h3 className="text-2xl font-bold mb-5">Hello! I'm Anamika Saha</h3>
+        <p className="text-xl italic text-accent border-l-2 border-accent pl-4 mb-5" style={{ textAlign: 'left' }}>
           I believe understanding the fundamentals is the first step toward building impactful technology!
         </p>
-        {/* Ekhane text-left mobile er jonno ebong lg:text-justify desktop er jonno set kora holo */}
-        <p className="text-mute text-lg leading-relaxed text-left lg:text-justify">
+        
+        {/* Direct style diye justify kora holo */}
+        <p className="text-mute text-lg leading-relaxed" style={{ textAlign: 'justify' }}>
           I am continuously learning new technologies and conducting research with the goal of contributing to impactful innovations in computer science. Passionate about building intelligent, scalable and data-driven solutions that transform research into real-world impact.
         </p>
       </div>
       <div className="xl:col-span-2">
-        <h3 className="text-sm font-semibold text-mute mb-4 text-center xl:text-left">Core Qualities</h3>
+        <h3 className="text-sm font-semibold text-mute mb-4">Core Qualities</h3>
         <ul className="divide-y divide-line border-y border-line">
           {qualities.map((q, i) => {
             const I = ICONS[q.icon]
