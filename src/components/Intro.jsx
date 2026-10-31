@@ -8,11 +8,11 @@ const ICONS = { FaLightbulb, FaBookOpen, FaBullseye, FaComments }
 
 export const Hero = () => {
   const { personal, projects, research } = portfolioData
-const stats = [
-  [`${projects.length}+`, 'Projects'],
-  [research.publications.length, 'Papers'],
-  [`${certifications.length}+`, 'Certificates'],
-]
+  const stats = [
+    [`${projects.length}+`, 'Projects'],
+    [research.publications.length, 'Papers'],
+    [`${certifications.length}+`, 'Certificates'],
+  ]
   return (
     <section id="home" className="min-h-[92vh] flex flex-col justify-center pt-24 pb-16 lg:pt-0">
       <div className="rise">
@@ -20,7 +20,12 @@ const stats = [
         <div className="mt-6 text-xl md:text-2xl text-accent font-display font-medium h-8">
           <Typewriter options={{ strings: ['Software Engineer', 'AI & ML Researcher', 'BI & Data Platform Engineer', 'Full-Stack Web Developer', 'Relentless Builder'], autoStart: true, loop: true, delay: 40, deleteSpeed: 40, pauseFor: 2000, cursor: '|' }} />
         </div>
-        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-mute">{personal.description}</p>
+        
+        {/* Ekhane text-justify ba text-left add kore line gulo align kora hoyeche */}
+        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-mute text-justify">
+          {personal.description}
+        </p>
+
         <div className="mt-10 flex flex-wrap gap-3">
           <a href="/anamikasahacv.pdf" download="anamikasahacv.pdf" className="btn btn-solid">Download CV</a>
           <a href="#projects" className="btn btn-ghost">View Projects</a>
@@ -42,12 +47,12 @@ export const About = () => (
       <div className="xl:col-span-3">
         <h3 className="text-2xl font-bold mb-5">Hello! I'm Anamika Saha</h3>
         <p className="text-xl italic text-accent border-l-2 border-accent pl-4 mb-5">I believe understanding the fundamentals is the first step toward building impactful technology!</p>
-        <p className="text-mute text-lg leading-relaxed">I am continuously learning new technologies and conducting research with the goal of contributing to impactful innovations in computer science. Passionate about building intelligent, scalable and data-driven solutions that transform research into real-world impact. </p>
+        <p className="text-mute text-lg leading-relaxed text-justify">I am continuously learning new technologies and conducting research with the goal of contributing to impactful innovations in computer science. Passionate about building intelligent, scalable and data-driven solutions that transform research into real-world impact. </p>
       </div>
       <div className="xl:col-span-2">
         <h3 className="text-sm font-semibold text-mute mb-4">Core Qualities</h3>
         <ul className="divide-y divide-line border-y border-line">
-          {qualities.map((q, i) => {
+          {qualities.main.map((q, i) => { // Jehethu apnar data structure onujayi adjust kore nite paren
             const I = ICONS[q.icon]
             return (
               <li key={i} className="flex items-start gap-4 py-4">
