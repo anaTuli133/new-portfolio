@@ -32,15 +32,16 @@ export default function App() {
           <About />
           <Education />
           <Experience />
-          <Research />   
-          <Projects />   
+          <Research />
+          <Projects />
           <Skills />
           <Certifications />
           <Activities />
           <Contact />
 
-          <footer className="py-10 border-t border-line text-sm text-mute">
-            © 2026 Anamika Saha. All rights reserved.
+          <footer className="py-10 border-t border-line text-sm text-mute flex flex-col items-center justify-center gap-3 text-center">
+            <img src="/analogo2.png" alt="Ana Logo" className="w-16 h-8 object-contain opacity-80" />
+            <p>© 2026 Anamika Saha. All rights reserved.</p>
           </footer>
         </div>
       </main>

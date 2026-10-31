@@ -11,7 +11,7 @@ export const NAV = [
   "About",
   "Education",
   "Experience",
-  "Research", // 
+  "Research",
   "Projects", 
   "Skills",
   "Certifications",
@@ -108,7 +108,7 @@ export default function Sidebar({ theme, toggleTheme }) {
   const [open, setOpen] = useState(false);
   const active = useActive();
 
-  const { name, title } = portfolioData.personal;
+  const { name } = portfolioData.personal;
 
   const Toggle = (
     <button
@@ -125,19 +125,14 @@ export default function Sidebar({ theme, toggleTheme }) {
       {/* Desktop Sidebar */}
       <aside className="hidden lg:flex fixed inset-y-0 left-0 w-80 flex-col justify-between p-10 border-r border-line">
         <div>
-          <img
-            src="/profile4.png"
-            alt={name}
-            className="w-20 h-20 rounded-full object-cover object-top border border-line mb-5"
-          />
-
-          <h1 className="font-display text-2xl font-bold">
-            {name}
-          </h1>
-
-          <p className="text-sm text-mute mt-1 mb-10">
-            {title}
-          </p>
+          {/* Logo-ti ekhon ektu compact vabe rakha holo */}
+          <div className="mb-10">
+            <img
+              src="/analogo2.png"
+              alt="Ana Logo"
+              className="w-28 h-12 object-contain"
+            />
+          </div>
 
           <Links active={active} />
         </div>
@@ -150,8 +145,13 @@ export default function Sidebar({ theme, toggleTheme }) {
 
       {/* Mobile Header */}
       <header className="lg:hidden fixed top-0 inset-x-0 z-40 flex items-center justify-between h-14 px-5 bg-bg/90 backdrop-blur border-b border-line">
-        <a href="#home" className="font-display font-bold">
-          {name}
+        <a href="#home" className="flex items-center gap-3">
+          <img
+            src="/profile4.png"
+            alt={name}
+            className="w-8 h-8 rounded-full object-cover object-top border border-line"
+          />
+          <span className="font-display font-bold text-sm">{name}</span>
         </a>
 
         <div className="flex items-center gap-2">
@@ -173,7 +173,7 @@ export default function Sidebar({ theme, toggleTheme }) {
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
-            className="lg:hidden fixed inset-x-0 top-14 z-30 bg-bg border-b border-line p-6 max-h-[80vh] overflow-y-auto"
+            className="lg:hidden fixed inset-x-0 top-14 z-30 bg-bg border-b border-line p-6 max-h-[80vh] overflow-y-auto shadow-xl"
           >
             <Links
               active={active}
